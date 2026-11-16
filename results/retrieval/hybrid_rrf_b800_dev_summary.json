@@ -1,0 +1,23 @@
+{
+  "config": "hybrid_rrf_b800",
+  "description": "Method 3: Hybrid RRF (Dense + BM25, fetch_k=12, k=60), top_k=3, budget=800 chars",
+  "split": "dev",
+  "n": 18,
+  "hit1": "14/18",
+  "hit1_rate": 0.7778,
+  "evidence_hit3": "16/18",
+  "evidence_hit3_rate": 0.8889,
+  "context_evidence_rate": "2/18",
+  "context_evidence_pct": 0.1111,
+  "avg_context_chars": 326.2,
+  "median_ms": 19.24,
+  "total_seconds": 0.416,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 18,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

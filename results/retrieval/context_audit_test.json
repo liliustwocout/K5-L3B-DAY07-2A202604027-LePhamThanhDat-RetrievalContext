@@ -1,0 +1,28 @@
+{
+  "split": "test",
+  "rubric": "0 = no evidence; 1 = partial evidence or missing condition/source; 2 = complete evidence with valid source/page",
+  "baseline_dense_b800": {
+    "grades": [
+      {"query_id": "q07", "grade": 0, "reason": "ctx_ids=['nist-ir-8312:p011:para:003'] discusses simple explanation nuances; Rank-1 gold chunk p022:para:001 (1150 chars) dropped by budget=800."},
+      {"query_id": "q08", "grade": 1, "reason": "ctx_ids=['nist-ir-8312:p029:para:002'] has human-machine collaboration implication, but drops p029:para:001 benchmark conclusion."},
+      {"query_id": "q15", "grade": 0, "reason": "ctx_ids=[] empty context; all top-3 chunks > 800 chars."},
+      {"query_id": "q16", "grade": 0, "reason": "ctx_ids=[] empty context; all top-3 chunks > 800 chars."},
+      {"query_id": "q23", "grade": 0, "reason": "ctx_ids=['nist-sp-800-218a:p021:para:002'] covers PW.1.1 risk modeling; Rank-1 PW.5.1 chunk p024:para:001 dropped by budget=800."},
+      {"query_id": "q24", "grade": 1, "reason": "ctx_ids=['nist-sp-800-218a:p026:para:002'] has RV.2.2 rebuild time/expense, but drops p026:para:001 RV.2.1 deep I/O analysis."}
+    ],
+    "counts": {"0": 4, "1": 2, "2": 0},
+    "mean_score": 0.3333
+  },
+  "selected_hybrid_rrf_neighbor_b4800": {
+    "grades": [
+      {"query_id": "q07", "grade": 2, "reason": "Contains both p022:para:000 (perturbation exploit) and p022:para:001 (fairwashing) with source/page."},
+      {"query_id": "q08", "grade": 2, "reason": "Contains both p029:para:001 (benchmark conclusion) and p029:para:002 (human-machine collaboration) with source/page."},
+      {"query_id": "q15", "grade": 2, "reason": "Contains p041:para:000 with full incompatibility and simultaneous mitigation evidence."},
+      {"query_id": "q16", "grade": 2, "reason": "Contains p055:para:001 with full three lines of defense evidence."},
+      {"query_id": "q23", "grade": 2, "reason": "Contains p024:para:001 plus Rank-1 neighbor p024:para:000 covering full PW.5.1 R2/R3."},
+      {"query_id": "q24", "grade": 2, "reason": "Contains p026:para:002 plus Rank-1 neighbor p026:para:001 covering both RV.2.1 and RV.2.2."}
+    ],
+    "counts": {"0": 0, "1": 0, "2": 6},
+    "mean_score": 2.0
+  }
+}

@@ -1,0 +1,901 @@
+[
+  {
+    "id": "adv_dev_table_01",
+    "split": "dev",
+    "group": "table",
+    "question": "According to Table 1 on page 12 ('Selected ecological events chronicled across the 20 editions of the Arctic Report Card since 2006'), what exact topic was highlighted for 2016 and for 2024?",
+    "ground_truth": "2016: 'Northern permafrost soils contain twice the carbon as in atmosphere'; 2024: 'Arctic tundra transitions to being a carbon source'.",
+    "expected_pages": [
+      12
+    ],
+    "expected_regions": [
+      "arc2025:p012:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p012_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Executive Summary, PDF page(s) [12], region(s) ['arc2025:p012:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_table_02",
+    "split": "dev",
+    "group": "table",
+    "question": "In Table 1 on page 102 summarizing taxa in the Chukchi Sea and northern Bering Sea, list all four taxa (scientific name and common name) classified under 'Pelagic fish'.",
+    "ground_truth": "Mallotus villosus (Capelin), Clupea pallasii (Herring), Oncorhynchus gorbuscha (Pink Salmon), and Oncorhynchus nerka (Sockeye Salmon).",
+    "expected_pages": [
+      102
+    ],
+    "expected_regions": [
+      "arc2025:p102:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p102_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Warming Waters and Borealization: Restructuring Ecosystem Dynamics in the Northern Bering and Chukchi Seas, 2002-2022, PDF page(s) [102], region(s) ['arc2025:p102:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_table_03",
+    "split": "dev",
+    "group": "table",
+    "question": "In Table 1 under Physical Indicators (page 133), for which Essay Topic is GMASI (Autosnow Ice) mentioned, and what does its Gaps entry state about both in situ ice sensors and GMASI?",
+    "ground_truth": "Essay Topic: Lake Ice. The Gaps column states that data from in situ ice sensors have good coverage but are still limited, while GMASI (Autosnow Ice) data are useless in winter but add value in summer and are useful for detecting snow under warm clouds in spring where surface stations are unavailable.",
+    "expected_pages": [
+      133
+    ],
+    "expected_regions": [
+      "arc2025:p133:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p133_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change, PDF page(s) [133], region(s) ['arc2025:p133:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_img_01",
+    "split": "dev",
+    "group": "image_diagram",
+    "question": "Inspect the Arctic Report Card Vital Signs wheel diagram on page 7 (Fig. 1): list all eight Vital Signs categories inside the wheel and report the trend box text for Terrestrial Snow Cover.",
+    "ground_truth": "Eight categories: Surface Air Temperature, Precipitation, Terrestrial Snow Cover, Tundra Greenness, Greenland Ice Sheet, Ocean Primary Productivity, Sea Ice, Sea Surface Temperature. Terrestrial Snow Cover: 'June snow cover extent reduced by 50% since 1967'.",
+    "expected_pages": [
+      7
+    ],
+    "expected_regions": [
+      "arc2025:p007:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p007_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Executive Summary, PDF page(s) [7], region(s) ['arc2025:p007:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_img_02",
+    "split": "dev",
+    "group": "image_diagram",
+    "question": "Inspect the four-panel tundra vegetation photograph (Fig. 1 on page 75): in the bottom-right panel, what color is the researcher's backpack instrument, what are they pointing in their right hand, and what lies inside the open black case on the tundra in front of them?",
+    "ground_truth": "The researcher wears a white (light grey/white) backpack spectrometer, holds a connected optical sensor/cable in their right hand aimed down at the vegetation, and has a white reference/calibration panel resting inside an open black case on the grass.",
+    "expected_pages": [
+      75
+    ],
+    "expected_regions": [
+      "arc2025:p075:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p075_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Tundra Greenness, PDF page(s) [75], region(s) ['arc2025:p075:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_img_03",
+    "split": "dev",
+    "group": "image_diagram",
+    "question": "Inspect Fig. 2 on page 112 (coastal erosion monitoring in Golovin, Alaska): how many people are standing beside the wooden building, what large bright blue cylindrical container is mounted on a wooden rack right next to them, and what red container lies on the snowy slope in the lower-left foreground?",
+    "ground_truth": "Two local observers stand beside the weathered wooden building; a bright blue plastic barrel/drum is mounted horizontally on a raised wooden frame right beside the person on the left; a red fuel can/jerrycan lies in the lower-left foreground.",
+    "expected_pages": [
+      112
+    ],
+    "expected_regions": [
+      "arc2025:p112:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p112_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Weaving the Seen and Unseen: Stewarding the Arctic Means Sustaining Indigenous Monitoring, PDF page(s) [112], region(s) ['arc2025:p112:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_chart_01",
+    "split": "dev",
+    "group": "chart",
+    "question": "Look closely at panel (c) Winter in the Surface Air Temperature time series chart on page 15 (Fig. 1): what are the exact printed 2006–2025 warming trends (in °C dec^-1) for the Arctic (red) and for the globe (blue), and by how much does the Arctic winter rate exceed the global winter rate?",
+    "ground_truth": "T_ARCTIC 2006-2025 = 0.87°C dec^-1 and T_GLOBAL 2006-2025 = 0.35°C dec^-1; Arctic winter warming exceeds the global rate by 0.52°C dec^-1 (about 2.49x faster).",
+    "expected_pages": [
+      15
+    ],
+    "expected_regions": [
+      "arc2025:p015:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p015_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Surface Air Temperature, PDF page(s) [15], region(s) ['arc2025:p015:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_chart_02",
+    "split": "dev",
+    "group": "chart",
+    "question": "In Fig. 1 on page 30 showing standardized Arctic snow cover extent anomalies (1967–2025), check the filled 2025 circles in panel (b) June SCE Anomaly: are both Eurasia (red) and North America (black) positive or negative, and approximately what standardized values do they show?",
+    "ground_truth": "Both 2025 June SCE anomalies are negative: Eurasian Arctic (red filled circle) is around -0.7 and North American Arctic (black filled circle) is around -1.3 (between -1 and -2).",
+    "expected_pages": [
+      30
+    ],
+    "expected_regions": [
+      "arc2025:p030:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p030_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Terrestrial Snow Cover, PDF page(s) [30], region(s) ['arc2025:p030:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_chart_03",
+    "split": "dev",
+    "group": "chart",
+    "question": "Inspect the MaxNDVI time series plot on page 76: which dataset curve consistently shows the highest maximum NDVI (~0.58–0.63) and which shows the lowest (~0.405–0.455), and in what year does the MODIS Circumarctic (black) curve peak near ~0.52?",
+    "ground_truth": "Highest: MODIS Eurasia (dotted red); Lowest: MODIS North America (dotted blue); MODIS Circumarctic peaks highest in 2020 (just below 0.52).",
+    "expected_pages": [
+      76
+    ],
+    "expected_regions": [
+      "arc2025:p076:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p076_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Tundra Greenness, PDF page(s) [76], region(s) ['arc2025:p076:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_multihop_01",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "Combining Precipitation Headlines (p. 21) and 'Precipitation at a glance' (p. 22), how did the 2024/25 water year rank overall, how did each of the four seasons rank, and which single season was unusually dry?",
+    "ground_truth": "The 2024/25 water year (Oct 2024–Sep 2025) ranked wettest/highest on record; spring was record high (#1), autumn was 4th highest, and winter was 4th highest, whereas summer was unusually dry, ranking 35th highest.",
+    "expected_pages": [
+      21,
+      22
+    ],
+    "expected_regions": [
+      "arc2025:p021:text:000",
+      "arc2025:p022:text:001"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Precipitation, PDF page(s) [21, 22], region(s) ['arc2025:p021:text:000', 'arc2025:p022:text:001']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_multihop_02",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "Using pages 36–37 on the Greenland Ice Sheet, compare the 2025 GRACE-FO annual mass balance against the 2003–24 GRACE/GRACE-FO annual average (in Gt): by how many Gt was the 2025 net mass loss smaller, and what partial-year mass balance did ICESat-2 measure from 1 September 2024 to 2 April 2025?",
+    "ground_truth": "2025 GRACE-FO mass balance was -129 ± 50 Gt vs. the 2003–24 average of -219 ± 16 Gt, meaning 2025 loss was 90 Gt smaller in magnitude (219 - 129 = 90 Gt). ICESat-2 measured -2 ± 56 Gt for 1 Sep 2024–2 Apr 2025.",
+    "expected_pages": [
+      36,
+      37
+    ],
+    "expected_regions": [
+      "arc2025:p036:text:001",
+      "arc2025:p037:text:001"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Greenland Ice Sheet, PDF page(s) [36, 37], region(s) ['arc2025:p036:text:001', 'arc2025:p037:text:001']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_multihop_03",
+    "split": "dev",
+    "group": "multi_hop",
+    "question": "From pages 110–111 on the Aleut Community of St. Paul Island (ACSPI), state the full names of both the BRAIDED Food Security Project and ISN, which WHO top-ten contaminant the BRAIDED pilot monitored at the BSRC lab, and what core principle underpins ISN.",
+    "ground_truth": "BRAIDED = Building Research Aligned with Indigenous Determination, Equity, and Decision-making (monitored mercury locally at the Bering Sea Research Center, BSRC); ISN = Indigenous Sentinels Network, founded on Indigenous Data Sovereignty (IDSov), where communities own and control all collected data.",
+    "expected_pages": [
+      110,
+      111
+    ],
+    "expected_regions": [
+      "arc2025:p110:text:000",
+      "arc2025:p111:text:001",
+      "arc2025:p111:text:002"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Weaving the Seen and Unseen: Stewarding the Arctic Means Sustaining Indigenous Monitoring, PDF page(s) [110, 111], region(s) ['arc2025:p110:text:000', 'arc2025:p111:text:001', 'arc2025:p111:text:002']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_text_01",
+    "split": "dev",
+    "group": "text",
+    "question": "According to the Surface Air Temperature Overview on page 14, since 1980 how much faster have Pan-Arctic (60° N–90° N) annual air temperatures warmed compared to the global mean (90° S–90° N)?",
+    "ground_truth": "Nearly three times faster than the global mean since 1980.",
+    "expected_pages": [
+      14
+    ],
+    "expected_regions": [
+      "arc2025:p014:text:003"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Surface Air Temperature, PDF page(s) [14], region(s) ['arc2025:p014:text:003']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_text_02",
+    "split": "dev",
+    "group": "text",
+    "question": "According to page 29 on Terrestrial Snow Cover, how does June Arctic snow cover extent today compare to six decades ago, and through what physical feedback does snow cover loss amplify Arctic warming?",
+    "ground_truth": "June Arctic snow cover extent today is half of what it was six decades ago, and snow cover loss amplifies Arctic warming through the surface albedo feedback.",
+    "expected_pages": [
+      29
+    ],
+    "expected_regions": [
+      "arc2025:p029:text:000",
+      "arc2025:p029:text:001"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Terrestrial Snow Cover, PDF page(s) [29], region(s) ['arc2025:p029:text:000', 'arc2025:p029:text:001']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_text_03",
+    "split": "dev",
+    "group": "text",
+    "question": "According to the AMAP essay on page 143, since which year has the Arctic Report Card been published, and more than how many specialists in AMAP's international network support its peer review process?",
+    "ground_truth": "Published annually since 2006; AMAP draws on an international network of more than 800 specialists.",
+    "expected_pages": [
+      143
+    ],
+    "expected_regions": [
+      "arc2025:p143:text:000"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) AMAP and the Arctic Report Card: A Collaboration that is 20 Years Strong, PDF page(s) [143], region(s) ['arc2025:p143:text:000']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_dev_unans_01",
+    "split": "dev",
+    "group": "unanswerable",
+    "question": "What Arctic penguin colony breeding counts are reported in the 2025 Arctic Report Card?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_dev_unans_02",
+    "split": "dev",
+    "group": "unanswerable",
+    "question": "How much funding in euros did Norway allocate to expanding its Arctic icebreaker fleet in 2025 according to the report?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_dev_unans_03",
+    "split": "dev",
+    "group": "unanswerable",
+    "question": "What surface ocean microplastic fiber concentration (particles per cubic meter) is reported in Table 2 of the report?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_test_table_01",
+    "split": "test",
+    "group": "table",
+    "question": "Using Table 1 on page 46 (March and September 2025 Arctic sea ice extent), report for both March Monthly Average and September Monthly Average: the 2025 Extent (10^6 km^2), Rank (out of 47 years), Anomaly rel. 1991–2020 average (10^6 km^2), and 1979–2025 Trend (km^2/yr). Which of the two had a steeper negative 1979–2025 trend?",
+    "ground_truth": "March Monthly Average: Extent 14.12 × 10^6 km^2, Rank 1 (out of 47), Anomaly -0.91 × 10^6 km^2, 1979–2025 Trend -38,000 km^2/yr. September Monthly Average: Extent 4.75 × 10^6 km^2, Rank 11 (out of 47), Anomaly -0.83 × 10^6 km^2, 1979–2025 Trend -76,100 km^2/yr. September Monthly Average had the steeper negative trend (-76,100 vs. -38,000 km^2/yr).",
+    "expected_pages": [
+      46
+    ],
+    "expected_regions": [
+      "arc2025:p046:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p046_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Sea Ice, PDF page(s) [46], region(s) ['arc2025:p046:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_table_02",
+    "split": "test",
+    "group": "table",
+    "question": "From Table 1 on page 69 (Primary productivity, 2003–25), which single named region experienced a negative 2003–25 trend and negative 2025 anomaly? Report all five numeric columns for that region and also report Total Arctic (>60° N) 2003–25 Trend and 2025 Anomaly including their asterisked units (* and **).",
+    "ground_truth": "Amerasian Arctic is the only region with negative values: 2003–25 Trend = -1.03 g C/m^2/yr/decade, Mann-Kendall p-value = 0.566, 2003–25 % Change = -3.0%, 2025 Anomaly = -8.60 g C/m^2/yr, 2025 Primary Productivity = 88.6% of 2003–22 average. Total Arctic (>60° N): 2003–25 Trend = 21.6* Tg C/yr (*units Tg C/yr) and 2025 Anomaly = 478.90** Tg C (**units Tg C).",
+    "expected_pages": [
+      69
+    ],
+    "expected_regions": [
+      "arc2025:p069:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p069_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Arctic Ocean Primary Productivity: The Response of Marine Algae to Climate Warming and Sea Ice Decline, PDF page(s) [69], region(s) ['arc2025:p069:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_table_03",
+    "split": "test",
+    "group": "table",
+    "question": "In Table 1 on page 83 listing 27 Arctic glaciers (climatic mass balance Bclim in mm w.e./yr), which two glaciers in Arctic Scandinavia had the most negative Bclim in 2023/24, what were their exact 2023/24 values, and by how many mm w.e./yr did the single worst glacier's 2023/24 loss exceed its 1991–2020 Bclim Mean?",
+    "ground_truth": "Langfjordjokelen (#18): -4060 mm w.e./yr in 2023/24 (1991–2020 Mean -953 mm w.e./yr, exceeding its mean loss by 3107 mm w.e./yr, i.e., -3107 mm w.e./yr difference); Engabreen (#17): -3855 mm w.e./yr in 2023/24 (1991–2020 Mean -62 mm w.e./yr).",
+    "expected_pages": [
+      83
+    ],
+    "expected_regions": [
+      "arc2025:p083:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p083_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Glaciers and Ice Caps Outside Greenland, PDF page(s) [83], region(s) ['arc2025:p083:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_table_04",
+    "split": "test",
+    "group": "table",
+    "question": "According to Table 2 under Physical Indicators on page 135, how do the risk assessments differ between 'Surface Air Temperature' and 'Precipitation' (specifically what observing system is at risk and what cause is given)?",
+    "ground_truth": "Surface Air Temperature: 'No risks noted' (—). Precipitation: 'Meteorological Stations Collecting Precipitation Data - a highly critical observing system for the Precipitation essay' are at risk due to potential impacts as precipitation data are collected or funded by agencies or programs facing major budget cuts.",
+    "expected_pages": [
+      135
+    ],
+    "expected_regions": [
+      "arc2025:p135:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p135_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change, PDF page(s) [135], region(s) ['arc2025:p135:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_table_05",
+    "split": "test",
+    "group": "table",
+    "question": "According to Table 2 under Physical Indicators on page 136, which four satellite observing systems are listed at risk for the 'Sea Ice' essay, and why does the 'DMSP SSM/I-SSMIS' decommissioning affect long-term consistency across Sea Ice, Greenland Ice Sheet, and Sea Surface Temperature?",
+    "ground_truth": "For Sea Ice: CryoSat-2, SMOS, and ICESat-2 (all past nominal mission lifetime) plus DMSP SSM/I-SSMIS. DMSP SSM/I-SSMIS is explicitly identified for decommissioning and will be replaced by new passive microwave sensors, introducing inconsistencies requiring staff time and expertise to recalibrate the data to stay consistent with the long-term record.",
+    "expected_pages": [
+      136
+    ],
+    "expected_regions": [
+      "arc2025:p136:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p136_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change, PDF page(s) [136], region(s) ['arc2025:p136:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_table_06",
+    "split": "test",
+    "group": "table",
+    "question": "In Table 2 under Ecological Indicators on page 137, which highest-criticality dataset for 'Tundra Greenness' will not be updated for 2025 or future years and why, and what satellite transition is planned as 'MODIS' is sunsetting for 'Ocean Primary Productivity'?",
+    "ground_truth": "For Tundra Greenness: AVHRR GIMMS-3g will not be updated for 2025 or future years due to funding cuts at NASA GSFC (with MODIS transitioning to VIIRS). For Ocean Primary Productivity: MODIS is transitioning to VIIRS and PACE, which introduces inconsistencies requiring in situ measurements, staff time, and expertise.",
+    "expected_pages": [
+      137
+    ],
+    "expected_regions": [
+      "arc2025:p137:table:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p137_table_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change, PDF page(s) [137], region(s) ['arc2025:p137:table:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_img_01",
+    "split": "test",
+    "group": "image_diagram",
+    "question": "Inspect the '2025 Arctic-wide headlines' annotated map on page 8 (Fig. 2): state the four labeled regional records/events on the right-hand side for Bering Sea & Sea of Okhotsk, Laptev Sea, Kara Sea, and Arctic Scandinavia & Svalbard, as well as the Greenland spring vs. summer temperature summary.",
+    "ground_truth": "Bering Sea & Sea of Okhotsk: near-record low sea ice extent in Feb/Mar; Laptev Sea: record low sea ice extent in May; Kara Sea: warmest SSTs on record in August; Arctic Scandinavia & Svalbard: glacial thinning largest on record during 2023/24 mass balance year; Greenland: above-average spring temps with records at Summit Station in May, while summer temperatures were close to average.",
+    "expected_pages": [
+      8
+    ],
+    "expected_regions": [
+      "arc2025:p008:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p008_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Executive Summary, PDF page(s) [8], region(s) ['arc2025:p008:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_img_02",
+    "split": "test",
+    "group": "image_diagram",
+    "question": "Inspect the Arctic Ocean circulation diagram on page 90 (Fig. 1): name the two labeled southern gateways where red 'Atlantic water inflow' enters the Arctic Ocean, the named island passage east of Svalbard, the two labeled ocean basins inside the central Arctic, and the major blue surface current shown.",
+    "ground_truth": "Gateways: Fram Strait and Barents Sea Opening; Passage east of Svalbard: Franz Joseph Land – Novaya Zemlya passage; Basins: Eurasian Basin and Amerasian Basin; Major blue surface current: Transpolar Drift.",
+    "expected_pages": [
+      90
+    ],
+    "expected_regions": [
+      "arc2025:p090:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p090_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Atlantification of the Arctic Ocean, PDF page(s) [90], region(s) ['arc2025:p090:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_img_03",
+    "split": "test",
+    "group": "image_diagram",
+    "question": "Inspect the Borealization diagram on page 94 (Fig. 4): list all 6 numbered biological groups under 'Borealized communities' in the legend, state how many wedges are filled in the Central Arctic Ocean hexagon, and name the two Arctic seas where all 6 hexagon wedges are filled.",
+    "ground_truth": "1. Marine mammals and seabirds; 2. Pelagic and 0-group fish; 3. Demersal fish; 4. Benthic invertebrates; 5. Zooplankton; 6. Microorganisms including phytoplankton. Central Arctic Ocean has 0 of 6 wedges filled (outline only). All 6 wedges are filled in the Barents Sea and the Chukchi Sea.",
+    "expected_pages": [
+      94
+    ],
+    "expected_regions": [
+      "arc2025:p094:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p094_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Atlantification of the Arctic Ocean, PDF page(s) [94], region(s) ['arc2025:p094:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_img_04",
+    "split": "test",
+    "group": "image_diagram",
+    "question": "Inspect the field photograph in Fig. 5 on page 115: describe the setting where the two observers are working, what they are doing with their hands, and what exact location header is displayed at the top left of the rugged tablet's satellite map screen.",
+    "ground_truth": "Inside the front cab of a vehicle/truck (steering wheel on the left, PRND dial on the dashboard); both observers are pointing their index fingers at a satellite map displayed on a rugged handheld tablet; the header text in the upper-left bar of the tablet reads 'North Kulu'.",
+    "expected_pages": [
+      115
+    ],
+    "expected_regions": [
+      "arc2025:p115:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p115_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Weaving the Seen and Unseen: Stewarding the Arctic Means Sustaining Indigenous Monitoring, PDF page(s) [115], region(s) ['arc2025:p115:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_img_05",
+    "split": "test",
+    "group": "image_diagram",
+    "question": "Inspect the conceptual rusting rivers diagram on page 123 (Fig. 4): identify the sulfide mineral weathered in Upland Processes, the reduced iron ion mobilized in Lowland Processes, the three fish species (common and scientific names) in Common Biota, and all three numbered 'Impacts to Aquatic Food Webs'.",
+    "ground_truth": "Upland sulfide mineral: pyrite; Lowland reduced ion: dissolved iron(II) ion; Fish species: Dolly Varden (Salvelinus malma), Chum Salmon (Oncorhynchus keta), Arctic Grayling (Thymallus arcticus); Impacts to Aquatic Food Webs: (1) Direct Uptake of trace metals by fish from the water column, (2) Bioaccumulation of toxic metals in an organism with time, and (3) Ecosystem Contraction resulting in loss of habitat due to degraded conditions.",
+    "expected_pages": [
+      123
+    ],
+    "expected_regions": [
+      "arc2025:p123:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p123_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Rusting Rivers: Assessing the Causes and Consequences in Alaska and Across the Arctic, PDF page(s) [123], region(s) ['arc2025:p123:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_chart_01",
+    "split": "test",
+    "group": "chart",
+    "question": "Inspect Fig. 4 on page 40 (Greenland daily surface melt extent and melt day anomaly map): in panel (a), approximately what peak percentage melt extent did the blue 2025 curve reach and around what time of year, and in panel (b), where do strong positive melt-day anomalies (dark red, up to +30 days) vs. negative anomalies (blue) appear on Greenland?",
+    "ground_truth": "Panel (a): the blue 2025 curve peaks at ~46% (above 45%) in mid-July, far above the ~20% black 1991–2020 median. Panel (b): strong positive anomalies (dark red, up to +15 to +30 days) appear along the eastern/northeastern, southeastern, and southwestern margins, while negative (blue) anomalies appear along the northwestern margin (and small parts of northern coast).",
+    "expected_pages": [
+      40
+    ],
+    "expected_regions": [
+      "arc2025:p040:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p040_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Greenland Ice Sheet, PDF page(s) [40], region(s) ['arc2025:p040:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_chart_02",
+    "split": "test",
+    "group": "chart",
+    "question": "Inspect Fig. 2 on page 46 ('Monthly average sea ice extent anomaly relative to 1991-2020'): in which two months of 2025 does the solid black 2025 line reach its deepest negative anomalies (~-1.1 million sq. km), in which single month does the dashed 2005 line briefly rise above 0.0, and which curve stays positive across all 12 months?",
+    "ground_truth": "The 2025 solid black line hits ~-1.1 mill. sq. km in February and July; the dashed black 2005 line rises slightly above 0.0 only in November; the red 'Average, 1979 - 2004' curve stays positive (~+0.5 to +1.2) across all 12 months.",
+    "expected_pages": [
+      46
+    ],
+    "expected_regions": [
+      "arc2025:p046:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p046_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Sea Ice, PDF page(s) [46], region(s) ['arc2025:p046:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_chart_03",
+    "split": "test",
+    "group": "chart",
+    "question": "Inspect Fig. 5 on page 70 (Annual net primary production, 2003–25, for 60–90° N): what are the y-axis label and unit, approximately what level does the 2025 data point reach relative to 2200 on the y-axis, and what exact linear trend is stated in the figure caption?",
+    "ground_truth": "Y-axis: Annual Net Primary Production (Tg C); the 2025 point rises slightly above 2200 Tg C (~2230 Tg C, the highest point in the 2003–25 record); caption trend: 21.6 Tg C/yr.",
+    "expected_pages": [
+      70
+    ],
+    "expected_regions": [
+      "arc2025:p070:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p070_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Arctic Ocean Primary Productivity: The Response of Marine Algae to Climate Warming and Sea Ice Decline, PDF page(s) [70], region(s) ['arc2025:p070:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_chart_04",
+    "split": "test",
+    "group": "chart",
+    "question": "Inspect Fig. 2 on page 84 (Cumulative Bclim in m w.e. for 27 monitored glaciers through 2024): identify which regional curve dropped furthest (below -35 m w.e., and roughly its end value), which showed the smallest cumulative loss, and roughly what value the black Pan-Arctic curve reached by 2024.",
+    "ground_truth": "Greatest thinning: Alaska (purple curve), dropping to ~-38.5 m w.e. (over 38 m w.e. loss); smallest cumulative loss: Arctic Canada (green curve), around -15.5 m w.e.; Pan-Arctic (black curve) ended around -28.5 m w.e.",
+    "expected_pages": [
+      84
+    ],
+    "expected_regions": [
+      "arc2025:p084:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p084_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Glaciers and Ice Caps Outside Greenland, PDF page(s) [84], region(s) ['arc2025:p084:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_chart_05",
+    "split": "test",
+    "group": "chart",
+    "question": "Inspect the 10-panel population index chart on page 104 (Fig. 3, Chukchi Sea in red vs. northern Bering Sea in blue): in the Chaetognatha, Euphausiacea, and Sockeye Salmon panels, which sea produces the tallest isolated spike (~2015 or ~2018), and approximately what peak index values are reached in those three panels?",
+    "ground_truth": "Chukchi Sea (red) produces all three tallest isolated spikes: Chaetognatha peaks around ~100 (in 2015), Euphausiacea peaks around ~65 (in 2015), and Sockeye Salmon peaks around ~0.55 (in 2018).",
+    "expected_pages": [
+      104
+    ],
+    "expected_regions": [
+      "arc2025:p104:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p104_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Warming Waters and Borealization: Restructuring Ecosystem Dynamics in the Northern Bering and Chukchi Seas, 2002-2022, PDF page(s) [104], region(s) ['arc2025:p104:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_multihop_01",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Combine Sea Ice melt onset (p. 47) and sea ice age (p. 48): what was the average 2025 marine melt onset date and how did it compare to 2024, AND how much old (>4 years) multi-year ice remained at the September 2025 minimum along with its percentage reductions compared to both 2005–24 and 1985–2004?",
+    "ground_truth": "Average 2025 melt onset date for Arctic marine areas was 21 May 2025 (2 days earlier than in 2024). Old (>4 years) multi-year ice at the September 2025 minimum was only 95,000 km^2, a 72% reduction from the 2005–24 average (326,000 km^2) and a 95% reduction from the 1985–2004 average (1.72 million km^2).",
+    "expected_pages": [
+      47,
+      48
+    ],
+    "expected_regions": [
+      "arc2025:p047:text:002",
+      "arc2025:p048:text:000"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Sea Ice, PDF page(s) [47, 48], region(s) ['arc2025:p047:text:002', 'arc2025:p048:text:000']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_multihop_02",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Using pages 53 and 54 on Sea Surface Temperature, report the highest August 2025 mean SST (°C) and peak positive anomaly (°C rel. 1991–2020) in the Atlantic sector (Barents/Kara Seas), and contrast them with the Pacific sector's August 2025 anomalies in the Beaufort & northern Chukchi Seas versus the southern Chukchi & Bering Seas.",
+    "ground_truth": "Atlantic sector (Barents & Kara Seas): August 2025 mean SSTs reached ~12°C, ~1–4°C warmer than 1991–2020 across Barents/Kara/Laptev and up to ~7°C warmer in the Kara Sea. Pacific sector: Beaufort and northern Chukchi Seas were ~1–2°C cooler than 1991–2020, whereas southern Chukchi and Bering Seas were ~1–2°C warmer.",
+    "expected_pages": [
+      53,
+      54
+    ],
+    "expected_regions": [
+      "arc2025:p053:text:000",
+      "arc2025:p054:text:001"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Sea Surface Temperature, PDF page(s) [53, 54], region(s) ['arc2025:p053:text:000', 'arc2025:p054:text:001']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_multihop_03",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Combine page 82 and Fig. 3 on page 85 (Glaciers and Ice Caps): which three of the 27 monitored glaciers are noted as having iceberg calving excluded from Bclim, and in Fig. 3 (GRACE/GRACE-FO, 2002–25), what approximate cumulative Pan-Arctic mass anomaly (Gt) is reached by 2025 and which two sub-regions account for the largest losses?",
+    "ground_truth": "Calving occurs only at Kongsvegen, Hansbreen, and Devon Ice Cap (calving losses excluded from Bclim). In Fig. 3, Pan-Arctic cumulative regional mass anomaly drops to around -4150 to -4500 Gt by 2025, led by Alaska (~-1700 to -1950 Gt) and Arctic Canada (~-1300 Gt).",
+    "expected_pages": [
+      82,
+      85
+    ],
+    "expected_regions": [
+      "arc2025:p082:text:001",
+      "arc2025:p085:fig:00"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [
+      "data/adv_index/crops/p085_fig_00.png"
+    ],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Glaciers and Ice Caps Outside Greenland, PDF page(s) [82, 85], region(s) ['arc2025:p082:text:001', 'arc2025:p085:fig:00']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_multihop_04",
+    "split": "test",
+    "group": "multi_hop",
+    "question": "Combining pages 89 and 93 on Atlantification of the Arctic Ocean: at what depth ranges do the warm, salty Atlantic Water (AW) and the overlying Arctic halocline sit, how did halocline stratification change differently in the Amerasian Basin vs. the Eurasian Basin, and by what percentage did Eurasian Basin halocline stability decline over the preceding three decades?",
+    "ground_truth": "Atlantic Water flows at 150–800 m depth, overlain by the Arctic halocline at ~50–150 m (and upper ~50 m fresh surface water). Stratification strengthened in the Amerasian Basin (slowing sea-ice loss) while weakening in the Eurasian Basin, where halocline stability declined by ~30% over the preceding three decades.",
+    "expected_pages": [
+      89,
+      93
+    ],
+    "expected_regions": [
+      "arc2025:p089:text:001",
+      "arc2025:p093:text:000",
+      "arc2025:p093:text:001"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Atlantification of the Arctic Ocean, PDF page(s) [89, 93], region(s) ['arc2025:p089:text:001', 'arc2025:p093:text:000', 'arc2025:p093:text:001']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_text_01",
+    "split": "test",
+    "group": "text",
+    "question": "According to the Sea Ice Extent section on page 45, what ice concentration threshold defines sea ice extent, and in what year did the 47-year satellite passive microwave record begin?",
+    "ground_truth": "Ice concentration of at least 15%; the 47-year passive microwave satellite record began in 1979.",
+    "expected_pages": [
+      45
+    ],
+    "expected_regions": [
+      "arc2025:p045:text:000"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Sea Ice, PDF page(s) [45], region(s) ['arc2025:p045:text:000']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_text_02",
+    "split": "test",
+    "group": "text",
+    "question": "According to the Sea Surface Temperature Headlines on page 53, at what approximate warming rate (°C per decade) have August mean SSTs increased north of 65° N over 1982–2025?",
+    "ground_truth": "Approximately ~0.3°C per decade north of 65° N (1982–2025).",
+    "expected_pages": [
+      53
+    ],
+    "expected_regions": [
+      "arc2025:p053:text:000"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Sea Surface Temperature, PDF page(s) [53], region(s) ['arc2025:p053:text:000']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_text_03",
+    "split": "test",
+    "group": "text",
+    "question": "According to page 81 on Glaciers and Ice Caps Outside Greenland, what share (%) of the world's mountain glaciers and ice caps by area (excluding the Greenland and Antarctic ice sheets) lies in the Arctic?",
+    "ground_truth": "60% of the world's mountain glaciers and ice caps by area.",
+    "expected_pages": [
+      81
+    ],
+    "expected_regions": [
+      "arc2025:p081:text:002"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Glaciers and Ice Caps Outside Greenland, PDF page(s) [81], region(s) ['arc2025:p081:text:002']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_text_04",
+    "split": "test",
+    "group": "text",
+    "question": "According to pages 120–121 on Rusting Rivers, beyond the 75 Brooks Range streams reported in 2024, more than how many discolored streams/rivers have been compiled in northern Alaska, how is the Landsat Redness Index calculated, and what Redness Index threshold distinguishes iron-discolored orange water from clear water?",
+    "ground_truth": "More than 200 discolored streams and rivers have been compiled across >1000 km; Redness Index is calculated as the ratio of surface reflectance of the red and blue bands; values > 1.5 (orange circles) indicate iron-discolored water whereas < 1.5 (grey circles) indicate clear water.",
+    "expected_pages": [
+      120,
+      121
+    ],
+    "expected_regions": [
+      "arc2025:p120:text:000",
+      "arc2025:p121:text:000"
+    ],
+    "answerable": true,
+    "expected_behavior": "answer",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (DOI:10.25923/nrzf-j897), section(s) Rusting Rivers: Assessing the Causes and Consequences in Alaska and Across the Arctic, PDF page(s) [120, 121], region(s) ['arc2025:p120:text:000', 'arc2025:p121:text:000']",
+    "verification_method": "Directly verified against extracted original PDF page text and rendered region PNG crops."
+  },
+  {
+    "id": "adv_test_unans_01",
+    "split": "test",
+    "group": "unanswerable",
+    "question": "Under the Paris Agreement 1.5°C target and the SSP5-8.5 scenario, in what exact year does the 2025 Arctic Report Card project the Arctic Ocean will permanently cross 1.5°C?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_test_unans_02",
+    "split": "test",
+    "group": "unanswerable",
+    "question": "What maritime carbon tax ($ per metric ton of CO2) was finalized at COP29 and COP30 for Arctic transit shipping according to the 2025 Arctic Report Card?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_test_unans_03",
+    "split": "test",
+    "group": "unanswerable",
+    "question": "How many trillion cubic meters of deep-sea methane clathrate reserves in the Beaufort Sea are quantified in the 2025 Arctic Report Card?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_test_unans_04",
+    "split": "test",
+    "group": "unanswerable",
+    "question": "Under the IMO Polar Code and UNCLOS compliance section, how many dedicated oil spill response vessels are stationed along the Northern Sea Route?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_test_unans_05",
+    "split": "test",
+    "group": "unanswerable",
+    "question": "In Table 3 comparing SWOT, NISAR, and Sentinel-6 satellite altimetry, what regional sea-level rise trend (mm/yr) does NISAR report for the Chukchi Sea?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  },
+  {
+    "id": "adv_test_unans_06",
+    "split": "test",
+    "group": "unanswerable",
+    "question": "What northward range shift (in kilometers) is documented for snow leopard populations in the Terrestrial Ecosystems section of the 2025 Arctic Report Card?",
+    "ground_truth": "Insufficient evidence in the provided document.",
+    "expected_pages": [],
+    "expected_regions": [],
+    "answerable": false,
+    "expected_behavior": "abstain",
+    "expected_crops": [],
+    "source": "Arctic Report Card 2025 (all 150 PDF pages checked)",
+    "verification_method": "Whole-word case-insensitive regex scan across all 150 PDF pages confirmed 0 occurrences of core entity."
+  }
+]

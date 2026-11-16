@@ -1,0 +1,1869 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "In explainable AI terminology, how are the three key terms \"explanation\", \"output\", and \"process\" operationally defined?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 9,
+        "evidence": "An explanation is the evidence, support, or reasoning related to a system’s output or process."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-ir-8312:p009:para:002",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 9,
+        "text": "Before we delve into the principles, for this document, we operationally define three key terms: explanation, output, and process. An explanation is the evidence, support, or reasoning related to a system’s output or process. We define theoutput of a system as i) the outcome from or ii) the action taken by a machine or system performing a task. The output of a system differs by task. For a loan application, the output is a decision: approved or denied. For a recommendation system, the output could be a list of recommended movies. For a grammar checking system, the output is grammatical errors and recommended cor- rections. For a classification system, it could be an object identifier or a spam detector. For automated driving, it could be the navigation itself. The process refers to the proce- dures, design, and system workflow which underlie the system (c.f. [50]). This includes documentation about the system, information on data used for system development or data stored, and related knowledge about the system.\n\nBriefly, our four principles of explainable AI are:\n\nExplanation: A system delivers or contains accompanying evidence or reason(s) for out- puts and/or processes.",
+        "metadata": {
+          "page": 9,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2. Four Principles of Explainable AI We present four fundamental principle",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3286,
+          "chunk_index": 2,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 1191
+        },
+        "score": 24.326928,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-ir-8312:p010:para:000",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 10,
+        "text": "Meaningful: A system provides explanations that are understandable to the intended con- sumer(s).\n\nExplanation Accuracy: An explanation correctly reflects the reason for generating the output and/or accurately reflects the system’s process.\n\nKnowledge Limits: A system only operates under conditions for which it was designed and when it reaches sufficient confidence in its output.\n\nThese are defined and put into context in more detail below. Figure 1 shows the prin- ciples and indicates that for a system to be considered explainable, it must first have an explanation or contain accompanying evidence which can be accessed.\n\nFig. 1. Illustration of the four principles of explainable artificial intelligence. Arrows indicate that for a system to be explainable, it must provide an explanation. The remaining three principles are the fundamental properties of those explanations.",
+        "metadata": {
+          "page": 10,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.1 Explanation The Explanation principle states that for a system to be co",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 2045,
+          "chunk_index": 0,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 883
+        },
+        "score": 18.876331,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p056:para:002",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 56,
+        "text": "NIST has provided an initial socio-technical framing for AI bias in this document, in- cluding key context and terminology, highlights of the main challenges, and foundational directions for future guidance. This information is classified and discussed through the document according to three key areas:\n\n1. dataset availability, representativeness, and suitability in socio-technical contexts;\n\n2. TEVV considerations for measurement and metrics to support testing and evaluation; 3. human factors, including societal and historic biases within individuals and organiza- tions, participatory approaches such as human-centered design, and human–in–the– loop practices.\n\n27Id.\n\n47/77",
+        "metadata": {
+          "page": 56,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "4. Conclusions This document has provided a broad overview of the complex",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2789,
+          "chunk_index": 2,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 682
+        },
+        "score": 13.321,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-sp-1270:p056:para:002"
+    ],
+    "context_chars": 753,
+    "context": "[nist-sp-1270:p056:para:002 | starter/data/NIST.SP.1270.pdf | page 56]\nNIST has provided an initial socio-technical framing for AI bias in this document, in- cluding key context and terminology, highlights of the main challenges, and foundational directions for future guidance. This information is classified and discussed through the document according to three key areas:\n\n1. dataset availability, representativeness, and suitability in socio-technical contexts;\n\n2. TEVV considerations for measurement and metrics to support testing and evaluation; 3. human factors, including societal and historic biases within individuals and organiza- tions, participatory approaches such as human-centered design, and human–in–the– loop practices.\n\n27Id.\n\n47/77",
+    "elapsed_ms": 0.934,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "What does the Knowledge Limits principle require of an explainable AI system?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 10,
+        "evidence": "Knowledge Limits: A system only operates under conditions for which it was designed and when it reaches sufficient confidence in its output."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-ir-8312:p022:para:002",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 22,
+        "text": "7. Evaluating Explainable AI Algorithms This sections summarizes the state-of-the art of evaluating explainable AI algorithms (cf., [151]). In this paper, we separate the evaluation of explainable AI algorithms according to which principle is being evaluated. The Explanation principle (Principle 1) is covered under the section, Overview of Explainable AI Algorithms (Section 6), which reviews current explanation methods. In this section, we review current methods for measuring explanation meaningfulness (Principle 2) and explanation accuracy (Principle 3). To our knowledge there is limited work on developing and evaluating algorithms’ knowledge limits (Principle 4). As a result, we do not discuss evaluating knowledge limits in this section.",
+        "metadata": {
+          "page": 22,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "6.3 Adversarial Attacks on Explainability Explanation accuracy (Principle 3",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3396,
+          "chunk_index": 2,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 749
+        },
+        "score": 19.825442,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": false
+      },
+      {
+        "id": "nist-ir-8312:p012:para:001",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 12,
+        "text": "2.4 Knowledge Limits The previous principles implicitly assume that a system is operating within the scope of its design and knowledge boundaries. The Knowledge Limits principle states that systems identify cases in which they were not designed or approved to operate, or in cases for which their answers are not reliable. By identifying and declaring knowledge limits, this practice safeguards answers so that a judgment is not provided when it may be inappropriate to do so. This principle can increase trust in a system by preventing misleading, dangerous, or unjust outputs.",
+        "metadata": {
+          "page": 12,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.4 Knowledge Limits The previous principles implicitly assume that a syste",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3383,
+          "chunk_index": 1,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 578
+        },
+        "score": 16.452657,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-ir-8312:p028:para:003",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 28,
+        "text": "This suggests people do have insight into their own knowledge limits, although this insight can be limited or weak in some cases.\n\n9. Discussion and Conclusions We introduced four principles to encapsulate the fundamental elements for explainable AI systems. The principles provide a framework with which to address different components of an explainable system. These four principles are that the system produce an explanation, that the explanation be meaningful to humans, that the explanation reflects the system’s processes accurately, and that the system expresses its knowledge limits. The principles derive their strength when a system follows all four. A system that provides an explanation but is not understandable, not accurate, or outside knowledge limits has reduced value. In 21 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312",
+        "metadata": {
+          "page": 28,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "9. Discussion and Conclusions We introduced four principles to encapsulate",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3570,
+          "chunk_index": 3,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 983
+        },
+        "score": 16.251596,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-ir-8312:p012:para:001"
+    ],
+    "context_chars": 649,
+    "context": "[nist-ir-8312:p012:para:001 | starter/data/NIST.IR.8312.pdf | page 12]\n2.4 Knowledge Limits The previous principles implicitly assume that a system is operating within the scope of its design and knowledge boundaries. The Knowledge Limits principle states that systems identify cases in which they were not designed or approved to operate, or in cases for which their answers are not reliable. By identifying and declaring knowledge limits, this practice safeguards answers so that a judgment is not provided when it may be inappropriate to do so. This principle can increase trust in a system by preventing misleading, dangerous, or unjust outputs.",
+    "elapsed_ms": 0.69,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "What are the two distinct ways an AI system can reach or exceed its knowledge limits, and how should it respond in each situation?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 12,
+        "evidence": "There are two ways a system can reach or exceed its knowledge limits. In one way, the operation or query to the system can be outside its domain."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-ir-8312:p012:para:002",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 12,
+        "text": "There are two ways a system can reach or exceed its knowledge limits. In one way, the operation or query to the system can be outside its domain. For example, in a system built to classify bird species, a user may input an image of an apple. The system could return an answer to indicate that it could not find any birds in the input image; therefore, the system cannot provide an answer. This is both an answer and an explanation. In a second way, the confidence of the most likely answer may be too low, depending on an internal confidence threshold. To revisit an example of the bird classification system, the input image of a bird may be too blurry to determine its species. In this case, the system may recognize that the image is of a bird but that the image is of low quality. An example output may be: “I found a bird in the image, but the image quality is too low to identify it.”",
+        "metadata": {
+          "page": 12,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.4 Knowledge Limits The previous principles implicitly assume that a syste",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3383,
+          "chunk_index": 2,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 890
+        },
+        "score": 29.53833,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-ir-8312:p012:para:001",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 12,
+        "text": "2.4 Knowledge Limits The previous principles implicitly assume that a system is operating within the scope of its design and knowledge boundaries. The Knowledge Limits principle states that systems identify cases in which they were not designed or approved to operate, or in cases for which their answers are not reliable. By identifying and declaring knowledge limits, this practice safeguards answers so that a judgment is not provided when it may be inappropriate to do so. This principle can increase trust in a system by preventing misleading, dangerous, or unjust outputs.",
+        "metadata": {
+          "page": 12,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.4 Knowledge Limits The previous principles implicitly assume that a syste",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3383,
+          "chunk_index": 1,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 578
+        },
+        "score": 18.838732,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-ir-8312:p028:para:000",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 28,
+        "text": "Here, we focused on whether humans correctly assess their own ability and accuracy, and whether they know when to report that they do not know an answer. There are several ways to test whether people can evaluate their own knowledge limits. One method is to ask participants to predict how well they believe they performed or will perform on a task, relative to others (e.g., in what percentile will their scores fall relative to other task-takers). Another way to test the awareness of knowledge limits is to obtain a measure of their response confidence, with higher confidence indicating that a person believes with greater likelihood that they are correct.",
+        "metadata": {
+          "page": 28,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "9. Discussion and Conclusions We introduced four principles to encapsulate",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3570,
+          "chunk_index": 0,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 660
+        },
+        "score": 18.702396,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-ir-8312:p012:para:001"
+    ],
+    "context_chars": 649,
+    "context": "[nist-ir-8312:p012:para:001 | starter/data/NIST.IR.8312.pdf | page 12]\n2.4 Knowledge Limits The previous principles implicitly assume that a system is operating within the scope of its design and knowledge boundaries. The Knowledge Limits principle states that systems identify cases in which they were not designed or approved to operate, or in cases for which their answers are not reliable. By identifying and declaring knowledge limits, this practice safeguards answers so that a judgment is not provided when it may be inappropriate to do so. This principle can increase trust in a system by preventing misleading, dangerous, or unjust outputs.",
+    "elapsed_ms": 1.023,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "How does a one-way interaction style differ from a declarative explanation in human-machine explanation delivery?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 13,
+        "evidence": "In a declarative explanation, the systems provides an explanation, and there is no further interaction."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-ir-8312:p013:para:002",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 13,
+        "text": "The level of detail is depicted as a range, from sparse to extensive. By sparse, we mean that the amount of information provided is brief, limited, and/or at a high-level, lacking in detail. An example of a sparse explanation might be an explanation for a decision made by an alert system (e.g., “system processes slowed because of overheating.”). An extensive explanation may contain detailed information about a system and/or provide a large amount of information (e.g., a report with relevant system information to understand its process). We place the degree of human-machine interaction into three categories: declarative explanations, one-way interaction, and two-way interaction. In a declarative explanation, the systems provides an explanation, and there is no further interaction. This describes most current explainable AI methods (Section 6). For example, a loan application system may always output the rationale for an acceptance or rejection. An object classifier may output a saliency map [120]. A model card [86] may contain pre-determined information about the system.",
+        "metadata": {
+          "page": 13,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3. Purposes and styles of explanations To illustrate the broad range of ex",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3502,
+          "chunk_index": 2,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 1086
+        },
+        "score": 26.742677,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-ir-8312:p013:para:003",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 13,
+        "text": "A declarative explanation is based on a default query, such as “why did the object classifier produce this decision?”. The human cannot alter the question being asked (barring a change in the system itself to produce something different). A higher degree of interaction is a one-way interaction. For this, the explanation is determined based on a query or question input to the system [20, 35, 142]. For example, this may be a graphical output depending on the factors a person wishes to visualize. This may allow the explanation’s consumer the ability to probe further or to submit different queries.\n\nWe define the category with the deepest interaction level as the two-way interaction. This models a conversation between people. The person can probe further, and the ma- chine can probe back, ask clarifying questions, or provide new avenues of exploration. For 6 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312",
+        "metadata": {
+          "page": 13,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3. Purposes and styles of explanations To illustrate the broad range of ex",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3502,
+          "chunk_index": 3,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 1057
+        },
+        "score": 22.372823,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-ir-8312:p015:para:001",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 15,
+        "text": "Each of these style elements will need to be considered to produce an explanation for its purpose and to meet the four principles. Some cases may call for a simple, declarative explanation as the most appropriate style to optimize how meaningful it is. This is some- times the case in a weather emergency, such as when a tornado is in the area. A current weather alert from the National Weather Service, “Tornado Warning: Take Action!”3, op- erates as both an alert and a simple explanation. The alert is to “Take Action” with the simple explanation of “Tornado Warning.” Depending on the metric, this explanation may not be considered highly accurate because the minimal level of detail: it does not include why a tornado warning is declared in its explanation. However, in this example, brevity is appropriate to ensure it is understood by a wide audience and to enable swift action. Although minimal, additional information with an alert may be helpful to address non- compliance in responding to weather alerts (e.g., “cry-wolf” effects) [73]. In a different scenario, such as when debugging a system, the explanation could include information on the internal steps of a system.",
+        "metadata": {
+          "page": 15,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "4. Risk Management of Explainable AI Risk is defined as “the effect of unc",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3451,
+          "chunk_index": 1,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 1182
+        },
+        "score": 20.393599,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.751,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Within explainability risk management, what potential negative intellectual property risk arises when a system provides multiple explanations across queries?",
+    "filter": {
+      "category": "explainability"
+    },
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 16,
+        "evidence": "A potential negative outcome of having an explanation is the exposure of proprietary details [85]. A single explanation may not expose the inner workings of the system."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-ir-8312:p016:para:001",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 16,
+        "text": "Any explainable AI system will contain potential risks, both threats and opportunities. The degree to which stakeholders are prepared to accept the trade-off of general risk and goals is called the stakeholders’ risk appetite [22]. Many risk management strategies share the common components: identifying, analyzing, responding, monitoring, and reviewing. For explainable AI, a risk management strategy will need to factor the four principles. An explanation, the first principle, is necessary for explainable AI, but an explanation itself introduces risks, both positive and negative. A potential negative outcome of having an explanation is the exposure of proprietary details [85]. A single explanation may not expose the inner workings of the system. However, multiple explanations, either from multiple independent queries or through a two-way interaction, could expose intellectual property when connected to each other. How many explanations must an end user have access to before they have an understanding of the system? The scope of each explanation may impact the number. These include explanations that describe the limit of the system’s knowledge.",
+        "metadata": {
+          "page": 16,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "4. Risk Management of Explainable AI Risk is defined as “the effect of unc",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3624,
+          "chunk_index": 1,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 1160
+        },
+        "score": 37.635012,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-ir-8312:p018:para:000",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 18,
+        "text": "present a set of user-centered design principles.\n\nFrom a psychological perspective, Broniatowski [17] makes the case that interpretabil- ity and explainability are distinct requirements for machine learning systems. The resulting analysis implies that system output should be tailored to different types of users. Wachter et al. [140] argue that explanations do need to meet the explanation accuracy property. They claim that counterfactual explanations are sufficient. “A counterfactual ex- planation of a prediction describes the smallest change to the feature values that changes the prediction to a predefined output [88];” e.g., if you had arrived to the platform 15 minutes earlier, you would have caught the train. Counterfactual explanations do not necessarily reveal the inner workings of a system. This property allows counterfactual explanations to protect intellectual property.",
+        "metadata": {
+          "page": 18,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "5. Overview of Principles in the Literature Theories and properties of exp",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3512,
+          "chunk_index": 0,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 891
+        },
+        "score": 19.645523,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-ir-8312:p016:para:003",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 16,
+        "text": "In order to be useful, an explanation not only needs to be meaningful, it must also be accurate, our third principle. A relevant potential risk is commonly known as model risk, the potential negative outcomes derived from an invalid or misapplied model. As stated in the Federal Reserve System [31], one of the two main sources for this type of risk is underlying errors in the model causing erroneous outputs. An inaccurate explanation can lead to a misinterpretation or misunderstanding of how the system works or arrived at an outcome. This is a negative risk for an end user, but AI systems are also used as one part of a larger system where the AI might bias a human.",
+        "metadata": {
+          "page": 16,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "4. Risk Management of Explainable AI Risk is defined as “the effect of unc",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3624,
+          "chunk_index": 3,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 672
+        },
+        "score": 17.201562,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-ir-8312:p016:para:003"
+    ],
+    "context_chars": 743,
+    "context": "[nist-ir-8312:p016:para:003 | starter/data/NIST.IR.8312.pdf | page 16]\nIn order to be useful, an explanation not only needs to be meaningful, it must also be accurate, our third principle. A relevant potential risk is commonly known as model risk, the potential negative outcomes derived from an invalid or misapplied model. As stated in the Federal Reserve System [31], one of the two main sources for this type of risk is underlying errors in the model causing erroneous outputs. An inaccurate explanation can lead to a misinterpretation or misunderstanding of how the system works or arrived at an outcome. This is a negative risk for an end user, but AI systems are also used as one part of a larger system where the AI might bias a human.",
+    "elapsed_ms": 0.317,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "How does SHAP compute per-feature importance for an individual prediction?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 20,
+        "evidence": "SHAP treats the features as the players, the features value vs. a default value as the strategies, and the system output as the payoff, forming a coalitional game from the input."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-ir-8312:p020:para:002",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 20,
+        "text": "Another commonly-used local explanation algorithm is SHAP (SHapley Additive ex- Planations) [82]. SHAP provides a per-feature importance for an input on a regression problem by converting the scenario to a coalitional game from game theory and then pro- ducing the Shapley values from that game. SHAP treats the features as the players, the features value vs. a default value as the strategies, and the system output as the payoff, forming a coalitional game from the input. See Ferguson [32] for more information on Shapley values and coalitional games.",
+        "metadata": {
+          "page": 20,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "6.2 Post-Hoc Explanations Post-hoc explanations are grouped into two kinds",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3396,
+          "chunk_index": 2,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 554
+        },
+        "score": 24.112164,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-ir-8312:p024:para:001",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 24,
+        "text": "[72] asked humans to made decisions, pro- vided them the explanation as help, and measured how quickly and how accurately they made decisions. Narayanan et al. [92] compared different types of output complexity for how they affected human performance. Bhatt et al. [12] designed a complexity metric to quantify “feature importance” explanations.",
+        "metadata": {
+          "page": 24,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "7.2 Evaluating Explanation Accuracy Explanation accuracy is closely related",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3658,
+          "chunk_index": 1,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 345
+        },
+        "score": 12.467206,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-ir-8312:p025:para:000",
+        "source_id": "nist-ir-8312",
+        "source": "starter/data/NIST.IR.8312.pdf",
+        "page": 25,
+        "text": "the inputs and measuring how much the explanation changes. Adebayo et al. [3] evaluated explanation accuracy of saliency pixel explanations for deep neural networks by measur- ing the amount the explanation changed relative to how the trained models differed. Sixt et al. [122] evaluated the quality of saliency pixels by randomizing middle convolutional layers and comparing saliency pixels. They also compared the saliency pixels when the labels are the actual labels vs. random. Qi et al. [104] evaluated explanation accuracy by adding or deleting image pixels deemed relevant by the explanation. They then compared the system’s scores on the new images. Bhatt et al. [12] evaluated the explanation accuracy of “feature importance” explanations by both checking sensitivity, meaning similar inputs have similar feature importance explanations, and faithfulness, meaning the change in the explanations should correlate to the change in inputs.",
+        "metadata": {
+          "page": 25,
+          "year": 2021,
+          "title": "Four Principles of Explainable Artificial Intelligence",
+          "source": "starter/data/NIST.IR.8312.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "8. Humans as a Comparison Group for Explainable AI When considering the pe",
+          "category": "explainability",
+          "is_empty": false,
+          "char_count": 3395,
+          "chunk_index": 0,
+          "document_id": "nist-ir-8312",
+          "extract_error": null,
+          "chunk_char_len": 945
+        },
+        "score": 11.726947,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-ir-8312:p020:para:002"
+    ],
+    "context_chars": 625,
+    "context": "[nist-ir-8312:p020:para:002 | starter/data/NIST.IR.8312.pdf | page 20]\nAnother commonly-used local explanation algorithm is SHAP (SHapley Additive ex- Planations) [82]. SHAP provides a per-feature importance for an input on a regression problem by converting the scenario to a coalitional game from game theory and then pro- ducing the Shapley values from that game. SHAP treats the features as the players, the features value vs. a default value as the strategies, and the system output as the payoff, forming a coalitional game from the input. See Ferguson [32] for more information on Shapley values and coalitional games.",
+    "elapsed_ms": 0.578,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "What are the three dominant categories of AI bias identified beyond purely computational factors, and how is systemic bias defined?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 15,
+        "evidence": "Systemic biases result from procedures and practices of particular institutions that operate in ways which result in certain social groups being advantaged or favored"
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-1270:p015:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 15,
+        "text": "2.1.2 Categories of AI bias Based on previous academic work to classify AI bias [80–90] and discussions with thought leaders in the field, it is possible to identify three dominant categories of AI bias. This three- way categorization helps to expand our understanding of AI bias beyond the computational realm. By defining and describing how systemic and human biases present within AI, we can build new approaches for analyzing, managing, and mitigating bias and begin to understand how these biases interact with each other. Correspondingly, Fig. 2 presents three categories of AI bias. Definitions for these terms are found in the G LOSSARY .10 This list of biases, while not exhaustive, constitutes prominent risks and vulnerabilities to consider when designing, developing, deploying, evaluating, using, or auditing AI applications.",
+        "metadata": {
+          "page": 15,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.1.2 Categories of AI bias Based on previous academic work to classify AI bi",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2116,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 838
+        },
+        "score": 32.508922,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p036:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 36,
+        "text": "Even among experts, data-driven technologies can exacer- bate CONFIRMATION BIAS , particularly when they are im- plicitly guided by expected outcomes. An analysis that ex- amined hundreds of AI algorithms for identifying COVID found that few of them were effective [189].\n\nThe danger is that with enough tweaking of hyperparameters across many candidate AI models, one of them may appear to be highly accurate even when measured against standard performance datasets. DATA DREDGING (also known as p-hacking) is a statistical bias in which testing huge numbers of hypotheses of a dataset may appear to yield statistical significance even when the results are statistically nonsignificant.\n\nFig. 5 provides examples of how the three categories of bias — systemic, statistical and computational, and human - interact and contribute to harms within the data and processes used in AI applications, and the validation procedures for determining performance. Systemic Biases Statistical and Computational Biases Human Biases\n\nDatasets\n\nProcesses and\n\nHuman Factors\n\nTEVV\n\nWho is counted, and who is not counted?\n\nWhat is important?\n\nHow do we know what is right?\n\nIssues with latent variables",
+        "metadata": {
+          "page": 36,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Datasets",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2972,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1185
+        },
+        "score": 24.62589,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p056:para:001",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 56,
+        "text": "4. Conclusions This document has provided a broad overview of the complex challenge of addressing and managing risks associated with AI bias. It is clear that developing detailed technical guid- ance to address this challenging area will take time and input from diverse stakeholders, within and beyond those groups who design, develop, and deploy AI applications, and in- cluding members of communities that may be impacted by the deployment of AI systems. Since AI is neither built nor deployed in a vacuum, we approach AI as a socio-technical system, acknowledging that AI systems and associated bias extend beyond the computa- tional level. Bias can be introduced purposefully or inadvertently, or it can emerge as the AI system is used, impacting society at large through perpetuating and amplifying biased and discriminatory outcomes. Adopting a socio-technical perspective brings new requirements, many of which are contextual in nature, to the processes that comprise the AI lifecycle. It is important to gain understanding in how computational and statistical factors interact with systemic and human biases.",
+        "metadata": {
+          "page": 56,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "4. Conclusions This document has provided a broad overview of the complex",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2789,
+          "chunk_index": 1,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1117
+        },
+        "score": 17.550183,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 1.007,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "How do statistical and computational biases arise, and can they occur without discriminatory intent?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 18,
+        "evidence": "Statistical and computational biases stem from errors that result when the sample is not representative of the population. These biases arise from systematic as opposed to random error and can occur in the absence of prejudice, partiality, or discriminatory intent [97]."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-1270:p018:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 18,
+        "text": "Statistical and Computational Statistical and computational biases stem from errors that result when the sample is not representative of the population. These biases arise from systematic as opposed to random error and can occur in the absence of prejudice, partiality, or discriminatory intent [97]. In AI systems, these biases are present in the datasets and algorithmic processes used in the development of AI applications, and often arise when algorithms are trained on one type of data and cannot extrapolate beyond those data. The error may be due to heterogeneous data, representation of complex data in simpler mathematical representations, wrong data, and algorithmic biases such as over- and under-fitting, the treatment of outliers, and data cleaning and imputation factors.",
+        "metadata": {
+          "page": 18,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.2 How AI bias contributes to harms Technology based on AI has tighter con",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3137,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 785
+        },
+        "score": 29.050881,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-1270:p036:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 36,
+        "text": "Even among experts, data-driven technologies can exacer- bate CONFIRMATION BIAS , particularly when they are im- plicitly guided by expected outcomes. An analysis that ex- amined hundreds of AI algorithms for identifying COVID found that few of them were effective [189].\n\nThe danger is that with enough tweaking of hyperparameters across many candidate AI models, one of them may appear to be highly accurate even when measured against standard performance datasets. DATA DREDGING (also known as p-hacking) is a statistical bias in which testing huge numbers of hypotheses of a dataset may appear to yield statistical significance even when the results are statistically nonsignificant.\n\nFig. 5 provides examples of how the three categories of bias — systemic, statistical and computational, and human - interact and contribute to harms within the data and processes used in AI applications, and the validation procedures for determining performance. Systemic Biases Statistical and Computational Biases Human Biases\n\nDatasets\n\nProcesses and\n\nHuman Factors\n\nTEVV\n\nWho is counted, and who is not counted?\n\nWhat is important?\n\nHow do we know what is right?\n\nIssues with latent variables",
+        "metadata": {
+          "page": 36,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Datasets",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2972,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1185
+        },
+        "score": 16.102333,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p019:para:001",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 19,
+        "text": "Values While ML systems are able to model complex phenomena, whether they are capable of learning and operating in line with our societal values remains an area of considerable re- search and concern [55, 60, 104–109]. Systemic and implicit biases such as racism and other forms of discrimination can inadvertently manifest in AI through the data used in training, as well as through the institutional policies and practices underlying how AI is commissioned, developed, deployed, and used. Statistical/algorithmic and human cogni- tive and perceptual biases enter the engineering and modeling processes themselves, and an inability to properly validate model performance leaves these biases exposed during de- ployment [61, 102, 110, 111]. These biases collide with the cognitive biases of the individ- uals interacting with the AI systems as users, experts in the loop, or other decision makers. Teams that develop and deploy AI often have inaccurate expectations of how the technol- ogy will be used and what human oversight can accomplish, especially when deployed outside of its original intent [112, 113].",
+        "metadata": {
+          "page": 19,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.3 A Socio-technical Systems Approach Likely due to expectations based on",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3279,
+          "chunk_index": 1,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1111
+        },
+        "score": 12.879155,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.705,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "What is \"techno-solutionism\" in the context of AI bias, and what model risk management control helps counter it?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 20,
+        "evidence": "used in model risk management to mitigate against techno-solutionism and other anti-patterns, is to establish, document, and review the anticipated real-world value of an AI system."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-1270:p020:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 20,
+        "text": "approaches that take into account the needs of individuals, groups and society.\n\nTechno-solutionism As computational technologies have evolved, there has been an increasing tendency to believe that technical solutions alone are sufficient for addressing complex problems that may have social, political, ecological, economic, and/or ethical dimensions. This approach to problem-solving, often termed techno- solutionism,[120] assumes that the “right” code or algorithm can be applied to any problem and ignores or minimizes the relevance of human, organizational, and so- cietal values and behaviors that inform design, deployment, and use of technology. In the context of socio-technical AI systems, techno-solutionism promotes a view- point that is too narrow to effectively address bias risks. One control, for exam- ple, used in model risk management to mitigate against techno-solutionism and other anti-patterns, is to establish, document, and review the anticipated real-world value of an AI system.",
+        "metadata": {
+          "page": 20,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.3 A Socio-technical Systems Approach Likely due to expectations based on",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 1405,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1006
+        },
+        "score": 28.531643,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-1270:p019:para:003",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 19,
+        "text": "2.3 A Socio-technical Systems Approach Likely due to expectations based on techno-solutionism and a lack of mature AI process governance, organizations often default to overly technical solutions for AI bias issues. Yet, these mathematical and computational approaches do not adequately capture the societal impact of AI systems [61, 73, 75, 111]. The limitations of a computational-only perspective for addressing bias have become evident as AI systems increasingly expand into our lives. The reviewed literature suggests that the expansion of AI into many aspects of public life requires extending our view from a mainly technical perspective to one that is socio- technical in nature, and considers AI within the larger social system in which it operates [7, 19, 31, 37, 74, 75, 78, 114–119]. Using a socio-technical approach to AI bias makes it possible to evaluate dynamic systems of bias and understand how they impact each other and under what conditions these biases are attenuated or amplified.",
+        "metadata": {
+          "page": 19,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2.3 A Socio-technical Systems Approach Likely due to expectations based on",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3279,
+          "chunk_index": 3,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1003
+        },
+        "score": 17.735175,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p053:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 53,
+        "text": "• detail standards for experimental design, data quality, and model training;\n\n• outline how the risks of bias should be mapped and measured, and according to what standards;\n\n• detail processes for model testing and validation;\n\n• detail the process of review by legal or risk functions;\n\n• set forth the periodicity and depth of ongoing auditing and review;\n\n• outline requirements for change management; and\n\n• detail any plans related to incident response for such systems, in the event that any significant risks do materialize during deployment.",
+        "metadata": {
+          "page": 53,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.4 How do we manage and provide oversight? Governance and AI Bias Governan",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2461,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 551
+        },
+        "score": 13.911389,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-sp-1270:p053:para:000"
+    ],
+    "context_chars": 622,
+    "context": "[nist-sp-1270:p053:para:000 | starter/data/NIST.SP.1270.pdf | page 53]\n• detail standards for experimental design, data quality, and model training;\n\n• outline how the risks of bias should be mapped and measured, and according to what standards;\n\n• detail processes for model testing and validation;\n\n• detail the process of review by legal or risk functions;\n\n• set forth the periodicity and depth of ongoing auditing and review;\n\n• outline requirements for change management; and\n\n• detail any plans related to incident response for such systems, in the event that any significant risks do materialize during deployment.",
+    "elapsed_ms": 1.142,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Why does excluding protected attributes such as race or gender from training datasets fail to prevent discrimination?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 25,
+        "evidence": "Developers sometimes exclude protected attributes, associated with social groups which have historically been discriminated against. However, this does not remedy the problem, since the information can be inadvertently inferred in other ways through proxy or latent variables."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-1270:p025:para:001",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 25,
+        "text": "Even when datasets are representative, they may still exhibit entrenched historical and systemic biases, improperly utilize protected attributes, or utilize culturally or contextually unsuitable attributes. Developers sometimes exclude protected attributes, associated with social groups which have historically been discriminated against. However, this does not remedy the problem, since the information can be inadvertently inferred in other ways through proxy or latent variables. Latent variables such as gender can be inferred through browsing history, and race can be inferred through zip code. So models based on such variables can still negatively impact individuals or classes of individuals [73]. Thus, the proxies used in development may be both a poor fit for the concept or characteristic seeking to be measured, and reveal unintended information about persons and groups. There is also sensitivity related to attributes and inferences that do not receive protection under civil rights laws, but which may enable discrimination when inferred and used by an ML model, such as low income status.",
+        "metadata": {
+          "page": 25,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.1 Who is Counted? Datasets in AI Bias",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3273,
+          "chunk_index": 1,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1106
+        },
+        "score": 27.170247,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-1270:p039:para:001",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 39,
+        "text": "Fairness metrics From a computational standpoint, defining a fairness metric for ML requires developing a formal mathematical model to achieve desired predictive goals on a given dataset and associated task. Numerous fairness metrics are proposed in the literature [85, 191, 194, 197–199]. Much of the work in determining fairness criteria involves supervised learning, but the labeled data required for these tasks may not be readily available. This is particularly true for large language models, where the sheer scale of the datasets used for training is prohibitive for proper data labeling. This has a direct impact on both representativeness of the training data and, in turn, its impact on the representativeness of the generated model might exacerbate discriminatory outcomes, as large language models are adapted to specific datasets and tasks. Moreover, even if datasets are representative they may still exhibit biases or improperly utilize protected attributes, which in turn may lead to discrimination. Proxies may be used for hiding protected attributes and care should be taken to avoid discrimination resulting from badly chosen proxies [59, 136, 147, 200, 201].",
+        "metadata": {
+          "page": 39,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "1. Pre-processing",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2922,
+          "chunk_index": 1,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1178
+        },
+        "score": 20.421075,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p025:para:002",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 25,
+        "text": "Alternately, when there is not sufficient knowledge or awareness of the socio-technical context of a process or phenomenon, the attributes that are collected for use in an ML application may not be universally applicable for modeling the different social groups or cultures who are analyzed using the application. For example, using (past) medical costs to predict the need for future health interventions leads to severe under-prediction of healthcare needs in groups that do not have sufficient access to health care, such as African Americans [14].\n\nProtected attributes: A host of laws and regulations have been established to prohibit discrimination based on grounds such as race, sex, age, religious affiliation, national origin, and disability status, among others. Local laws can apply protections across a wide variety of groups and activities.",
+        "metadata": {
+          "page": 25,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.1 Who is Counted? Datasets in AI Bias",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3273,
+          "chunk_index": 2,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 853
+        },
+        "score": 18.089844,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.838,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Why is the distinction between reducible epistemic uncertainty and irreducible aleatoric uncertainty described as not absolute in bias management?",
+    "filter": {
+      "category": "bias_management"
+    },
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 30,
+        "evidence": "Since these two types of uncertainties (EPISTEMIC and ALEATORIC ) are highly context-dependent, changing the context may blur the difference between them or even cause one to turn into the other. Thus, their characterization as reducible and irreducible is not absolute."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-1270:p030:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 30,
+        "text": "It represents the uncertainty inherent in the data, e.g., the uncertainty in the label assigning process of the training dataset. Aleatoric uncertainty is the irreducible part of the predictive uncertainty. Since these two types of uncertainties (EPISTEMIC and ALEATORIC ) are highly context-dependent, changing the context may blur the difference between them or even cause one to turn into the other. Thus, their characterization as reducible and irreducible is not absolute. For example, datasets containing overlapping samples with different attributes could be embedded into higher dimensions so that the samples are clearly separated, thus reducing aleatoric uncertainty at the expense of epistemic uncertainty - because the model would likely overfit the existing data in the larger space. Some of the difficulty in distin- guishing epistemic and aleatoric uncertainty is that ML models are (implicit) mathematical representations of the data on which they are trained [152].",
+        "metadata": {
+          "page": 30,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.2 How do we know what is right? TEVV Considerations for AI Bias",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 1773,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 982
+        },
+        "score": 47.833941,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-1270:p029:para:003",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 29,
+        "text": "Epistemic and aleatoric uncertainty ML distinguishes two types of predictive uncertainty: EPISTEMIC and ALEATORIC [149]. For example, models produced by deep learning ML systems exhibit epistemic uncertainty in the parameters of the computed model. The model parameters are typically computed as the result of a nonconvex minimization of an appropriately chosen cost function. It is well known from mathematics that such a formulation of the problem does not have a unique solution [150, 151]. While epistemic uncertainty can be reduced by increasing the amount of representative training data, it cannot be fully eliminated. This can impact the behav- ior of a deep learning system in deployment when used with real-world data, especially when there is a mismatch in the distributions of the real and training data [102]. This can lead to undesirable effects on many of the AI system’s critical attributes (e.g., robustness, resilience), including inducing harmful bias. Even convex problems (e.g., multiple linear regression) may suffer from epistemic uncertainty when a decision variable is not included in the model.",
+        "metadata": {
+          "page": 29,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.2 How do we know what is right? TEVV Considerations for AI Bias",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3222,
+          "chunk_index": 3,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1120
+        },
+        "score": 27.153622,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p030:para:001",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 30,
+        "text": "The growth of Large Language Models Large LANGUAGE MODEL s (LLMs) have become the dominant trend in deep learning to- day and are expected to continue to grow in importance [103, 153]. Although LLMs have been able to achieve impressive advances in performance on a number of important tasks, they come with significant risks that could potentially undermine public trust in the technol- ogy. LLMs create significant challenges for both EPISTEMIC and ALEATORIC uncertainty. Relying on large amounts of uncurated web data increases aleatoric uncertainty [154]. In- depth knowledge of the data and its statistical properties is critically important for detecting bias in the predictive output of ML models.\n\nIdentifying sources of bias is the first step in any bias mitiga- tion strategy.\n\n21/77",
+        "metadata": {
+          "page": 30,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.2 How do we know what is right? TEVV Considerations for AI Bias",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 1773,
+          "chunk_index": 1,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 792
+        },
+        "score": 21.900263,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.631,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "In the field study on STEM career advertisements, why did more men than women see an ad intended for women, and what limitation of algorithmic transparency does this reveal?",
+    "filter": {
+      "year": 2022
+    },
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 38,
+        "evidence": "While transparency into AI system mechanisms is rarely a direct bias mitigant, as explained above, transparency enables many critical AI governance functions. Transparency is very important, but should not be mistaken for fairness."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-1270:p038:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 38,
+        "text": "The limits of algorithmic transparency in eliminating bias Automated decision-making is appealing but comes with risks that can result in discriminatory outcomes. Researchers investigated settings where ads are allo- cated by algorithm and found instances where historically–discriminated–against– groups are less likely to see desirable ads [132]. In this setting, a field test was performed with an ad that was intended to promote job opportunities and train- ing in STEM. The STEM career ad campaign was motivated by widespread con- cern about a shortage of underrepresented groups in the STEM sector, particularly women. The assumption is that disseminating information about STEM careers to women and encouraging women to enter this field helps to address this problem. However, since women are far more likely to make decisions about household purchases, they are more valuable targets for advertising, creating pricing differ- entials for ad displays. The result of the ad campaign was that 20%+ more men than women viewed the ad, with the largest difference in the 25-54 year old age group.",
+        "metadata": {
+          "page": 38,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "1. Pre-processing",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2837,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1098
+        },
+        "score": 59.261084,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p026:para:000",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 26,
+        "text": "only the most active users, likely creating downstream system activity that does not reflect the intended or real user population [130, 131] resulting in potentially harmful impacts. In one example, by considering that ads for jobs in Science, Technology, Engineering and Mathematics (STEM) might be seen most often by men due to how marketing algorithms optimize for cost in ad placement, the women who were the intended audience of the ads never saw them [132] cf., V IGNETTE for details. Furthermore, feedback loops can result in disparity amplification in which marginalized individuals or groups are less likely to use an AI system and the subsequent training data are based on the most frequent users. For example, non-native English speakers are less likely to use a voice-enabled personal assistant and people living in transit deserts are often dependent on ride-hailing services. So, the experiences of these groups do not match the intended purpose or operation of the AI system.",
+        "metadata": {
+          "page": 26,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3.1.2 Dataset Guidance A key question that must be asked for the development",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 3185,
+          "chunk_index": 0,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 990
+        },
+        "score": 28.530392,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-1270:p037:para:001",
+        "source_id": "nist-sp-1270",
+        "source": "starter/data/NIST.SP.1270.pdf",
+        "page": 37,
+        "text": "Algorithms In ML, it is not meaningful to assign bias to the model or algorithm itself without con- textual information about the specific tasks on which they may be used. This links the model and algorithm to the dataset on which they are trained and tested (see V IGNETTE for how contextual factors can play a role in bias). The catchphrase “bias in, bias out” is widely used to describe the heavy dependence of the algorithmic behavior on the data. For example, in a natural language processing context, hate speech detection models use di- alect markers as toxicity predictors, which can result in bias against minority groups [190]. In another context, an algorithm designed to deliver gender-neutral advertisements about jobs in STEM resulted in gender bias due to younger women being considered a valuable subgroup and more expensive as the targets for advertisements [85, 132]. Methods that help to reduce algorithmic bias are another helpful construct for under- standing it. Specific methods for algorithmic mitigation of bias for many different machine learning tasks have been delineated or surveyed in recent studies [85, 191–194].",
+        "metadata": {
+          "page": 37,
+          "year": 2022,
+          "title": "Towards a Standard for Identifying and Managing Bias in Artificial Intelligence",
+          "source": "starter/data/NIST.SP.1270.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "1. Pre-processing",
+          "category": "bias_management",
+          "is_empty": false,
+          "char_count": 2315,
+          "chunk_index": 1,
+          "document_id": "nist-sp-1270",
+          "extract_error": null,
+          "chunk_char_len": 1144
+        },
+        "score": 27.815026,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.714,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "q17",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Which Executive Order section prompted the secure generative AI development companion profile, and what unique boundary challenge exists in AI systems?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 9,
+        "evidence": "A unique challenge for this community is the blurring of traditional boundaries between system code and system data, as well as the use of plain human language as the means of interaction with the systems."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-800-218a:p009:para:001",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 9,
+        "text": "1. Introduction Section 4.1.a of Executive Order (EO) 14110, Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence [1], tasked NIST with “developing a companion resource to the Secure Software Development Framework to incorporate secure development practices for generative AI and for dual-use foundation models.” This document is that companion resource. The software development and use of AI models and AI systems inherit much of the same risk as any other digital system. A unique challenge for this community is the blurring of traditional boundaries between system code and system data, as well as the use of plain human language as the means of interaction with the systems. AI models and systems, their configuration parameters (e.g., model weights), and the data they interact with (e.g., training data, user queries, etc.) can form closed loops that can be manipulated for unintended functionality. AI model and system development is still much more of an art than an exact science, requiring developers to interact with model code, training data, and other parameters over multiple iterations. Training datasets may be acquired from unknown, untrusted sources.",
+        "metadata": {
+          "page": 9,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "1. Introduction Section 4",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3228,
+          "chunk_index": 1,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1194
+        },
+        "score": 31.818324,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-800-218a:p011:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 11,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 3\n\n• Section 2 provides additional background on the SSDF and explains what an SSDF Community Profile is and how it can be used.\n\n• Section 3 defines the SSDF Community Profile for AI Model Development.\n\n• The References section lists all references cited in this document.\n\n• Appendix A provides a glossary of selected terms used within this document.",
+        "metadata": {
+          "page": 11,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Document Structure",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 462,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 467
+        },
+        "score": 22.215932,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p014:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 14,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 6\n\n3. SSDF Community Profile for AI Model Development\n\nTable 1 defines the SSDF Community Profile for AI Model Development. The meanings of each column are as follows:\n\n• Practice contains the name of the practice and a unique identifier, followed by a brief explanation of what the practice is and why it is beneficial.\n\nTask specifies one or more actions that may be needed to perform a practice. Each task includes a unique identifier and a brief explanation.\n\nAll practices and tasks are unchanged from SSDF version 1.1 unless they are explicitly tagged as “Modified from SSDF 1.1” or “Not part of SSDF 1.1.” An example is the PW.3 practice, “Confirm the Integrity of Training, Testing, Fine-Tuning, and Aligning Data Before Use” and all of its tasks.\n\n• Priority reflects the suggested relative importance of each task within the context of the profile and is intended to be a starting point for organizations to assign their own priorities:\n\no High: Critically important for AI model development security compared to other tasks",
+        "metadata": {
+          "page": 14,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3. SSDF Community Profile for AI Model Development",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2623,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1149
+        },
+        "score": 18.668362,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-sp-800-218a:p011:para:000"
+    ],
+    "context_chars": 546,
+    "context": "[nist-sp-800-218a:p011:para:000 | starter/data/NIST.SP.800-218A.pdf | page 11]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 3\n\n• Section 2 provides additional background on the SSDF and explains what an SSDF Community Profile is and how it can be used.\n\n• Section 3 defines the SSDF Community Profile for AI Model Development.\n\n• The References section lists all references cited in this document.\n\n• Appendix A provides a glossary of selected terms used within this document.",
+    "elapsed_ms": 0.989,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q18",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Which lifecycle activities are excluded from the AI model development security profile, and does it treat AI-generated source code differently from human-written source code?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 10,
+        "evidence": "Practices and tasks in this Profile do not distinguish between human-written and AI-generated source code, because it is assumed that all source code should be evaluated for vulnerabilities and other issues before use."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-800-218a:p010:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 10,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 2\n\nScope This Profile’s scope is AI model development, which includes data sourcing for, designing, training, fine-tuning, and evaluating AI models, as well as incorporating and integrating AI models into other software. Consistent with SSDF version 1.1 and EO 14110, practices for the deployment and operation of AI systems with AI models are out of scope. Similarly, while cybersecurity practices for training data and other forms of data being used for AI model development are in scope, the rest of the data governance and management life cycle is out of scope.\n\nPractices and tasks in this Profile do not distinguish between human-written and AI-generated source code, because it is assumed that all source code should be evaluated for vulnerabilities and other issues before use.\n\nSources of Expertise This document leverages and integrates numerous sources of expertise, including:",
+        "metadata": {
+          "page": 10,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Document Structure",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2691,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1003
+        },
+        "score": 36.92742,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-800-218a:p019:para:001",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 19,
+        "text": "R2: Continuous monitoring and analysis tools should generate alerts when detected activity involving an AI model passes a risk threshold or otherwise merits additional investigation.\n\nAI RMF:\n\nMeasure 2.4\n\nOWASP:\n\nLLM03-7, LLM04, LLM05- 8, LLM09,\n\nLLM10\n\nProtect Software (PS)\n\nProtect All Forms of Code and Data from\n\nUnauthorized Access and Tampering (PS.1):\n\nHelp prevent unauthorized changes to code and data, both inadvertent and intentional, which could circumvent or negate the intended security characteristics of the software. For code and data that are not intended to be publicly accessible, this helps prevent theft of the software and may make it more difficult or time-consuming for attackers to find vulnerabilities in the software. [Modified from\n\nSSDF 1.1]\n\nPS.1.1: Store all forms of code – including source code, executable code, and configuration-as-code – based on the principle of least privilege so that only authorized personnel, tools, services, etc.\n\nhave access.",
+        "metadata": {
+          "page": 19,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Medium No additions to SSDF 1.1 OWASP:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2659,
+          "chunk_index": 1,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 989
+        },
+        "score": 27.184669,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p024:para:002",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 24,
+        "text": "Compliance with Security Requirements (PW.7): Help identify vulnerabilities so that they can be corrected before the software is released to prevent exploitation. Using automated methods lowers the effort and resources needed to detect vulnerabilities. Human-readable code includes source code, scripts, and any other form of code that an organization deems human-readable.\n\nPW.7.1: Determine whether code review (a person looks directly at the code to find issues) and/or code analysis (tools are used to find issues in code, either in a fully automated way or in conjunction with a person) should be used, as defined by the organization.\n\nMedium R1: Code review and analysis policies or guidelines should include code for AI models and other related components.\n\nC1: Consider performing scans of AI model code in addition to testing the AI models.",
+        "metadata": {
+          "page": 24,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Create Source Code by Adhering to Secure",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3591,
+          "chunk_index": 2,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 849
+        },
+        "score": 25.779855,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 1.08,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q19",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Why is tracking model versioning, lineage, and reproducibility harder for final AI model weights than for model architecture source code?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 12,
+        "evidence": "However, the final model weights are defined only after the model is trained and fine-tuned; this is where limitations in tracking all aspects of collection, processing, and training arise."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-800-218a:p012:para:002",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 12,
+        "text": "The contents of the Profile are meant to be adapted and customized, as not all practices and tasks are applicable to all use cases. Organizations should adopt a risk- based approach to determine what practices and tasks are relevant, appropriate, and effective to mitigate the threats to software development practices from the organization’s perspective as an AI model producer, AI system producer, or AI system acquirer. Factors such as risk, cost, feasibility, and applicability should be considered when deciding which practices and tasks to use and how much time and resources to devote to each one. Cost models may need to be updated to effectively consider the costs inherent to AI model development. A risk-based approach to secure software development may change over time as an organization responds to new or elevated capabilities and risks associated with an AI model or system. Generative AI and dual-use foundation models present additional challenges in tracking model versioning and lineage. Source code for defining the model architecture and building model binaries is amenable to secure software engineering practices for versioning, lineage, and reproducibility.",
+        "metadata": {
+          "page": 12,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2. Using the SSDF Community Profile AI model producers, AI system producer",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3777,
+          "chunk_index": 2,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1182
+        },
+        "score": 36.052639,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p012:para:003",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 12,
+        "text": "However, the final model weights are defined only after the model is trained and fine-tuned; this is where limitations in tracking all aspects of collection, processing, and training arise. Organizations should follow secure software development practices for the parts of a model that can be covered fully and strive to introduce secure practices to the extent possible for the stages and corresponding artifacts where obtaining such security guarantees is hard to achieve. Organizations should document the parts and artifacts that are not covered by the secure software development practices.\n\nThe Profile’s practices, tasks, recommendations, and considerations can be integrated into machine learning operations (MLOps) along with other software assets within a continuous integration/continuous delivery (CI/CD) pipeline.\n\nThe responsibility for implementing SSDF practices in the Profile may be shared among multiple organizations. For example, an AI model could be produced by one organization and executed within an AI system hosted by a second organization, which is then used by other organizations.",
+        "metadata": {
+          "page": 12,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "2. Using the SSDF Community Profile AI model producers, AI system producer",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3777,
+          "chunk_index": 3,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1109
+        },
+        "score": 18.642962,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-800-218a:p025:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 25,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 17 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References development team’s workflow or issue tracking system.\n\nOWASP:\n\nLLM03-7d,\n\nLLM07-4\n\nTest Executable Code to Identify\n\nVulnerabilities and Verify Compliance with\n\nSecurity Requirements (PW.8): Help identify vulnerabilities so that they can be corrected before the software is released in order to prevent exploitation. Using automated methods lowers the effort and resources needed to detect vulnerabilities and improves traceability and repeatability. Executable code includes binaries, directly executed bytecode and source code, and any other form of code that an organization deems executable.\n\nPW.8.1: Determine whether executable code testing should be performed to find vulnerabilities not identified by previous reviews, analysis, or testing and, if so, which types of testing should be used.",
+        "metadata": {
+          "page": 25,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "OWASP:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3284,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1050
+        },
+        "score": 16.230496,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.863,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q20",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "In the SSDF Community Profile table, what do the designation codes R, C, and N appended to a task ID represent?",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 14,
+        "evidence": "An R, C, or N designation and its number can be appended to the task ID to create a unique identifier (e.g., “PO.1.2.R1” is the first recommendation for task PO.1.2)."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-800-218a:p014:para:002",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 14,
+        "text": "o “N” (note: additional information besides recommendations and considerations) An R, C, or N designation and its number can be appended to the task ID to create a unique identifier (e.g., “PO.1.2.R1” is the first recommendation for task PO.1.2). Note that a value of “No additions to SSDF 1.1” in this column indicates that the Profile does not contain recommendations, considerations, or notes specific to AI model development for the task. Refer to SSDF version 1.1 [6] for baseline guidance on the secure development task in question and to the other references in this document for additional information related to the task.\n\n• Informative References point (map) to parts of standards, guidance, and other content containing requirements, recommendations, considerations, or other supporting",
+        "metadata": {
+          "page": 14,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3. SSDF Community Profile for AI Model Development",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2623,
+          "chunk_index": 2,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 797
+        },
+        "score": 36.891349,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-800-218a:p016:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 16,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 8 Note: This Profile supplements what SSDF version 1.1 [6] already includes and is intended to be used in conjunction with it, not on its own. As a reminder, the deployment and operation of AI systems with AI models are out of the Profile’s scope, as are most parts of the data governance and management life cycle.\n\nThere are gaps in the numbering of some SSDF practices and tasks. For example, the PW.4 practice has three tasks: PW.4.1, PW.4.2, and PW.4.4.\n\nPW.4.3 was a task in SSDF version 1.0 that was moved elsewhere for version 1.1, so its ID was not reused.\n\nTable 1. SSDF Community Profile for AI Model Development Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nPrepare the Organization (PO)\n\nDefine Security Requirements for Software",
+        "metadata": {
+          "page": 16,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Prepare the Organization (PO)",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3032,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 946
+        },
+        "score": 33.163007,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p014:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 14,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 6\n\n3. SSDF Community Profile for AI Model Development\n\nTable 1 defines the SSDF Community Profile for AI Model Development. The meanings of each column are as follows:\n\n• Practice contains the name of the practice and a unique identifier, followed by a brief explanation of what the practice is and why it is beneficial.\n\nTask specifies one or more actions that may be needed to perform a practice. Each task includes a unique identifier and a brief explanation.\n\nAll practices and tasks are unchanged from SSDF version 1.1 unless they are explicitly tagged as “Modified from SSDF 1.1” or “Not part of SSDF 1.1.” An example is the PW.3 practice, “Confirm the Integrity of Training, Testing, Fine-Tuning, and Aligning Data Before Use” and all of its tasks.\n\n• Priority reflects the suggested relative importance of each task within the context of the profile and is intended to be a starting point for organizations to assign their own priorities:\n\no High: Critically important for AI model development security compared to other tasks",
+        "metadata": {
+          "page": 14,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "3. SSDF Community Profile for AI Model Development",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2623,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1149
+        },
+        "score": 22.698537,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [],
+    "context_chars": 0,
+    "context": "",
+    "elapsed_ms": 0.967,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "q21",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Under task PO.5.1 for securing development environments, what practices are recommended for protecting sensitive data, training pipelines, and model registries?",
+    "filter": {
+      "category": "genai_security"
+    },
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 18,
+        "evidence": "R3: Protect all training pipelines, model registries, and other components within the environments according to the principle of least privilege."
+      }
+    ],
+    "required_spans": null,
+    "top3_results": [
+      {
+        "id": "nist-sp-800-218a:p018:para:002",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 18,
+        "text": "High C1: Consider separating execution environments from each other to the extent feasible, such as through isolation, segmentation, containment, access via APIs, or other means.\n\nR1: Monitor, track, and limit resource usage and rates for AI model users during model development.\n\nR2: Only store sensitive data used during AI model development, including production data, within organization-approved environments and locations within those environments.\n\nR3: Protect all training pipelines, model registries, and other components within the environments according to the principle of least privilege.\n\nOWASP:\n\nLLM01-1, LLM01-4, LLM04, LLM08,\n\nLLM10",
+        "metadata": {
+          "page": 18,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "AI RMF:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2806,
+          "chunk_index": 2,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 649
+        },
+        "score": 32.305326,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": true
+      },
+      {
+        "id": "nist-sp-800-218a:p019:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 19,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 11 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR4: Continuously monitor training-related activity in pipelines and model modifications in the model registry.\n\nR5: Follow recommended practices for securely configuring each environment.\n\nR6: Continuously monitor each environment for plaintext secrets.\n\nPO.5.2: Secure and harden development endpoints (endpoints for software designers, developers, testers, builders, etc.) to perform development tasks using a risk-based approach.\n\nMedium No additions to SSDF 1.1 OWASP:\n\nLLM01-1, LLM05-3, LLM05-9,\n\nLLM08\n\nPO.5.3: Continuously monitor software execution performance and behavior in software development environments to identify potential suspicious activity and other issues. [Not part of SSDF 1.1]\n\nHigh R1: Perform continuous security monitoring for all development environment components that host an AI model or related resources (e.g., model APIs, weights, configuration parameters, training datasets).",
+        "metadata": {
+          "page": 19,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "Medium No additions to SSDF 1.1 OWASP:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2659,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1163
+        },
+        "score": 31.775931,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p018:para:001",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 18,
+        "text": "Medium R1: Implement guardrails and other controls throughout the AI development life cycle, extending beyond the traditional SDLC.\n\nC1: Consider requiring review and approval from a human-in-the-loop for software security checks beyond risk-based thresholds.\n\nAI RMF:\n\nMeasure 2.3, 2.7; Manage 1.1\n\nOWASP:\n\nLLM01-2\n\nPO.4.2: Implement processes, mechanisms, etc. to gather and safeguard the necessary information in support of the criteria.\n\nLow No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.3, 2.7; Manage 1.1\n\nOWASP:\n\nLLM01-2\n\nImplement and Maintain Secure\n\nEnvironments for Software Development (PO.5): Ensure that all components of the environments for software development are strongly protected from internal and external threats to prevent compromises of the environments or the software being developed or maintained within them. Examples of environments for software development include development, AI model training, build, test, and distribution environments. [Modified from SSDF 1.1]\n\nPO.5.1: Separate and protect each environment involved in software development.",
+        "metadata": {
+          "page": 18,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "AI RMF:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2806,
+          "chunk_index": 1,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1075
+        },
+        "score": 24.012302,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-sp-800-218a:p018:para:002"
+    ],
+    "context_chars": 728,
+    "context": "[nist-sp-800-218a:p018:para:002 | starter/data/NIST.SP.800-218A.pdf | page 18]\nHigh C1: Consider separating execution environments from each other to the extent feasible, such as through isolation, segmentation, containment, access via APIs, or other means.\n\nR1: Monitor, track, and limit resource usage and rates for AI model users during model development.\n\nR2: Only store sensitive data used during AI model development, including production data, within organization-approved environments and locations within those environments.\n\nR3: Protect all training pipelines, model registries, and other components within the environments according to the principle of least privilege.\n\nOWASP:\n\nLLM01-1, LLM01-4, LLM04, LLM08,\n\nLLM10",
+    "elapsed_ms": 0.306,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q22",
+    "split": "dev",
+    "config": "bm25_b800",
+    "question": "Under task PW.3.2, what should an organization still do when the provenance of training, testing, or fine-tuning data is unknown?",
+    "filter": {
+      "year": 2024
+    },
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 23,
+        "evidence": "Provenance verification is not possible in all cases because provenance is not always known. However, it is still beneficial for security purposes to track and verify provenance whenever possible, and to track when provenance is unknown."
+      }
+    ],
+    "required_spans": [
+      "Provenance verification is not possible in all cases because provenance is not always known.",
+      "However, it is still beneficial for security purposes to track and verify provenance whenever possible, and to track when provenance is unknown."
+    ],
+    "top3_results": [
+      {
+        "id": "nist-sp-800-218a:p022:para:002",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 22,
+        "text": "PW.3.1: Analyze data for signs of data poisoning, bias, homogeneity, and tampering before using it for AI model training, testing, fine-tuning, or aligning\n\nHigh R1: Verify the provenance (when known) and integrity of training, testing, fine-tuning, and aligning data before use.\n\nAI RMF:\n\nMeasure 2.1; Manage 1.2, 1.3",
+        "metadata": {
+          "page": 22,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "LLM09, LLM10",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 2394,
+          "chunk_index": 2,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 318
+        },
+        "score": 37.935548,
+        "strategy": "bm25",
+        "rank": 1,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p023:para:000",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 23,
+        "text": "NIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 15 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References being consumed as part of AI model training, testing, fine-tuning, and aligning. [Not part of\n\nSSDF 1.1] purposes, and mitigate the risks as necessary. [Not part of SSDF 1.1]\n\nR2: Select and apply appropriate methods for analyzing and altering the training, testing, fine- tuning, and aligning data for an AI model.\n\nExamples of methods include anomaly detection, bias detection, data cleaning, data curation, data filtering, data sanitization, fact- checking, and noise reduction.\n\nC1: Consider using a human-in-the-loop to examine data, such as with exploratory data analysis techniques [18].\n\nOWASP:\n\nLLM03, LLM06\n\nPW.3.2: Track the provenance, when known, of all training, testing, fine-tuning, and aligning data used for an AI model, and document which data do not have known provenance. [Not part of SSDF 1.1]\n\nMedium N1: Provenance verification is not possible in all cases because provenance is not always known.",
+        "metadata": {
+          "page": 23,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "OWASP:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3022,
+          "chunk_index": 0,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 1172
+        },
+        "score": 35.743132,
+        "strategy": "bm25",
+        "rank": 2,
+        "hit": false
+      },
+      {
+        "id": "nist-sp-800-218a:p023:para:001",
+        "source_id": "nist-sp-800-218a",
+        "source": "starter/data/NIST.SP.800-218A.pdf",
+        "page": 23,
+        "text": "However, it is still beneficial for security purposes to track and verify provenance whenever possible, and to track when provenance is unknown.\n\nAI RMF:\n\nMeasure 2.1\n\nOWASP:\n\nLLM03-1\n\nAdv ML\n\nPW.3.3: Include adversarial samples in the training and testing data to improve attack prevention. [Not part of SSDF 1.1]\n\nMedium R1: Use a process and corresponding controls to test the adversarial samples and put appropriate guardrails on training and testing use.\n\nOWASP:\n\nLLM03-6,\n\nLLM05-7\n\nAdv ML\n\nReuse Existing, Well-Secured Software When\n\nFeasible Instead of Duplicating Functionality (PW.4): Lower the costs of software development, expedite software development, and decrease the likelihood of introducing additional security vulnerabilities into the software by reusing software modules and services that have already had their security posture checked. This is particularly important for software that implements security functionality, such as cryptographic modules and protocols.",
+        "metadata": {
+          "page": 23,
+          "year": 2024,
+          "title": "Secure Software Development Practices for Generative AI and Dual-Use Foundation Models",
+          "source": "starter/data/NIST.SP.800-218A.pdf",
+          "license": "U.S. Government Work (17 U.S.C. § 105) — Public Domain",
+          "section": "OWASP:",
+          "category": "genai_security",
+          "is_empty": false,
+          "char_count": 3022,
+          "chunk_index": 1,
+          "document_id": "nist-sp-800-218a",
+          "extract_error": null,
+          "chunk_char_len": 986
+        },
+        "score": 28.587752,
+        "strategy": "bm25",
+        "rank": 3,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "nist-sp-800-218a:p022:para:002"
+    ],
+    "context_chars": 397,
+    "context": "[nist-sp-800-218a:p022:para:002 | starter/data/NIST.SP.800-218A.pdf | page 22]\nPW.3.1: Analyze data for signs of data poisoning, bias, homogeneity, and tampering before using it for AI model training, testing, fine-tuning, or aligning\n\nHigh R1: Verify the provenance (when known) and integrity of training, testing, fine-tuning, and aligning data before use.\n\nAI RMF:\n\nMeasure 2.1; Manage 1.2, 1.3",
+    "elapsed_ms": 0.299,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  }
+]

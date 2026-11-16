@@ -1,0 +1,1775 @@
+[
+  {
+    "query_id": "adv_dev_table_01",
+    "split": "dev",
+    "group": "table",
+    "status": "answered",
+    "answer": "According to Table 1 on page 12, the topic highlighted for 2016 was \"Northern permafrost soils contain twice the carbon as in atmosphere\" [arc2025:p012:text:000], and the topic highlighted for 2024 was \"Arctic tundra transitions to being a carbon source\" [arc2025:p012:text:001].",
+    "citations": [
+      "arc2025:p012:text:000",
+      "arc2025:p012:text:001"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p012:text:000",
+        "page": 12,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          71.1,
+          535.3,
+          397.1
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p012:text:001",
+        "page": 12,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          219.0,
+          532.6,
+          756.4
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 12
+        },
+        "results": [
+          {
+            "id": "arc2025:p012:text:000",
+            "page": 12,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p012:text:001",
+            "page": 12,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p012:table:00",
+            "page": 12,
+            "modality": "table",
+            "crop_path": "data/adv_index/crops/p012_table_00.png"
+          }
+        ],
+        "elapsed_ms": 6.48
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p012:text:000 | ArcticReportCard_full_report2025.pdf | page 12]\nTable 1. Selected ecological events chronicled across the 20 editions of the Arctic Report Card since 2006. The full inventory of past ARC essays is available at https://arctic.noaa.gov/Report-Card/Report-Card-Archive/.\n\nYear Topic\n\n2006 Arctic as large contributor to warmest year on record for the planet in 2005\n\n2007 Bering Sea ecological structure questioned after 6 years of sustained warming\n\n2008 Declining caribou populations\n\n2009 Bering Sea ecosystems influenced more by climate variability than long-term change\n\n2010 Threatened Arctic char present conservation challenge\n\n2011 Amplified ocean acidification\n\n2012 Widespread shorebird population decline reported\n\n2013 Sub-Arctic fish species reported in Arctic waters\n\n2014 Polar bear reproductive rates linked to sea ice cover duration\n\n2015 Sea-ice loss seen as greatest threat to walrus populations\n\n2016 Northern permafrost soils contain twice the carbon as in atmosphere\n\n2017 High latitude wildfires burning more area as climate rapidly warms\n\n2018 Impact of increasing harmful algal blooms warrants new monitoring\n\n2019 Bering Sea Elders share perspectives on rapid regional warming\n\n[arc2025:p012:text:001 | ArcticReportCard_full_report2025.pdf | page 12]\n2020 Bowhead whales resilient despite ecological and human impacts\n\nTwo decades of highlighting ecological change\n\n2021 Changing marine soundscape amid increasing sea ice loss, storms, and shipping\n\n2022 Arctic geese populations at or above historic levels\n\n2023 Record-low Chinook and Chum Salmon contrasted with record-high Sockeye in Western Alaska\n\n2024 Arctic tundra transitions to being a carbon source\n\n2025 Rusting rivers degrading water quality and fish habitat\n\nReferences\n\nANTHC [Alaska Native Tribal Health Consortium], 2024: Unmet needs of environmentally threatened Alaska native villages: Assessment and recommendations. Available at: https://anthc.org/resource/unmet-needs-report/.\n\nSmith, S. L., V. E. Romanovsky, K. Isaksen, K. E. Nyland, N. I. Shiklomanov, D. A. Streletskiy, and H. H. Christiansen, 2025: Permafrost [in “State of the Climate in 2024”]. Bull. Amer. Meteor. Soc., 106(8), S338-S341, https://doi.org/10.1175/BAMS-D-25-0104.1.\n\n10\n\n[arc2025:p012:table:00 | ArcticReportCard_full_report2025.pdf | page 12]\n[TABLE] Page 12 (Executive Summary)\nCaption: Table 1. Selected ecological events chronicled across the 20 editions of the Arctic Report Card since 2006. The full inventory of past ARC essays is available at https://arctic.noaa.gov/Report-Card/Report-Card-Archive/.\n|  |  |  | Year |  |  | Topic |\n| --- | --- | --- | --- | --- | --- | --- |\n|  | Twodecadesofhighlightingecologicalchange |  |  | 2006 |  | Arcticaslargecontributortowarmestyearonrecordfortheplanetin2005 |\n|  |  |  | 2007 |  |  | BeringSeaecologicalstructurequestionedafter6yearsofsustained warming |\n|  |  |  |  | 2008 |  | Decliningcariboupopulations |\n|  |  |  | 2009 |  |  | BeringSeaecosystemsinfluencedmorebyclimatevariabilitythanlong-term change |\n|  |  |  |  | 2010 |  | ThreatenedArcticcharpresentconservationchallenge |\n|  |  |  |  | 2011 |  | Amplifiedoceanacidification |\n|  |  |  |  | 2012 |  | Widespreadshorebirdpopulationdeclinereported |\n|  |  |  |  | 2013 |  | Sub -ArcticfishspeciesreportedinArcticwaters |\n|  |  |  |  | 2014 |  | Polarbearreproductiverateslinkedtoseaicecoverduration |\n|  |  |  |  | 2015 |  | Sea-icelossseenasgreatestthreattowalruspopulations |\n|  |  |  |  | 2016 |  | Northernpermafrostsoilscontaintwicethecarbonasinatmosphere |\n|  |  |  |  | 2017 |  | Highlatitudewildfiresburningmoreareaasclimaterapidlywarms |\n|  |  |  |  | 2018 |  | Impactofincreasingharmfulalgalbloomswarrantsnewmonitoring |\n|  |  |  |  | 2019 |  | BeringSeaEldersshareperspectivesonrapidregionalwarming |\n|  |  |  |  | 2020 |  | Bowheadwhalesresilientdespiteecologicalandhumanimpacts |\n|  |  |  | 2021 |  |  | Changingmarinesoundscapeamidincreasingseaiceloss storms and , , shipping |\n|  |  |  |  | 2022 |  | Arcticgeesepopulationsatorabovehistoriclevels |\n|  |  |  | 2023 |  |  | Record -lowChinookandChumSalmoncontrastedwithrecord -highSockeye inWesternAlaska |\n|  |  |  |  | 2024 |  | Arctictundratransitionstobeingacarbonsource |\n|  |  |  |  | 2025 |  | Rustingriversdegradingwaterqualityandfishhabitat |",
+    "context_ids": [
+      "arc2025:p012:text:000",
+      "arc2025:p012:text:001",
+      "arc2025:p012:table:00"
+    ],
+    "elapsed_ms": 4628.71,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2777,
+      "output_tokens": 159,
+      "llm_seconds": 4.607648199991672
+    }
+  },
+  {
+    "query_id": "adv_dev_table_02",
+    "split": "dev",
+    "group": "table",
+    "status": "answered",
+    "answer": "According to Table 1 on page 102, the four taxa classified under 'Pelagic fish' are: Mallotus villosus (Capelin), Clupea pallasii (Herring), Oncorhynchus gorbuscha (Pink Salmon), and Oncorhynchus nerka (Sockeye Salmon) [arc2025:p102:text:000, arc2025:p102:table:00].",
+    "citations": [
+      "arc2025:p102:text:000",
+      "arc2025:p102:table:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p102:text:000",
+        "page": 102,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          71.1,
+          538.7,
+          587.1
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p102:table:00",
+        "page": 102,
+        "modality": "table",
+        "crop_path": "data/adv_index/crops/p102_table_00.png",
+        "bbox": [
+          62.2,
+          80.8,
+          549.8,
+          600.9
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 102
+        },
+        "results": [
+          {
+            "id": "arc2025:p102:text:000",
+            "page": 102,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p102:text:001",
+            "page": 102,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p102:table:00",
+            "page": 102,
+            "modality": "table",
+            "crop_path": "data/adv_index/crops/p102_table_00.png"
+          }
+        ],
+        "elapsed_ms": 0.11
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p102:text:000 | ArcticReportCard_full_report2025.pdf | page 102]\nTable1. Summary of taxa in this essay, with habitat type, classification, and common name. Most were found in the Chukchi Sea and the northern Bering Sea, except sea stars and basket stars (NBS only), and sea cucumbers and brittle stars (CS only).\n\nHabitat and Classification Taxa Common Name\n\nPelagic zooplankton Calanus marshallae/glaciallis Copepods\n\nCalanus hyperboreus Copepods\n\nPseudocalanus spp Copepods\n\nEuphausiacea Krill\n\nChaetognatha Chaetognats\n\nPelagic invertebrate Chrysaora melanaster Northern Sea Nettle\n\nPelagic fish Mallotus villosus Capelin\n\nClupea pallasii Herring\n\nOncorhynchus gorbuscha Pink Salmon\n\nOncorhynchus nerka Sockeye Salmon\n\nBenthic infauna Bivalvia Bivalves\n\nPolychaeta Bristle worms\n\nCrustacea Crustaceans\n\nAmphipoda Amphipods\n\nBenthic epifauna Chionoecetes opilio Snow crab\n\nPhrynophiurida Basket stars\n\nOphiurida Brittle stars\n\nAscidiacea Sea squirts\n\nStrongylocentrotidae Sea urchins\n\nDendrochirotida Sea cucumbers\n\nAsteroidea Sea stars\n\nEpibenthic fish Boreogadus saida Arctic cod\n\nEleginus gracilis Saffron cod\n\nGadus chalcogrammus Walleye pollock\n\nGadus macrocephalus Pacific cod\n\nLimanda aspera Yellowfin sole\n\nPleuronectes quadrituberculatus Alaska plaice\n\n[arc2025:p102:text:001 | ArcticReportCard_full_report2025.pdf | page 102]\nEnvironmental drivers\n\nIn the Chukchi Sea, bottom temperatures in September show no long-term trends due to high variation among years, but temperatures increased from 2013 to 2019; whereas in the northern Bering Sea, temperatures decreased into the late 2000s and early 2010s before increasing (Fig. 2). Spring sea ice declined in both regions during the study period.\n\n100\n\n[arc2025:p102:table:00 | ArcticReportCard_full_report2025.pdf | page 102]\n[TABLE] Page 102 (Warming Waters and Borealization: Restructuring Ecosystem Dynamics in the Northern Bering and Chukchi Seas, 2002-2022)\nCaption: Table1. Summary of taxa in this essay, with habitat type, classification, and common name. Most were found in the Chukchi Sea and the northern Bering Sea, except sea stars and basket stars (NBS only), and sea cucumbers and brittle stars (CS only).\n| HabitatandClassification | Taxa | CommonName |\n| --- | --- | --- |\n| Pelagiczooplankton | Calanusmarshallae/glaciallis | Copepods |\n|  | Calanushyperboreus | Copepods |\n|  | Pseudocalanusspp | Copepods |\n|  | Euphausiacea | Krill |\n|  | Chaetognatha | Chaetognats |\n| Pelagicinvertebrate | Chrysaoramelanaster | NorthernSeaNettle |\n| Pelagicfish | Mallotusvillosus | Capelin |\n|  | Clupeapallasii | Herring |\n|  | Oncorhynchusgorbuscha | PinkSalmon |\n|  | Oncorhynchusnerka | SockeyeSalmon |\n| Benthicinfauna | Bivalvia | Bivalves |\n|  | Polychaeta | Bristleworms |\n|  | Crustacea | Crustaceans |\n|  | Amphipoda | Amphipods |\n| Benthicepifauna | Chionoecetesopilio | Snowcrab |\n|  | Phrynophiurida | Basketstars |\n|  | Ophiurida | Brittlestars |\n|  | Ascidiacea | Seasquirts |\n|  | Strongylocentrotidae | Seaurchins |\n|  | Dendrochirotida | Seacucumbers |\n|  | Asteroidea | Seastars |\n| Epibenthicfish | Boreogadussaida | Arcticcod |\n|  | Eleginusgracilis | Saffroncod |\n|  | Gaduschalcogrammus | Walleyepollock |\n|  | Gadusmacrocephalus | Pacificcod |\n|  | Limandaaspera | Yellowfinsole |\n|  | Pleuronectesquadrituberculatus | Alaskaplaice |",
+    "context_ids": [
+      "arc2025:p102:text:000",
+      "arc2025:p102:text:001",
+      "arc2025:p102:table:00"
+    ],
+    "elapsed_ms": 3525.82,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2473,
+      "output_tokens": 167,
+      "llm_seconds": 3.5251543000194943
+    }
+  },
+  {
+    "query_id": "adv_dev_table_03",
+    "split": "dev",
+    "group": "table",
+    "status": "answered",
+    "answer": "In Table 1 under Physical Indicators on page 133, GMASI (Autosnow Ice) is mentioned under the Essay Topic \"Lake Ice\" [arc2025:p133:table:00, arc2025:p133:text:002]. Regarding the Gaps entry, it states that data from in situ ice sensors \"have good coverage but are still limited,\" and that GMASI (Autosnow Ice) data \"are useless in winter but adds value in summer, and is useful for detecting snow under warm clouds in spring where surface stations are unavailable\" [arc2025:p133:table:00, arc2025:p133:text:002].",
+    "citations": [
+      "arc2025:p133:table:00",
+      "arc2025:p133:text:002"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p133:table:00",
+        "page": 133,
+        "modality": "table",
+        "crop_path": "data/adv_index/crops/p133_table_00.png",
+        "bbox": [
+          62.0,
+          68.6,
+          550.0,
+          703.7
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p133:text:002",
+        "page": 133,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          153.9,
+          544.0,
+          535.7,
+          756.4
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 133
+        },
+        "results": [
+          {
+            "id": "arc2025:p133:text:000",
+            "page": 133,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p133:text:001",
+            "page": 133,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p133:text:002",
+            "page": 133,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p133:table:00",
+            "page": 133,
+            "modality": "table",
+            "crop_path": "data/adv_index/crops/p133_table_00.png"
+          }
+        ],
+        "elapsed_ms": 0.11
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p133:text:000 | ArcticReportCard_full_report2025.pdf | page 133]\nTable 1. Summary of key observational gaps across Arctic observing systems grouped by indicator type: physical (blue), ecological (green), and integrated (orange).\n\nIndicator Type Essay Topic Gaps\n\nSea Ice\n\nPhysical Indicators\n\nNeed for more small-scale observations and better sampling of properties (e.g., impurities in snow and ice), alongside improved satellite data resolution and coverage, especially near coasts and for melt ponds. Reducing uncertainties in thickness estimations is crucial, particularly regarding snow cover and the availability of summer retrievals.\n\nGreenland Ice Sheet\n\nLow spatial resolution at the ice sheet edge, significant uncertainties in coastal ice sheet elevation, and limited site variation for in situ data collection.\n\nPrecipitation\n\n[arc2025:p133:text:001 | ArcticReportCard_full_report2025.pdf | page 133]\nMuch of the Arctic terrestrial drainage remains ungauged, with a lack of coverage in high elevations and other data- sparse regions, alongside a sharp decline in reporting gauges over recent decades. The sparse network is prone to precipitation undercatch errors that are difficult to correct, and short-term forecasts from reanalyses like ERA5 remain uncertain, particularly over high latitudes. Key datasets such as GPCC lack marine coverage, and while integration with reanalysis or satellite products (e.g., MSWEP) could improve monitoring, high-latitude ocean areas have yet to be properly evaluated.\n\nSea Surface Temperature\n\nSubsurface ocean temperature data are incomplete. Spatial resolution of satellite-derived SST is limited, especially in coastal regions where SST variability is significant.\n\nTerrestrial Snow Cover\n\nNeed for higher resolution in higher latitudes and mountain regions for global snow water equivalent products. Larger uncertainty in snow cover extent trends during fall and winter due to coarse resolution, difficulty distinguishing snow from clouds, and inconsistent temporal coverage has resulted in limited analysis for these seasons.\n\nSurface Air Temperature\n\n[arc2025:p133:text:002 | ArcticReportCard_full_report2025.pdf | page 133]\nSparse station coverage and relatively few weather stations add uncertainty to the early portion of the record for GHCNm data. Similarly, sparse surface air temperature observations in the Arctic before the satellite era increase uncertainty in the early years of the ERA5 reanalysis record.\n\nLake Ice\n\nData from in situ ice sensors have good coverage but are still limited. GMASI (Autosnow Ice) data are useless in winter but adds value in summer, and is useful for detecting snow under warm clouds in spring where surface stations are unavailable.\n\n131\n\n[arc2025:p133:table:00 | ArcticReportCard_full_report2025.pdf | page 133]\n[TABLE] Page 133 (Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change)\nCaption: Table 1. Summary of key observational gaps across Arctic observing systems grouped by indicator type: physical (blue), ecological (green), and integrated (orange).\n| IndicatorType | EssayTopic | Gaps |\n| --- | --- | --- |\n| Physical Indicators | SeaIce | Needformoresmall -scaleobservationsandbettersampling ofproperties(eg impuritiesinsnowandice) alongside . ., , improvedsatellitedataresolutionandcoverage especially , nearcoastsandformeltponds Reducinguncertaintiesin . thicknessestimationsiscrucial particularlyregardingsnow , coverandtheavailabilityofsummerretrievals . |\n|  | GreenlandIceSheet | Lowspatialresolutionattheicesheetedge significant , uncertaintiesincoastalicesheetelevation andlimitedsite , variationforinsitudatacollection . |\n|  | Precipitation | MuchoftheArcticterrestrialdrainageremainsungauged , withalackofcoverageinhighelevationsandotherdata- sparseregions alongsideasharpdeclineinreportinggauges , overrecentdecades Thesparsenetworkisproneto . precipitationundercatcherrorsthataredifficulttocorrect , andshort -termforecastsfromreanalyseslikeERA5remain uncertain particularlyoverhighlatitudes Keydatasetssuch , . asGPCClackmarinecoverage andwhileintegrationwith , reanalysisorsatelliteproducts(eg MSWEP)couldimprove . ., monitoring high -latitude ocean areas have yet to be , properlyevaluated . |\n|  | SeaSurface Temperature | Subsurfaceoceantemperaturedataareincomplete Spatial . resolution of satellite-derived SST is limited especially in , coastalregionswhereSSTvariabilityissignificant . |\n|  | TerrestrialSnow Cover | Needforhigherresolutioninhigherlatitudesandmountain regionsforglobalsnowwaterequivalentproducts Larger . uncertaintyinsnowcoverextenttrendsduringfalland winterduetocoarseresolution difficultydistinguishing , snowfromclouds andinconsistenttemporalcoveragehas , resultedinlimitedanalysisfortheseseasons . |\n|  | SurfaceAir Temperature | Sparsestationcoverageandrelativelyfewweatherstations adduncertaintytotheearlyportionoftherecordfor GHCNmdata Similarly sparsesurfaceairtemperature . , observationsintheArcticbeforethesatelliteeraincrease uncertaintyintheearlyyearsoftheERA5reanalysisrecord . |\n|  | LakeIce | Datafrominsituicesensorshavegoodcoveragebutarestill limited GMASI(AutosnowIce)dataareuselessinwinterbut . addsvalueinsummer andisusefulfordetectingsnow , underwarmcloudsinspringwheresurfacestationsare unavailable . |",
+    "context_ids": [
+      "arc2025:p133:text:000",
+      "arc2025:p133:text:001",
+      "arc2025:p133:text:002",
+      "arc2025:p133:table:00"
+    ],
+    "elapsed_ms": 6079.87,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2682,
+      "output_tokens": 230,
+      "llm_seconds": 6.079393000007258
+    }
+  },
+  {
+    "query_id": "adv_dev_img_01",
+    "split": "dev",
+    "group": "image_diagram",
+    "status": "answered",
+    "answer": "The eight Vital Signs categories listed inside the wheel diagram (Fig. 1) on page 7 are: Surface Air Temperature, Precipitation, Terrestrial Snow Cover, Tundra Greenness, Greenland Ice Sheet, Ocean Primary Productivity, Sea Ice, and Sea Surface Temperature [arc2025:p007:fig:00]. The trend box text for Terrestrial Snow Cover states: \"June snow cover extent reduced by 50% since 1967\" [arc2025:p007:fig:00].",
+    "citations": [
+      "arc2025:p007:fig:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p007:fig:00",
+        "page": 7,
+        "modality": "visual",
+        "crop_path": "data/adv_index/crops/p007_fig_00.png",
+        "bbox": [
+          58.0,
+          397.2,
+          539.8,
+          674.7
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 7
+        },
+        "results": [
+          {
+            "id": "arc2025:p007:text:000",
+            "page": 7,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p007:text:001",
+            "page": 7,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p007:text:002",
+            "page": 7,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p007:fig:00",
+            "page": 7,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p007_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.14
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p007:text:000 | ArcticReportCard_full_report2025.pdf | page 7]\nExecutive Summary\n\nhttps://doi.org/10.25923/nrzf-j897\n\nM. L. Druckenmiller1, R. L. Thoman2,3, and T. A. Moon1\n\n1National Snow and Ice Data Center, Cooperative Institute for Research in Environmental Sciences, University of Colorado Boulder, Boulder, CO, USA 2Alaska Center for Climate Assessment and Preparedness, University of Alaska Fairbanks, Fairbanks, AK, USA 3International Arctic Research Center, University of Alaska Fairbanks, Fairbanks, AK, USA\n\n[arc2025:p007:text:001 | ArcticReportCard_full_report2025.pdf | page 7]\nTo observe the Arctic is to take the pulse of the planet. The Arctic is warming several times faster than Earth as a whole, reshaping the northern landscapes, ecosystems, and livelihoods of Arctic peoples. Also transforming are the roles the Arctic plays in the global climate, economic, and societal systems. Arctic Report Card (ARC) 2025 marks the 20th annual installment of this report as a timely account of the state of the Arctic environment. Since its first publication in 2006, motivated by notable Arctic warming and change already underway, the Report Card has served as a peer-reviewed record of diverse environmental observations that together document an extraordinary, ongoing transformation. Its essays reveal the increasing pace, scale, and consequences of rapid environmental change across the Arctic’s Vital Signs (Fig. 1)—annually reported critical indicators of marine, terrestrial, and atmospheric processes—and other consequential parts of the Arctic system. This 20th anniversary edition reflects the Arctic’s trajectory, highlighting the persistence of long-term trends and the emergence of new and complex feedbacks and interactions (Figs. 2 and 3).\n\n[arc2025:p007:text:002 | ArcticReportCard_full_report2025.pdf | page 7]\nFig. 1. Arctic Report Card Vital Signs with selected noteworthy trends and observations. The ARC annually reports on eight Vital Sign topics. Vital Sign data records vary in length based on dataset availability and considerations to methodological continuity. The historical record periods are used when computing ranked observations. When reporting anomalies, Vital Signs currently use 1991-2020 as the 30-year reference period, except for Tundra Greenness (2000-24) and Ocean Primary Productivity (2003-24).\n\n5\n\n[arc2025:p007:fig:00 | ArcticReportCard_full_report2025.pdf | page 7]\n[VISUAL:DIAGRAM] Page 7 (Executive Summary)\nCaption: Fig. 1. Arctic Report Card Vital Signs with selected noteworthy trends and observations. The ARC annually reports on eight Vital Sign topics. Vital Sign data records vary in length based on dataset availability and considerations to methodological continuity. The historical record periods are used when computing ranked observations. When reporting anomalies, Vital Signs currently use 1991-2020 as the 30-year reference period, except for Tundra Greenness (2000-24) and Ocean Primary Productivity (2003-24).\nTitle: Arctic Report Card Vital Signs with selected noteworthy trends and observations\nAxes/Units/Legend: N/A\nDetails: A diagram titled 'Vital Signs' at the center showing eight core topics: Surface Air Temperature, Precipitation, Terrestrial Snow Cover, Tundra Greenness, Greenland Ice Sheet, Ocean Primary Productivity, Sea Ice, and Sea Surface Temperature. Associated noteworthy trends surrounding the diagram include: Surface Air Temperature - Arctic autumn and winter temperatures increasing twice as fast as for the globe since 2006; Precipitation - Arctic precipitation trend increasing in every season since 1950, with the greatest increase in winter; Terrestrial Snow Cover - June snow cover extent reduced by 50% since 1967; Tundra Greenness - Annual maximum tundra greenness increasing across most of Arctic since 1982; Greenland Ice Sheet - Net loss of Greenland ice has occurred every year since the late 1990s; Ocean Primary Productivity - Arctic annual net primary production increased by 30.5% since 2003; Sea Ice - 19 lowest September sea-ice extents in satellite record all within the last 19 years; Sea Surface Temperature - August mean SST north of 65°N increasing at ~0.3°C per decade.",
+    "context_ids": [
+      "arc2025:p007:text:000",
+      "arc2025:p007:text:001",
+      "arc2025:p007:text:002",
+      "arc2025:p007:fig:00"
+    ],
+    "elapsed_ms": 5633.8,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2387,
+      "output_tokens": 163,
+      "llm_seconds": 5.632978200010257
+    }
+  },
+  {
+    "query_id": "adv_dev_img_02",
+    "split": "dev",
+    "group": "image_diagram",
+    "status": "answered",
+    "answer": "In the bottom-right panel of Figure 1 on page 75 [arc2025:p075:fig:00], the researcher is wearing a bright orange backpack instrument [arc2025:p075:fig:00]. They are pointing a handheld sensor (likely a spectroradiometer) with their right hand [arc2025:p075:fig:00]. Inside the open black case resting on the tundra in front of them is a laptop computer [arc2025:p075:fig:00].",
+    "citations": [
+      "arc2025:p075:fig:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p075:fig:00",
+        "page": 75,
+        "modality": "visual",
+        "crop_path": "data/adv_index/crops/p075_fig_00.png",
+        "bbox": [
+          58.0,
+          58.0,
+          554.0,
+          439.5
+        ]
+      }
+    ],
+    "num_searches": 6,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 75
+        },
+        "results": [
+          {
+            "id": "arc2025:p075:text:000",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p075:text:001",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p075:fig:00",
+            "page": 75,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p075_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.06
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "args": {
+          "query": "bottom-right panel researcher backpack instrument pointing right hand open black case tundra",
+          "page": 75,
+          "modality": "visual"
+        },
+        "results": [
+          {
+            "id": "arc2025:p075:fig:00",
+            "page": 75,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p075_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 673.79
+      },
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 75
+        },
+        "results": [
+          {
+            "id": "arc2025:p075:text:000",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p075:text:001",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p075:fig:00",
+            "page": 75,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p075_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.07
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "args": {
+          "query": "bottom-right panel researcher backpack instrument color pointing right hand open black case tundra contents",
+          "modality": "visual",
+          "page": 75
+        },
+        "results": [
+          {
+            "id": "arc2025:p075:fig:00",
+            "page": 75,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p075_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 663.31
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "args": {
+          "query": "backpack instrument color pointing right hand open black case tundra"
+        },
+        "results": [
+          {
+            "id": "arc2025:p075:fig:00",
+            "page": 75,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p075_fig_00.png"
+          },
+          {
+            "id": "arc2025:p075:text:000",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p132:fig:00",
+            "page": 132,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p132_fig_00.png"
+          },
+          {
+            "id": "arc2025:p077:fig:00",
+            "page": 77,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p077_fig_00.png"
+          },
+          {
+            "id": "arc2025:p131:fig:00",
+            "page": 131,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p131_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 1.34
+      },
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 75
+        },
+        "results": [
+          {
+            "id": "arc2025:p075:text:000",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p075:text:001",
+            "page": 75,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p075:fig:00",
+            "page": 75,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p075_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.1
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p075:text:000 | ArcticReportCard_full_report2025.pdf | page 75]\nFig. 1. The composition and structure of tundra vegetation varies depending on landscape characteristics as well as climate. Tundra shrubs tend to be prominent in riverine corridors and well drained upland landscapes (upper left; Seward Peninsula, Alaska). Coastal tundra supports highly productive herbaceous vegetation that, in turn, supports large concentrations of migratory waterbirds (upper right; Baldwin Peninsula, Alaska). Living vegetation plays a critical role in protecting underlying permafrost, but permafrost disturbances can abruptly transform the land surface (lower left; thermo-erosional gully, Seward Baldwin Peninsula, Alaska). Field studies are crucial to determining the drivers and consequences of Arctic greening (lower right, northeastern Greenland). Alaska photos credit G. V. Frost, Greenland photo credit J. J. Assmann.\n\nSpaceborne monitoring of tundra greenness\n\n[arc2025:p075:text:001 | ArcticReportCard_full_report2025.pdf | page 75]\nThe earliest consistent spaceborne record of Arctic vegetation began in 1982 with the launch of the Advanced Very High Resolution Radiometer (AVHRR) sensor; however, funding for the AVHRR-derived Global Inventory Modeling and Mapping Studies 3g V1.2 dataset (GIMMS-3g+), which long underpinned reports of Arctic greening, ceased in 2025 after 43 years of record (see essay Assessing the State of the Arctic Observing Network). At present, the Moderate Resolution Imaging Spectroradiometer (MODIS) and the Landsat series of satellites provide the longest active spaceborne records of tundra greenness. MODIS is nearing the end of its service life, but continuity of this important record will be maintained by its successor, the Visible Infrared Imaging Radiometer Suite (VIIRS). All of these instruments monitor vegetation greenness using the Normalized Difference Vegetation Index (NDVI), a spectral metric of plant biomass that exploits the unique way in which green vegetation absorbs and reflects visible and near-infrared light. We summarize greenness observations for each growing season by calculating the\n\n73\n\n[arc2025:p075:fig:00 | ArcticReportCard_full_report2025.pdf | page 75]\n[VISUAL:PHOTO] Page 75 (Tundra Greenness)\nCaption: Fig. 1. The composition and structure of tundra vegetation varies depending on landscape characteristics as well as climate. Tundra shrubs tend to be prominent in riverine corridors and well drained upland landscapes (upper left; Seward Peninsula, Alaska). Coastal tundra supports highly productive herbaceous vegetation that, in turn, supports large concentrations of migratory waterbirds (upper right; Baldwin Peninsula, Alaska). Living vegetation plays a critical role in protecting underlying permafrost, but permafrost disturbances can abruptly transform the land surface (lower left; thermo-erosional gully, Seward Baldwin Peninsula, Alaska). Field studies are crucial to determining the drivers and consequences of Arctic greening (lower right, northeastern Greenland). Alaska photos credit G. V. Frost, Greenland photo credit J. J. Assmann.\nTitle: Tundra vegetation variation across landscape characteristics and climate\nAxes/Units/Legend: N/A\nDetails: A four-panel figure displaying different tundra landscapes and field studies. Upper left: Seward Peninsula, Alaska, showing riverine corridors and well-drained upland landscapes where tundra shrubs are prominent. Upper right: Baldwin Peninsula, Alaska, showing coastal tundra supporting highly productive herbaceous vegetation for migratory waterbirds. Lower left: Seward Baldwin Peninsula, Alaska, showing a thermo-erosional gully where permafrost disturbances abruptly transform the land surface. Lower right: Northeastern Greenland, showing field studies using equipment in the tundra to determine drivers and consequences of Arctic greening.\n\n[arc2025:p132:fig:00 | ArcticReportCard_full_report2025.pdf | page 132]\n[VISUAL:CHART] Page 132 (Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change)\nCaption: Fig. 3. Societal benefits supported by ARC essay ecological indicators: This depiction of the assessed societal benefits for ecological indicators provides greater detail on the specific strengths identified and the level of AON performance for the five most relevant SBAs for ecological indicators. Natural Resource Management and Community Resilience SBAs were also identified as relevant, but did not rise to the same level as those pictured here.\nTitle: ARC Essay, Ecological Indicators - Societal Benefit Areas\nAxes/Units/Legend: Line thickness indicates criticality (thicker lines indicate higher criticality, thinner lines indicate lower criticality). Line color indicates performance rating (1-100 scale from yellow at 1 to purple at 100).\nDetails: A Sankey diagram mapping Ecological Indicators (left) to Societal Benefit Areas (right). Ecological Indicators include: Migratory Caribou, Pollinators, Tundra Greenness, Ice Seals of Alaska, Arctic Geese, Ocean Primary Productivity, and Beavers. Societal Benefit Areas include: Terrestrial, Freshwater; Fundamental Understanding; Environmental Quality; Food Security; and Marine, Coastal. Performance ratings correspond to a continuous color scale ranging from 1 to 100.\n\n[arc2025:p077:fig:00 | ArcticReportCard_full_report2025.pdf | page 77]\n[VISUAL:MAP] Page 77 (Tundra Greenness)\nCaption: Fig. 3. Magnitude of the MaxNDVI trend calculated as the change per decade using ordinary least squares regression for Arctic tundra (solid colors), and boreal forest north of 60° latitude (muted colors) during (a) 2000-25 based on the MODIS MCD13A1 v6.1 dataset, and (b) 1982-2024 based on the no longer active AVHRR GIMMS 3-g+ dataset.\nTitle: Magnitude of the MaxNDVI trend calculated as the change per decade using ordinary least squares regression\nAxes/Units/Legend: Legend range: -0.04 to 0.04 (unitless/decade) with color steps at -0.04, -0.03, -0.02, -0.01, 0, 0.01, 0.02, 0.03, 0.04\nDetails: Two polar projection maps labeled (a) MCD13A1 MaxNDVI Trend, 2000-2025 (unitless/decade) and (b) AVHRR GIMMS3G Max-NDVI Trend, 1982-2024 (unitless/decade). Map (a) shows tundra greenness trends from 2000-2025 based on MODIS MCD13A1 v6.1 dataset, while map (b) shows trends from 1982-2024 based on AVHRR GIMMS3G dataset. Solid colors represent Arctic tundra and muted colors represent boreal forest north of 60° latitude. Color scale ranges from brown (negative trends, down to -0.04) through white (near zero) to green (positive trends, up to 0.04).\n\n[arc2025:p131:fig:00 | ArcticReportCard_full_report2025.pdf | page 131]\n[VISUAL:CHART] Page 131 (Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change)\nCaption: Fig. 2. Societal benefits supported by ARC essay physical indicators: This depiction of the assessed societal benefits for physical indicators provides greater detail on the specific strengths identified and the level of AON performance for the five most relevant SBAs for physical indicators.\nTitle: ARC Essay, Physical Indicators - Societal Benefit Areas\nAxes/Units/Legend: Line thickness indicates criticality (thicker lines = higher criticality, thinner lines = lower criticality). Line color indicates performance on a scale of 1-100 (legend ranges from yellow at 1 through light green, light blue, purple to dark purple at 100).\nDetails: The chart is a Sankey diagram mapping 7 physical indicators (Lake Ice, Terrestrial Snow Cover, Greenland Ice Sheet, Sea Surface Temp, Precipitation, Surface Air Temp, Sea Ice) on the left to 5 Societal Benefit Areas on the right (Fundamental Understanding, Environmental Quality, Weather and Climate, Marine, Coastal, Terrestrial, Freshwater). The flows are color-coded by performance rating (1-100) and vary in thickness based on criticality.",
+    "context_ids": [
+      "arc2025:p075:text:000",
+      "arc2025:p075:text:001",
+      "arc2025:p075:fig:00",
+      "arc2025:p132:fig:00",
+      "arc2025:p077:fig:00",
+      "arc2025:p131:fig:00"
+    ],
+    "elapsed_ms": 20073.7,
+    "token_usage": {
+      "llm_calls": 7,
+      "prompt_tokens": 22537,
+      "output_tokens": 321,
+      "llm_seconds": 18.733675899988157
+    }
+  },
+  {
+    "query_id": "adv_dev_img_03",
+    "split": "dev",
+    "group": "image_diagram",
+    "status": "answered",
+    "answer": "In Fig. 2 on page 112 [arc2025:p112:text:000], there are two people standing beside the wooden building [arc2025:p112:fig:00]. The large bright blue cylindrical container mounted on a wooden rack next to them is a blue barrel [arc2025:p112:fig:00]. The red container lying on the snowy slope in the lower-left foreground is a red fuel container (or red jerry can) [arc2025:p112:fig:00].",
+    "citations": [
+      "arc2025:p112:text:000",
+      "arc2025:p112:fig:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p112:text:000",
+        "page": 112,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          422.1,
+          523.4,
+          756.4
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p112:fig:00",
+        "page": 112,
+        "modality": "visual",
+        "crop_path": "data/adv_index/crops/p112_fig_00.png",
+        "bbox": [
+          58.0,
+          58.0,
+          554.0,
+          439.0
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 112
+        },
+        "results": [
+          {
+            "id": "arc2025:p112:text:000",
+            "page": 112,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p112:fig:00",
+            "page": 112,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p112_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.1
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p112:text:000 | ArcticReportCard_full_report2025.pdf | page 112]\nFig. 2. Coastal erosion monitoring in Golovin, Alaska, is conducted by local observers documenting shoreline change as part of regional monitoring efforts. Such observations provide critical information for understanding climate impacts in vulnerable communities. Credit: Hannah-Marie Ladd.\n\n110\n\n[arc2025:p112:fig:00 | ArcticReportCard_full_report2025.pdf | page 112]\n[VISUAL:PHOTO] Page 112 (Weaving the Seen and Unseen: Stewarding the Arctic Means Sustaining Indigenous Monitoring)\nCaption: Fig. 2. Coastal erosion monitoring in Golovin, Alaska, is conducted by local observers documenting shoreline change as part of regional monitoring efforts. Such observations provide critical information for understanding climate impacts in vulnerable communities. Credit: Hannah-Marie Ladd.\nTitle: Coastal erosion monitoring in Golovin, Alaska\nAxes/Units/Legend: N/A\nDetails: A photo showing two local observers standing near an eroded shoreline in Golovin, Alaska, documenting shoreline change. A weathered wooden building is in the background with a blue barrel on a stand, and snow is visible on the lower ground towards the left.",
+    "context_ids": [
+      "arc2025:p112:text:000",
+      "arc2025:p112:fig:00"
+    ],
+    "elapsed_ms": 3505.6,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 1683,
+      "output_tokens": 199,
+      "llm_seconds": 3.505008199994336
+    }
+  },
+  {
+    "query_id": "adv_dev_chart_01",
+    "split": "dev",
+    "group": "chart",
+    "status": "answered",
+    "answer": "Based on the Winter (panel c) surface air temperature time series chart on page 15, the 2006–2025 warming trends are 0.87°C dec⁻¹ for the Arctic (red) and 0.35°C dec⁻¹ for the globe (blue) [arc2025:p015:fig:00]. The Arctic winter warming rate exceeds the global winter rate by 0.52°C dec⁻¹.",
+    "citations": [
+      "arc2025:p015:fig:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p015:fig:00",
+        "page": 15,
+        "modality": "visual",
+        "crop_path": "data/adv_index/crops/p015_fig_00.png",
+        "bbox": [
+          58.0,
+          386.7,
+          575.4,
+          720.4
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 15
+        },
+        "results": [
+          {
+            "id": "arc2025:p015:text:000",
+            "page": 15,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p015:text:001",
+            "page": 15,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p015:fig:00",
+            "page": 15,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p015_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.12
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p015:text:000 | ArcticReportCard_full_report2025.pdf | page 15]\nof sea ice across the Arctic marginal seas (see essay Sea Ice), while increasing summer temperatures are associated with more frequent and devastating high-latitude wildland fires across much of Alaska (York et al. 2020) and northern Canada (Jain et al. 2024). Surface air temperature observations from weather stations often provide localized, long-term records, which are augmented by atmospheric reanalyses to provide a more complete spatial representation of multidecadal Arctic change.\n\nConsistent with previous Arctic Report Cards, the sections that follow examine this past year’s Arctic surface air temperatures in an historical context. For this year’s 20th anniversary issue of the Arctic Report Card, we also compare recent Arctic air temperature changes since 2006 against global rates of change. We subsequently highlight seasonal surface air temperature anomaly patterns and extremes and discuss associated large-scale atmospheric circulation patterns.\n\nAnnual and seasonal air temperatures in context\n\n[arc2025:p015:text:001 | ArcticReportCard_full_report2025.pdf | page 15]\nAnnual air temperatures are averaged for the water year (i.e., October 2024-September 2025 represents 2025), while three-month seasons are referenced as follows: autumn 2024 (October-December [OND]), winter (January-March [JFM]), spring (April-June [AMJ]), and summer 2025 (July-September [JAS]).\n\nAnnual Arctic and global surface air temperature anomalies (i.e., differences from average temperature; see Methods and data) are shown in Fig. 1a. This past year was the warmest on record since 1900 with anomalies of 1.60°C above the 1991-2020 mean. Arctic temperature anomalies continue to be larger than those measured at the global scale. This is the 12th consecutive year where pan-Arctic temperature departures were above the global average. The years 2016-25 have been the Arctic’s warmest ten individual years on record, punctuated by several new annual and seasonal records (Fig. 2).\n\nFig. 1. Long-term time series of (a) annual, (b) autumn, (c) winter, (d) spring, and (e) summer surface air\n\n13\n\n[arc2025:p015:fig:00 | ArcticReportCard_full_report2025.pdf | page 15]\n[VISUAL:CHART] Page 15 (Surface Air Temperature)\nCaption: Fig. 1. Long-term time series of (a) annual, (b) autumn, (c) winter, (d) spring, and (e) summer surface air\nTitle: Long-term time series of (a) annual, (b) autumn, (c) winter, (d) spring, and (e) summer surface air temperature\nAxes/Units/Legend: Y-axis: temperature anomaly in °C (ranging from -4 to 2). X-axis: time in years from 1900 to 2020 (specifically 1900, 1920, 1940, 1960, 1980, 2000, 2020). Legend series: T_ARCTIC (red line) and T_GLOBAL (blue line).\nDetails: The figure contains five line charts labeled (a) Annual, (b) Autumn, (c) Winter, (d) Spring, and (e) Summer surface air temperatures. Each chart displays trends for T_ARCTIC (red) and T_GLOBAL (blue). In chart (a) Annual: T_ARCTIC 1900-2025 = 0.18°C dec⁻¹, T_GLOBAL 1900-2025 = 0.10°C dec⁻¹, and from 2006-2025: T_ARCTIC = 0.55°C dec⁻¹, T_GLOBAL = 0.31°C dec⁻¹. In chart (b) Autumn: T_ARCTIC 1900-2024 = 0.20°C dec⁻¹, T_GLOBAL 1900-2024 = 0.10°C dec⁻¹, and from 2006-2024: T_ARCTIC = 0.77°C dec⁻¹, T_GLOBAL = 0.33°C dec⁻¹. In chart (c) Winter: T_ARCTIC 1900-2025 = 0.24°C dec⁻¹, T_GLOBAL 1900-2025 = 0.11°C dec⁻¹, and from 2006-2025: T_ARCTIC = 0.87°C dec⁻¹, T_GLOBAL = 0.35°C dec⁻¹. In chart (d) Spring: T_ARCTIC 1900-2025 = 0.17°C dec⁻¹, T_GLOBAL 1900-2025 = 0.10°C dec⁻¹, and from 2006-2025: T_ARCTIC = 0.34°C dec⁻¹, T_GLOBAL = 0.28°C dec⁻¹. In chart (e) Summer: T_ARCTIC 1900-2025 = 0.12°C dec⁻¹, T_GLOBAL 1900-2025 = 0.10°C dec⁻¹, and from 2006-2025: T_ARCTIC = 0.31°C dec⁻¹, T_GLOBAL = 0.32°C dec⁻¹. A vertical dashed black line marks the year 2006 across all plots, separating the long-term trend from the post-2006 trend.",
+    "context_ids": [
+      "arc2025:p015:text:000",
+      "arc2025:p015:text:001",
+      "arc2025:p015:fig:00"
+    ],
+    "elapsed_ms": 3506.33,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2809,
+      "output_tokens": 153,
+      "llm_seconds": 3.5057579999993322
+    }
+  },
+  {
+    "query_id": "adv_dev_chart_02",
+    "split": "dev",
+    "group": "chart",
+    "status": "answered",
+    "answer": "In Fig. 1, panel (b) (June SCE Anomaly) on page 30, the filled 2025 circles for both Eurasia (red) and North America (black) are negative. Based on the visual representation in the chart, the standardized value for the Eurasian (red) anomaly is approximately -0.7, and the standardized value for the North American (black) anomaly is approximately -1.4 [arc2025:p030:fig:00].",
+    "citations": [
+      "arc2025:p030:fig:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p030:fig:00",
+        "page": 30,
+        "modality": "visual",
+        "crop_path": "data/adv_index/crops/p030_fig_00.png",
+        "bbox": [
+          58.0,
+          144.6,
+          550.8,
+          395.1
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 30
+        },
+        "results": [
+          {
+            "id": "arc2025:p030:text:000",
+            "page": 30,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p030:text:001",
+            "page": 30,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p030:fig:00",
+            "page": 30,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p030_fig_00.png"
+          },
+          {
+            "id": "arc2025:p030:fig:01",
+            "page": 30,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p030_fig_01.png"
+          }
+        ],
+        "elapsed_ms": 0.12
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p030:text:000 | ArcticReportCard_full_report2025.pdf | page 30]\nperiods listed in figure captions). Weekly SCE anomalies (Fig. 2) indicate that Eurasian Arctic SCE was already below normal in April (Fig. 2a; see also the discussion of SWE below), and while it recovered slightly during May, by June it dropped to values typical of recent years (typical recent values illustrated in Fig. 2 by the average anomalies seen over the 2010-24 period). Across North America, SCE was very close to normal until the end of May (Fig. 2b), after which it fell sharply to values even lower than those typical of recent years.\n\nFig. 1. Standardized monthly Arctic snow cover extent anomalies (circles) from 1967 to 2025 for (a) May, and (b) June for the Eurasian (red) and North American (black) sectors. Filled circles highlight 2025 anomalies. Lines depict 5-year running averages of the anomalies. Anomalies relative to the 1991-2020 baseline. Source: NOAA Climate Data Record of Northern Hemisphere SCE; available from 1967 to present.\n\n[arc2025:p030:text:001 | ArcticReportCard_full_report2025.pdf | page 30]\nFig. 2. Weekly Arctic snow cover extent anomalies from April to July 2025 (black) for the (a) Eurasian and (b) North American sectors. Also depicted are average anomalies for the historical 1967-81 period (green) and the recent 2010-24 period (brown). Panel (c) shows the difference in snowmelt timing between the historical and recent time periods for both sectors of the Arctic using the same colors as in (a) and (b). Black horizontal lines in panel (c) depict differences of two weeks in snowmelt timing. Anomalies relative to 1991-2020 baseline. Source: NOAA Climate Data Record of Northern Hemisphere SCE; available from 1967 to present.\n\nCorresponding SCD anomalies (Fig. 3) indicate a mix of early and late snow onset over Eurasia but primarily late onset over North America, except for central Alaska (Fig 3a). Snow melt at the end of the 2024/25 snow season was earlier than normal over northern Europe and eastern Siberia, but later than normal over the central portion of the continent (Fig 3b). Across the North American Arctic, melt was later than normal over the western parts of the region but earlier than normal over the central and\n\n28\n\n[arc2025:p030:fig:00 | ArcticReportCard_full_report2025.pdf | page 30]\n[VISUAL:CHART] Page 30 (Terrestrial Snow Cover)\nCaption: Fig. 1. Standardized monthly Arctic snow cover extent anomalies (circles) from 1967 to 2025 for (a) May, and (b) June for the Eurasian (red) and North American (black) sectors. Filled circles highlight 2025 anomalies. Lines depict 5-year running averages of the anomalies. Anomalies relative to the 1991-2020 baseline. Source: NOAA Climate Data Record of Northern Hemisphere SCE; available from 1967 to present.\nTitle: Standardized monthly Arctic snow cover extent anomalies from 1967 to 2025 for May and June\nAxes/Units/Legend: Y-axis: May SCE Anomaly and June SCE Anomaly, ranging from -4 to 4. X-axis: Year, ranging from 1970 to 2020. Legend: North American Arctic (black circles), Eurasian Arctic (red circles).\nDetails: The figure shows two subplots, (a) May SCE Anomaly and (b) June SCE Anomaly, plotting standardized Arctic snow cover extent anomalies from 1967 to 2025. Subplot (a) for May shows fluctuations ranging generally between -3 and 3, with filled circles highlighting 2025 anomalies (red and black near -0.5). Subplot (b) for June shows anomalies ranging between -3 and 3, with 2025 filled circles shown near -1.4 (black) and -0.7 (red). Lines depict 5-year running averages of the anomalies relative to the 1991-2020 baseline.\n\n[arc2025:p030:fig:01 | ArcticReportCard_full_report2025.pdf | page 30]\n[VISUAL:CHART] Page 30 (Terrestrial Snow Cover)\nCaption: Fig. 2. Weekly Arctic snow cover extent anomalies from April to July 2025 (black) for the (a) Eurasian and (b) North American sectors. Also depicted are average anomalies for the historical 1967-81 period (green) and the recent 2010-24 period (brown). Panel (c) shows the difference in snowmelt timing between the historical and recent time periods for both sectors of the Arctic using the same colors as in (a) and (b). Black horizontal lines in panel (c) depict differences of two weeks in snowmelt timing. Anomalies relative to 1991-2020 baseline. Source: NOAA Climate Data Record of Northern Hemisphere SCE; available from 1967 to present.\nTitle: Weekly Arctic snow cover extent anomalies from April to July 2025 for Eurasian and North American sectors\nAxes/Units/Legend: {'chart_a': {'y_axis_title': 'Difference from Normal', 'y_axis_units': 'millions of square kilometers', 'y_range': [-1.0, 2.0], 'x_axis_title': 'week of year', 'x_range': [15, 30]}, 'chart_b': {'y_axis_title': 'Difference from Normal', 'y_axis_units': 'millions of square kilometers', 'y_range': [-1.0, 1.0], 'x_axis_title': 'week of year', 'x_range': [15, 30], 'legend': ['2025 Anomaly', 'Historical Average (1967-1981)', 'Recent Average (2010-2024)']}, 'chart_c': {'y_axis_title': 'Percent of Winter Snow Extent', 'y_axis_units': 'percent', 'y_range': [0, 100], 'x_axis_title': 'week of year', 'x_range': [15, 30], 'legend': ['Eurasia', 'N. America']}}\nDetails: Figure 2 presents weekly Arctic snow cover extent anomalies from April to July 2025 (black bars) alongside historical (1967-1981, green) and recent (2010-2024, brown) averages. Panel (a) shows the Eurasian sector, where 2025 anomalies (black) show large negative values reaching around -0.7 to -0.9 million square kilometers from mid-May through June, while historical and recent averages show positive anomalies reaching up to roughly 2.0 million square kilometers. Panel (b) shows the North American sector, where 2025 anomalies are also prominently negative during May-June (reaching down to ~ -0.7 million square kilometers), with historical/recent averages showing positive anomalies up to ~1.0 million square kilometers. Panel (c) shows the percent of winter snow extent over time for Eurasia and N. America, highlighting differences in snowmelt timing between historical and recent periods with black horizontal lines depicting differences of two weeks in snowmelt timing.",
+    "context_ids": [
+      "arc2025:p030:text:000",
+      "arc2025:p030:text:001",
+      "arc2025:p030:fig:00",
+      "arc2025:p030:fig:01"
+    ],
+    "elapsed_ms": 3196.74,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 3230,
+      "output_tokens": 154,
+      "llm_seconds": 3.1962194999941858
+    }
+  },
+  {
+    "query_id": "adv_dev_chart_03",
+    "split": "dev",
+    "group": "chart",
+    "status": "answered",
+    "answer": "Based on the MaxNDVI time series plot (Fig. 2) on page 76 [arc2025:p076:fig:00], the MODIS Eurasia (red) dataset curve consistently shows the highest maximum NDVI values (~0.58–0.63), while the MODIS North America (blue) dataset curve shows the lowest (~0.40–0.45) [arc2025:p076:fig:00]. The MODIS Circumarctic (black) curve peaks near ~0.52 in the year 2024 [arc2025:p076:fig:00].",
+    "citations": [
+      "arc2025:p076:fig:00"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p076:fig:00",
+        "page": 76,
+        "modality": "visual",
+        "crop_path": "data/adv_index/crops/p076_fig_00.png",
+        "bbox": [
+          116.9,
+          304.3,
+          495.1,
+          624.2
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 76
+        },
+        "results": [
+          {
+            "id": "arc2025:p076:text:000",
+            "page": 76,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p076:text:001",
+            "page": 76,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p076:text:002",
+            "page": 76,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p076:text:003",
+            "page": 76,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p076:fig:00",
+            "page": 76,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p076_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.14
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p076:text:000 | ArcticReportCard_full_report2025.pdf | page 76]\nMaximum NDVI (MaxNDVI), representing vegetation biomass at the height of the Arctic summer, typically during July and August.\n\n[arc2025:p076:text:001 | ArcticReportCard_full_report2025.pdf | page 76]\nAll three long-term records show increasing annual maximum tundra greenness (MaxNDVI) across most of the circumpolar Arctic during 1982-2024 (GIMMS-3g+) and 2000-25 (MODIS and Landsat), respectively (Fig. 2). MODIS (Fig. 3a), GIMMS-3g+ (Fig. 3b), and Landsat (not shown) all display widespread greening trends in continental Eurasia and North America, except for portions of southwestern Alaska, and central and northeastern Siberia where flat or negative (“browning”) trends are evident. Trends in the Canadian Arctic Archipelago are somewhat mixed, which may be partly due to different observational periods among sensors, as well as observational challenges posed by the very short growing season, persistent cloudiness, and high interannual variability in snowmelt and surface water in High Arctic environments (Zemlianskii et al. 2025). Regional contrasts in greening highlight the complexity of Arctic change and the rich web of interactions that exist between tundra ecosystems and the local properties of sea ice (see essay Sea Ice), permafrost, seasonal snow (see essay Terrestrial Snow Cover), soil composition and moisture, microtopography, disturbance processes, wildlife, and human activ\n\n[arc2025:p076:text:002 | ArcticReportCard_full_report2025.pdf | page 76]\nities (Frost et al. 2025). Understanding the underlying drivers of complex Arctic trends is important for improved monitoring and prediction of tundra ecosystem functions and the consequences of Arctic change on the global carbon cycle.\n\n[arc2025:p076:text:003 | ArcticReportCard_full_report2025.pdf | page 76]\nFig. 2. Time-series of mean MaxNDVI for Arctic tundra from the MODIS MCD13A1 v6.1 (2000-25) dataset for the Eurasian Arctic (red), North American Arctic (blue), and the circumpolar Arctic (black), and from the Landsat Collection 2 (2000-25; pink) and AVHRR GIMMS-3g+ (1982-2024; gray) datasets.\n\n74\n\n[arc2025:p076:fig:00 | ArcticReportCard_full_report2025.pdf | page 76]\n[VISUAL:CHART] Page 76 (Tundra Greenness)\nCaption: Fig. 2. Time-series of mean MaxNDVI for Arctic tundra from the MODIS MCD13A1 v6.1 (2000-25) dataset for the Eurasian Arctic (red), North American Arctic (blue), and the circumpolar Arctic (black), and from the Landsat Collection 2 (2000-25; pink) and AVHRR GIMMS-3g+ (1982-2024; gray) datasets.\nTitle: Time-series of mean MaxNDVI for Arctic tundra\nAxes/Units/Legend: Y-axis: maximum NDVI (unitless) ranging from 0.40 to 0.65. X-axis: Years ranging from 1980 to 2025. Legend: MODIS Eurasia (red), AVHRR Circumarctic (gray), MODIS Circumarctic (black), Landsat Circumarctic (pink), MODIS North America (blue).\nDetails: The chart illustrates annual fluctuations and trends in maximum NDVI across different datasets from 1982 to 2025. AVHRR Circumarctic ranges from 1982 to 2024, showing general upward variability with values around 0.47 to 0.57. MODIS Eurasia, MODIS Circumarctic, Landsat Circumarctic, and MODIS North America span the 2000 to 2025 period. MODIS Eurasia shows the highest values, hovering between 0.58 and 0.63. MODIS Circumarctic values range between 0.47 and 0.52. Landsat Circumarctic ranges from approximately 0.45 to 0.48. MODIS North America shows the lowest values, generally ranging between 0.40 and 0.45.",
+    "context_ids": [
+      "arc2025:p076:text:000",
+      "arc2025:p076:text:001",
+      "arc2025:p076:text:002",
+      "arc2025:p076:text:003",
+      "arc2025:p076:fig:00"
+    ],
+    "elapsed_ms": 2725.93,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2546,
+      "output_tokens": 196,
+      "llm_seconds": 2.7250747000070987
+    }
+  },
+  {
+    "query_id": "adv_dev_multihop_01",
+    "split": "dev",
+    "group": "multi_hop",
+    "status": "answered",
+    "answer": "For the 2024/25 water year, the Arctic experienced its wettest year on record [arc2025:p021:text:000, arc2025:p022:text:001]. Regarding the four seasons, spring ranked as the highest on record [arc2025:p022:text:001], while autumn and winter both ranked as the 4th highest [arc2025:p022:text:001]. The single season that was unusually dry was summer, which ranked as the 35th highest [arc2025:p022:text:001].",
+    "citations": [
+      "arc2025:p021:text:000",
+      "arc2025:p022:text:001"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p021:text:000",
+        "page": 21,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          70.3,
+          542.0,
+          404.2
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p022:text:001",
+        "page": 22,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          155.1,
+          540.2,
+          756.4
+        ]
+      }
+    ],
+    "num_searches": 2,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 21
+        },
+        "results": [
+          {
+            "id": "arc2025:p021:text:000",
+            "page": 21,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p021:text:001",
+            "page": 21,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p021:text:002",
+            "page": 21,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.09
+      },
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 22
+        },
+        "results": [
+          {
+            "id": "arc2025:p022:text:000",
+            "page": 22,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p022:text:001",
+            "page": 22,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.07
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p021:text:000 | ArcticReportCard_full_report2025.pdf | page 21]\nPrecipitation\n\nhttps://doi.org/ 10.25923/11nn-hn03\n\nM. C. Serreze1, S. Bigalke2, R. Lader3, A. Crawford4, and T. J. Ballinger3\n\n1National Snow and Ice Data Center, Cooperative Institute for Research in Environmental Sciences, University of Colorado Boulder, Boulder, CO, USA 2Department of Geography, Portland State University, Portland, OR, USA 3International Arctic Research Center, University of Alaska Fairbanks, Fairbanks, AK, USA 4Department of Environment and Geography, University of Manitoba, Winnipeg, MB, Canada\n\nHeadlines\n\n• Precipitation averaged across the Arctic for water year 2024/25 (October 2024-September 2025) was at a record high, and precipitation totals for the winter, spring, and autumn seasons were each in the top five highest, reinforcing positive trends in Arctic precipitation over the 1950- 2025 period. • Summer was unusually dry, notably over parts of Eurasia and Canada. • An intensifying water cycle with more extreme precipitation events threatens to further disrupt Arctic ecosystems, infrastructure, and communities.\n\nIntroduction\n\n[arc2025:p021:text:001 | ArcticReportCard_full_report2025.pdf | page 21]\nAnnual precipitation over the Arctic region, taken here as poleward of 60° N, is characterized by high totals over the Atlantic sector due to open water and the frequent passage of storm systems, locally exceeding 2000 mm, and generally dry conditions elsewhere. Polar desert, with annual precipitation of 250 mm or less, characterizes much of the Canadian Arctic Archipelago and central Arctic Ocean, reflecting cold conditions and distance from moisture sources. However, within these patterns, there is strong seasonality and local to regional variability related largely to the passage of storms and forced uplift of air masses by orography (orographic precipitation). Convective precipitation (thunderstorms), caused by strong surface heating, is found over land areas in summer. However, convective precipitation also occurs over the ice-free ocean in some circumstances.\n\n[arc2025:p021:text:002 | ArcticReportCard_full_report2025.pdf | page 21]\nFor the Arctic as a whole, annual precipitation for the October 2024-September 2025 water year was the highest on record. This has reinforced upward trends in precipitation as observed over the period 1950- 2025. The year 2025 also saw the widespread occurrence of extreme precipitation events in winter, as well as summer dryness. As the water cycle intensifies and extreme precipitation events become more common (Yu and Zhong 2021; Dou et al. 2022), disruption to ecosystems (e.g., Christensen et al. 2021; Serreze et al. 2021) and human infrastructure (e.g., Hansen et al. 2014; Fox et al. 2023) will further impact Arctic communities.\n\nAs with other essays in Arctic Report Card 2025, water-year seasons are defined as autumn (October- December), winter (January-March), spring (April-June), and summer (July- September). Anomalies are relative to the 1991-2020 average. The results presented here use both precipitation gauges and atmospheric reanalysis data, which are derived by assimilating observations with output from numerical\n\n19\n\n[arc2025:p022:text:000 | ArcticReportCard_full_report2025.pdf | page 22]\nweather prediction models. Atmospheric reanalysis data are helpful for filling in the many gaps in the sparse precipitation gauge network in the Arctic, especially over the Arctic Ocean, though in general in situ precipitation measurements are not assimilated.\n\nPrecipitation at a glance\n\n[arc2025:p022:text:001 | ArcticReportCard_full_report2025.pdf | page 22]\nThe 2024/25 water year included several prominent features. Record-high precipitation for spring, and high ranks for autumn (4th highest) and winter (4th highest) stand in contrast to an unusually dry summer (35th highest). However, despite summer dryness, the water year, as a whole, ranked as the wettest on record. Regionally, below-average precipitation in autumn over the Barents Sea contrasted above-average precipitation over northern Europe, pointing to an eastward shift in storm tracks relative to average conditions. The Alaskan Panhandle shifted from having above-average precipitation in autumn to below-average precipitation in winter. This reflects a westward location of low pressure from over the Gulf of Alaska in autumn to over the Aleutian Islands in winter (see Fig. 3 in essay Surface Air Temperature). The summer dryness was especially apparent over large parts of Eurasia and northern Canada, likely contributing to the frequent Canadian forest fires. Figure 1 shows seasonal precipitation totals derived from ERA5 reanalysis during the 2024/25 water year expressed as departures from the 1991-2020 means.\n\n20",
+    "context_ids": [
+      "arc2025:p021:text:000",
+      "arc2025:p021:text:001",
+      "arc2025:p021:text:002",
+      "arc2025:p022:text:000",
+      "arc2025:p022:text:001"
+    ],
+    "elapsed_ms": 2605.43,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2628,
+      "output_tokens": 238,
+      "llm_seconds": 2.6045862000028137
+    }
+  },
+  {
+    "query_id": "adv_dev_multihop_02",
+    "split": "dev",
+    "group": "multi_hop",
+    "status": "answered",
+    "answer": "The 2025 GRACE-FO annual mass balance for the Greenland Ice Sheet was -129 ± 50 Gt [arc2025:p036:text:001, arc2025:p037:text:001], while the 2003–24 GRACE/GRACE-FO annual average was -219 ± 16 Gt [arc2025:p036:text:001, arc2025:p037:text:001]. The 2025 net mass loss was 90 Gt smaller than the 2003–24 annual average (calculated as 219 Gt - 129 Gt = 90 Gt). From 1 September 2024 to 2 April 2025, the ICESat-2 method measured a partial-year mass balance of -2 ± 56 Gt [arc2025:p037:text:001].",
+    "citations": [
+      "arc2025:p036:text:001",
+      "arc2025:p037:text:001"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p036:text:001",
+        "page": 36,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          332.8,
+          532.9,
+          502.4
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p037:text:001",
+        "page": 37,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          396.0,
+          541.3,
+          570.3
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 36,
+          "end_page": 37
+        },
+        "results": [
+          {
+            "id": "arc2025:p036:text:000",
+            "page": 36,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p036:text:001",
+            "page": 36,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p036:text:002",
+            "page": 36,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p037:text:000",
+            "page": 37,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p037:text:001",
+            "page": 37,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p037:text:002",
+            "page": 37,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p037:fig:00",
+            "page": 37,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p037_fig_00.png"
+          }
+        ],
+        "elapsed_ms": 0.11
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p036:text:000 | ArcticReportCard_full_report2025.pdf | page 36]\nGreenland Ice Sheet\n\nhttps://doi.org/10.25923/rbsh-t897\n\nK. Poinar1, J. E. Box2, B. E. Smith3, T. G. Askjaer4, T. L. Mote5, B. D. Loomis6, B. C. Medley6, K. D. Mankoff7,8, and R. S. Fausto2\n\n1University at Buffalo, Buffalo, NY, USA 2Geological Survey of Denmark and Greenland, Copenhagen, Denmark 3University of Washington, Seattle, WA, USA 4Danish Meteorological Institute, Copenhagen, Denmark 5Department of Geography, University of Georgia, Athens, GA, USA 6Goddard Space Flight Center, NASA, Greenbelt, MD, USA 7Goddard Institute of Space Studies, NASA, New York, NY, USA 8Autonomic Integra, New York, NY, USA\n\nHeadlines\n\n[arc2025:p036:text:001 | ArcticReportCard_full_report2025.pdf | page 36]\n• The mass balance of the Greenland Ice Sheet for 2025 was -129 ± 50 Gt, showing less loss than the 2003-24 annual average of -219 ± 16 Gt but continuing the long-term trend of net loss. • Above-average snowfall and below-average melt, despite above-average ice discharge (all compared to the 1991-2020 average), contributed to the ice sheet losing less mass this year than typical. • This loss of ice contributes to global sea-level rise, alters regional ocean circulation in the North Atlantic, and changes nutrient levels in local marine food webs. • Sustained, routine measurement of the mass balance of the Greenland Ice Sheet is crucial for understanding current changes and projecting future changes, which support effective local to global planning and adaptation.\n\nIntroduction\n\n[arc2025:p036:text:002 | ArcticReportCard_full_report2025.pdf | page 36]\nThe Greenland Ice Sheet is susceptible to climate change. Total loss of the Greenland Ice Sheet would raise global sea levels by approximately seven meters (Morlighem et al. 2017). Greenland ice loss affects human societies and environments globally, including through coastal erosion, saltwater intrusion, habitat change, tidal flooding, heightened storm surges, and permanent seawater inundation. Local and regional impacts of negative Greenland Ice Sheet mass balance include potential disruption of North Atlantic thermohaline circulation, which portends local Arctic sea ice expansion and northern European cooling (van Westen et al. 2024). Enhanced runoff also changes nutrient fluxes into marine environments, affecting marine food webs and fisheries (Hendry et al. 2019).\n\nNet loss of ice from the Greenland Ice Sheet has occurred every year since the late 1990s (Mouginot et al. 2019; Mankoff et al. 2020; Fig. 1a). We summarize the observed mass change and the factors driving it for 2025.\n\n34\n\n[arc2025:p037:text:000 | ArcticReportCard_full_report2025.pdf | page 37]\nFig. 1. (a) Full observational record of the mass balance of the Greenland Ice Sheet from GRACE/GRACE-FO (blue) and ICESat-2 (green), with measurement uncertainties shaded. (b) Mass balance over the 2025 mass balance year (GRACE-FO, blue) and through 2 April (ICESat-2, green) (bold lines) and 2003-24 (thinner lines). (c) Histogram of annual mass balance from 2003-24 from GRACE/GRACE-FO, with the GRACE-FO 2025 mass balance of -129 ± 50 Gt in black.\n\nIce-sheet mass balance\n\nThe Greenland Ice Sheet gains mass primarily through snowfall and loses it primarily through runoff and ice discharge (calving of icebergs and melting of glacier marine termini) into the ocean. The sum of these quantities (and including other minor mass change contributors) is the ice-sheet mass balance: the net gain or loss of ice over a period, typically one year. We report on the 2025 mass balance year, 1 September 2024 through 31 August 2025.\n\n[arc2025:p037:text:001 | ArcticReportCard_full_report2025.pdf | page 37]\nThe Gravity Recovery and Climate Experiment Follow-on (GRACE-FO) satellite mission measured a 2025 mass balance of -129 ± 50 Gt (Fig. 1b). The observed mass balance was less negative than the 2003-24 annual average measured by GRACE/GRACE-FO of -219 ± 16 Gt (mean ± 1 st. dev.; Fig. 1c).\n\nThe Ice, Cloud, and land Elevation Satellite-2 (ICESat-2) mission measures the surface height of the ice sheet over time, which we convert to mass change. Adequate data were not available to evaluate the full 2025 mass balance year. From 1 September 2024 to 2 April 2025, however, this ICESat-2 method measured a mass balance of -2 ± 56 Gt (mean ± 1 st. dev.; Fig. 1b), which underestimates the annual loss because the period does not include the melt season. The ICESat-2 partial-year mass balance is 102 Gt below the independent GRACE-FO measurement over the same time period (Fig. 1b) and is slightly below the ICESat-2 1 September-2 April average of +21 ± 40 Gt (mean ± 1 st. dev) over 2020-23. The ICESat-2 annual average for full mass balance years (2020-24) was -134 ± 62 Gt (mean ± 1 st. dev) and follows a steady trend of year-over-year ice loss (Fig. 1a).\n\n[arc2025:p037:text:002 | ArcticReportCard_full_report2025.pdf | page 37]\nContributions to the observed loss of ice mass\n\nSurface mass balance (SMB) comprises mass input to the ice sheet from snowfall and refrozen rainfall, minus mass loss from surface runoff, sublimation, and evaporation. SMB is influenced by air temperature, precipitation, melt, and surface reflectivity (albedo), for which we summarize observations over the 2025 mass balance year.\n\nIn situ rain and snowfall (hereafter, “precipitation”) is observed at 11 coastal and 10 inland ice sheet stations (see Methods and data). Precipitation totals observed at coastal stations during the 2025 mass balance year were generally above the 1991-2020 average. Autumn (September-November 2024)\n\n35\n\n[arc2025:p037:fig:00 | ArcticReportCard_full_report2025.pdf | page 37]\n[VISUAL:CHART] Page 37 (Greenland Ice Sheet)\nCaption: Fig. 1. (a) Full observational record of the mass balance of the Greenland Ice Sheet from GRACE/GRACE-FO (blue) and ICESat-2 (green), with measurement uncertainties shaded. (b) Mass balance over the 2025 mass balance year (GRACE-FO, blue) and through 2 April (ICESat-2, green) (bold lines) and 2003-24 (thinner lines). (c) Histogram of annual mass balance from 2003-24 from GRACE/GRACE-FO, with the GRACE-FO 2025 mass balance of -129 ± 50 Gt in black.\nTitle: Greenland Ice Sheet Mass Balance (Fig. 1)\nAxes/Units/Legend: Subfigure (a): Y-axis 'Mass (Gt) rel. to Sep 01, 2024' ranging from -1000 to 5000; X-axis years from 2004 to 2024. Legend: ICESat-2 (green), GRACE/GRACE-FO (blue). Subfigure (b): Y-axis 'Mass (Gt) relative to Sep 1' from -400 to 200; X-axis months from 01-Sep to 31-Aug. Legend: GRACE-FO 2025: -129 ± 50 Gt (blue), ICESat-2 (to 2 April 2025) (green). Subfigure (c): Y-axis 'Mass (Gt) relative to Sep 1' from -500 to 200; X-axis '# occurrences' from 0 to 5. Legend: 2003-2024 (bars), 2025 (black dot).\nDetails: Subfigure (a) displays the full observational record of the mass balance of the Greenland Ice Sheet from GRACE/GRACE-FO (blue) and ICESat-2 (green) showing a downward trend from approximately 4500 Gt in 2004 down near 0 Gt around 2024. Subfigure (b) tracks the mass balance over the 2025 mass balance year where GRACE-FO 2025 is -129 ± 50 Gt and ICESat-2 extends to 2 April 2025, compared to 2003-24 (thinner lines). Subfigure (c) shows a histogram of annual mass balance from 2003-2024 alongside the 2025 value marked by a black point around -129 Gt.",
+    "context_ids": [
+      "arc2025:p036:text:000",
+      "arc2025:p036:text:001",
+      "arc2025:p036:text:002",
+      "arc2025:p037:text:000",
+      "arc2025:p037:text:001",
+      "arc2025:p037:text:002",
+      "arc2025:p037:fig:00"
+    ],
+    "elapsed_ms": 43152.7,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 3894,
+      "output_tokens": 331,
+      "llm_seconds": 2.651136199987377
+    }
+  },
+  {
+    "query_id": "adv_dev_multihop_03",
+    "split": "dev",
+    "group": "multi_hop",
+    "status": "answered",
+    "answer": "The full name of the BRAIDED Food Security Project is \"Building Research Aligned with Indigenous Determination, Equity, and Decision-making\" [arc2025:p110:text:000], and the full name of ISN is the \"Indigenous Sentinels Network\" [arc2025:p110:text:000]. The BRAIDED pilot monitored mercury, which is identified as a World Health Organization top-ten contaminant of concern, at the Bering Sea Research Center (BSRC) lab [arc2025:p111:text:001]. The core principle that underpins the ISN is Indigenous Data Sovereignty (IDSov), which dictates that all data are owned and controlled by the communities that collect them [arc2025:p111:text:002].",
+    "citations": [
+      "arc2025:p110:text:000",
+      "arc2025:p111:text:001",
+      "arc2025:p111:text:002"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p110:text:000",
+        "page": 110,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          71.2,
+          540.7,
+          582.9
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p111:text:001",
+        "page": 111,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          187.7,
+          536.4,
+          323.3
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p111:text:002",
+        "page": 111,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          334.0,
+          541.6,
+          520.0
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 110,
+          "end_page": 111
+        },
+        "results": [
+          {
+            "id": "arc2025:p110:text:000",
+            "page": 110,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p110:text:001",
+            "page": 110,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p110:fig:00",
+            "page": 110,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p110_fig_00.png"
+          },
+          {
+            "id": "arc2025:p111:text:000",
+            "page": 111,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p111:text:001",
+            "page": 111,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p111:text:002",
+            "page": 111,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p111:text:003",
+            "page": 111,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.09
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p110:text:000 | ArcticReportCard_full_report2025.pdf | page 110]\nCommunity of St. Paul Island (ACSPI) Tribal Government: the BRAIDED Food Security Project (Building Research Aligned with Indigenous Determination, Equity, and Decision-making) and the Indigenous Sentinels Network (ISN). These efforts are more than projects; they are pathways to resilience, rooted in Indigenous leadership and designed to meet the challenges of a changing world.\n\nFig. 1. Map of the Arctic showing (Insert 1): St. Paul Island, the pilot location, the largest of the Pribilof Islands, located at 57.2° N, 170.3° W. The city of St. Paul, Alaska (Tanax̂ Amix̂) is located on the southern peninsula of the island. (Inset 2): The Aleutian Islands (Unangam Tanangin) with island (blue) and village (black) names in Unangam Tunuu, the Indigenous language of the Aleutian and Pribilof Islands region. Credit: Matthew Druckenmiller.\n\nBackground\n\n[arc2025:p110:text:001 | ArcticReportCard_full_report2025.pdf | page 110]\nIn the 18th and 19th centuries, Russian and U.S. regimes forcibly relocated Unangax̂ communities to the Pribilof Islands for commercial fur seal harvests (Torrey 1983). After the United States purchased Alaska from Russia in 1867, federal policies in the 1870s continued to exert tight control over Unangax̂ communities on the Pribilofs, reflecting the long arc of colonial management that shaped local governance and resource use (Torrey 1983; Burch 1998). Despite this tragic history, the people of St. Paul Island have remained deeply connected to their environment. From an Indigenous perspective, our ecosystems are a living network of relatives, providers, kin, and teachers who are woven into identities and cultures (Carothers et al. 2021). Impacts to our environments are not only an ecological crisis but\n\n108\n\n[arc2025:p110:fig:00 | ArcticReportCard_full_report2025.pdf | page 110]\n[VISUAL:MAP] Page 110 (Weaving the Seen and Unseen: Stewarding the Arctic Means Sustaining Indigenous Monitoring)\nCaption: Fig. 1. Map of the Arctic showing (Insert 1): St. Paul Island, the pilot location, the largest of the Pribilof Islands, located at 57.2° N, 170.3° W. The city of St. Paul, Alaska (Tanax̂ Amix̂) is located on the southern peninsula of the island. (Inset 2): The Aleutian Islands (Unangam Tanangin) with island (blue) and village (black) names in Unangam Tunuu, the Indigenous language of the Aleutian and Pribilof Islands region. Credit: Matthew Druckenmiller.\nTitle: Map of the Arctic showing St. Paul Island and the Aleutian Islands (Unangam Tanangin)\nAxes/Units/Legend: Insert 1 scale bars: 0 1 2 3 miles, 0 1 2 3 km. Insert 2 scale bar: 0 100 200 miles, 0 100 200 km.\nDetails: Figure 1 consists of maps detailing the location of St. Paul Island and the Aleutian Islands. The upper right map shows the Arctic with a highlighted area around Alaska. Insert 1 provides a detailed satellite-based view of St. Paul Island, the largest of the Pribilof Islands (located at 57.2° N, 170.3° W), highlighting landmarks such as Tasamanna, Rush Hill, North Point, Northeast Point, Big Lake, Sea Lion Point, Polovina, Airport, Salt Lagoon, Lukanin Bay, Kitovi Point, Reef Point, Tolstoy Point, Zapadni Point, Southwest Point, and the city of St. Paul, Alaska (St. Paul, Alaska / Tanax̂ Amix̂) on the southern peninsula. Insert 2 shows the Aleutian Islands (Unangam Tanangin) across the Bering Sea, listing island (blue) and village (black) names in Unangam Tunuu, including Atan, Angatûx, Qisxa, Sitignâx, Unyax, Amchixtâx, Tanâx, Anangusîx, Adaax, Kanaga, Adaax, Atxâx, Atxâx, Amilax, Saĝuugamax, Yunâsxa, Tanâx Angunâx, Umnax, Chalukâx, Akutanâx, Unimax, Iluulûx, Achan-ingiiga, Nawan-Alaxsxa, Isanâx, Sanâgax, Agdaagûx, Udaamagax, Niilsanam Alĝuudaa, and Qagun Tayagungin.\n\n[arc2025:p111:text:000 | ArcticReportCard_full_report2025.pdf | page 111]\nalso a cultural one, rooted in both the historic trauma of forced relocation and in the ongoing grief that comes with threats to the right to remain in one’s homeland.\n\nRecognizing this reality, the ACSPI has spent decades building local leadership in economic development and research so that St. Paul Island would not just be a site of study but a full partner, with Tribal leadership shaping and governing the work.\n\nTwo initiatives now carry this vision forward:\n\n[arc2025:p111:text:001 | ArcticReportCard_full_report2025.pdf | page 111]\nThe BRAIDED Food Security Project began as a pilot in 2023 to test new ways of monitoring contaminants and strengthen community control over decisions related to food safety. Mercury is a World Health Organization top ten contaminant of concern. BRAIDED aimed to monitor mercury by establishing the Bering Sea Research Center (BSRC) on St. Paul Island. Instead of sending samples off- island—a process requiring expensive shipping from one of the most remote communities in the Bering Sea and long waits for results—Tribal staff can now receive donated tissues from harvesters, process them locally at BSRC, and analyze fish, seals, seabirds, and other harvested foods. The pilot phase, completed in 2025, laid the foundation for the program’s continuation and expansion by building the capacity and confidence of Tribal staff to independently assess the health of harvested foods and maintain on-island laboratory operations.\n\n[arc2025:p111:text:002 | ArcticReportCard_full_report2025.pdf | page 111]\nThe ISN builds on more than 20 years of local innovation. Created and designed by ACSPI, ISN is a suite of software tools supported by training programs that allow Tribes to design and manage their own monitoring programs across the state of Alaska. ISN’s foundation is Indigenous Data Sovereignty (IDSov): all data are owned and controlled by the communities that collect them. ISN trains Sentinels and Guardians to collect observations within their communities. ISN data are stored in secure systems, but can also be connected to larger Arctic research networks.\n\nTogether, BRAIDED and ISN show what it means for Indigenous communities to lead Arctic research. Four themes woven throughout this work illustrate the impact of Tribally-led research: community- driven monitoring, food safety, IDSov, and training and capacity building.\n\nCommunity-driven monitoring: Sentinels and Guardians as eyes and ears for lands and waters\n\n[arc2025:p111:text:003 | ArcticReportCard_full_report2025.pdf | page 111]\nResilience depends on seeing change as it happens. While conventional Arctic science often relies on short-term field seasons, Indigenous peoples live in a deep relationship with place. Implementing monitoring programs that are driven by communities ensures that essential knowledge and observations are informing stewardship of lands and waters in real time (see Figs. 2 and 3).\n\n109",
+    "context_ids": [
+      "arc2025:p110:text:000",
+      "arc2025:p110:text:001",
+      "arc2025:p110:fig:00",
+      "arc2025:p111:text:000",
+      "arc2025:p111:text:001",
+      "arc2025:p111:text:002",
+      "arc2025:p111:text:003"
+    ],
+    "elapsed_ms": 4457.18,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 3456,
+      "output_tokens": 296,
+      "llm_seconds": 4.4566531000164105
+    }
+  },
+  {
+    "query_id": "adv_dev_text_01",
+    "split": "dev",
+    "group": "text",
+    "status": "answered",
+    "answer": "According to the Surface Air Temperature Overview on page 14, since 1980, Pan-Arctic (60° N–90° N) annual air temperatures have warmed nearly three times faster than the global mean (90° S–90° N) [arc2025:p014:text:003].",
+    "citations": [
+      "arc2025:p014:text:003"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p014:text:003",
+        "page": 14,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          569.1,
+          539.5,
+          756.4
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 14
+        },
+        "results": [
+          {
+            "id": "arc2025:p014:text:000",
+            "page": 14,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p014:text:001",
+            "page": 14,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p014:text:002",
+            "page": 14,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p014:text:003",
+            "page": 14,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.17
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p014:text:000 | ArcticReportCard_full_report2025.pdf | page 14]\nSurface Air Temperature\n\nhttps://doi.org/10.25923/cj60-9s07\n\nT. J. Ballinger1, A. Crawford2, M. C. Serreze3, S. Bigalke4, J. E. Walsh1, B. Brettschneider5, R. L. Thoman1,6, U. S. Bhatt7, E. Hanna8, H. Motrøen Gjelten9,\n\nS. -J. Kim10, J. E. Overland11, and M. Wang11,12\n\n[arc2025:p014:text:001 | ArcticReportCard_full_report2025.pdf | page 14]\n1International Arctic Research Center, University of Alaska Fairbanks, Fairbanks, AK, USA 2Department of Environment and Geography, University of Manitoba, Winnipeg, MB, Canada 3National Snow and Ice Data Center, Cooperative Institute for Research in Environmental Sciences, University of Colorado Boulder, Boulder, CO, USA 4Department of Geography, Portland State University, Portland, OR, USA 5National Weather Service Alaska Region, NOAA, Anchorage, AK, USA 6Alaska Center for Climate Assessment and Preparedness, University of Alaska Fairbanks, Fairbanks, AK, USA 7Geophysical Institute, University of Alaska Fairbanks, Fairbanks, AK, USA 8Department of Geography and Lincoln Climate Research Group, University of Lincoln, Lincoln, UK 9Norwegian Meteorological Institute, Oslo, Norway 10Korea Polar Research Institute, Incheon, Republic of Korea 11Pacific Marine Environmental Laboratory, NOAA, Seattle, WA, USA 12Cooperative Institute for Climate, Ocean, and Ecosystem Studies, University of Washington, Seattle, WA, USA\n\nHeadlines\n\n[arc2025:p014:text:002 | ArcticReportCard_full_report2025.pdf | page 14]\n• Dating back to 1900, the Arctic experienced the warmest water year (October 2024-September 2025) and autumn (2024) on record. • Since 2006, Arctic autumn and winter air temperatures have each increased by more than twice the corresponding increases in global air temperatures. • Amplified Arctic warming has cascading impacts on the Arctic system, including glacial melt, sea ice decline, greening landscapes, and various ecological changes.\n\nOverview\n\n[arc2025:p014:text:003 | ArcticReportCard_full_report2025.pdf | page 14]\nPan-Arctic (60° N-90° N) surface air temperatures continue to increase faster than those for the planet as a whole (90° S-90° N), especially during winter (Ballinger et al. 2025). Since 1980, the Arctic annual air temperatures have warmed nearly three times faster than the global mean due to global anthropogenic greenhouse gas emissions (Sweeney et al. 2023; Zhou et al. 2024). This amplified Arctic warming has been linked with a plethora of ongoing and emerging physical and ecological changes that profoundly affect transportation, infrastructure, and subsistence livelihoods for many people across the Arctic with impacts extending to societies in lower latitudes (Moon et al. 2019; Walsh et al. 2020). Some widespread responses to this warming include increased annual precipitation (see essay Precipitation), increased greening of Arctic landscapes (see essay Tundra Greenness), and sustained mass loss of the Greenland Ice Sheet (see essay Greenland Ice Sheet) and Arctic glaciers and ice caps (see essay Glaciers and Ice Caps outside Greenland). Increased winter temperatures affect the development and thickening\n\n12",
+    "context_ids": [
+      "arc2025:p014:text:000",
+      "arc2025:p014:text:001",
+      "arc2025:p014:text:002",
+      "arc2025:p014:text:003"
+    ],
+    "elapsed_ms": 2308.87,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2229,
+      "output_tokens": 125,
+      "llm_seconds": 2.3081594000104815
+    }
+  },
+  {
+    "query_id": "adv_dev_text_02",
+    "split": "dev",
+    "group": "text",
+    "status": "answered",
+    "answer": "According to the Terrestrial Snow Cover section on page 29, June Arctic snow cover extent today is half of what it was six decades ago [arc2025:p029:text:000]. The loss of snow cover contributes to amplified Arctic warming through the surface albedo feedback [arc2025:p029:text:001].",
+    "citations": [
+      "arc2025:p029:text:000",
+      "arc2025:p029:text:001"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p029:text:000",
+        "page": 29,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          70.3,
+          530.4,
+          391.3
+        ]
+      },
+      {
+        "chunk_id": "arc2025:p029:text:001",
+        "page": 29,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          401.2,
+          540.2,
+          509.9
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 29
+        },
+        "results": [
+          {
+            "id": "arc2025:p029:text:000",
+            "page": 29,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p029:text:001",
+            "page": 29,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p029:text:002",
+            "page": 29,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.12
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p029:text:000 | ArcticReportCard_full_report2025.pdf | page 29]\nTerrestrial Snow Cover\n\nhttps://doi.org/10.25923/cfhv-c239\n\nL. R. Mudryk1, A. Elias Chereque2, C. Derksen1, K. Luojus3, and B. Decharme4\n\n1Climate Research Division, Environment and Climate Change Canada, Toronto, ON, Canada 2Department of Physics, University of Toronto, Toronto, ON, Canada 3Arctic Research Centre, Finnish Meteorological Institute, Helsinki, Finland 4Centre National de Recherches Météorologiques, Météo-France, Toulouse, France\n\nHeadlines\n\n• Snowpack at the peak of the 2024/25 snow season was higher than normal over much of the Arctic and remained high through May. • Despite the higher-than-normal snowpack remaining in May, by June snow cover extent dropped below normal, consistent with values typical of the past 15 years. • June snow cover extent over the Arctic today is half of what it was six decades ago. • Loss of snow cover directly contributes to amplified warming in the Arctic, while also affecting permafrost deterioration, timing of freshwater availability, and ecosystem health.\n\nOverview\n\n[arc2025:p029:text:001 | ArcticReportCard_full_report2025.pdf | page 29]\nSnow cover in the Arctic helps to regulate the climate and maintain the health of the established ecosystem. Reductions in snowpack depth or coverage reduce the amount of insulation between the ground and the air, which can, for example, alter ground temperatures and affect permafrost conditions (Goodrich 1982). Winter snowpack also functions as a temperature-stable habitat for small animals, vegetation, and microbial life (Jones et al. 2011). Even following the snow cover season, the timing of snowmelt has impacts on river discharge timing and magnitude, surface and sub-surface water availability, vegetation phenology, and fire risk (Meredith et al. 2019). Loss of snow cover also contributes to amplified Arctic warming through the surface albedo feedback (Forster et al. 2021).\n\n[arc2025:p029:text:002 | ArcticReportCard_full_report2025.pdf | page 29]\nIn this essay, multiple data sets derived from satellite observations and snowpack models driven by historical weather conditions are used to assess Arctic seasonal snow cover (see Methods and data). Collectively, this approach provides a reliable picture of Arctic snow cover variability over the last five to six decades. We characterize snow conditions across the Arctic land surface using three quantities: how much total land area is covered by snow (snow cover extent – SCE), how much of the year snow covers the land surface (snow cover duration – SCD), and how much total water is stored in solid form by the snowpack (snow water equivalent – SWE; the product of snow depth and density). We examine each of these quantities in turn for the 2024/25 Arctic snow season (August 2024 to July 2025).\n\nSnow cover extent and duration\n\nSnow cover extent anomalies over the 1967-2025 period are shown separately for the North American and Eurasian sectors of the Arctic in Fig. 1. In 2025, Arctic SCE was close to normal across both the Eurasian and North American sectors during May but by June had dropped below normal (baseline\n\n27",
+    "context_ids": [
+      "arc2025:p029:text:000",
+      "arc2025:p029:text:001",
+      "arc2025:p029:text:002"
+    ],
+    "elapsed_ms": 2314.45,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2103,
+      "output_tokens": 148,
+      "llm_seconds": 2.313920499989763
+    }
+  },
+  {
+    "query_id": "adv_dev_text_03",
+    "split": "dev",
+    "group": "text",
+    "status": "answered",
+    "answer": "According to the AMAP essay on page 143, the Arctic Report Card has been published since 2006 [arc2025:p143:text:000]. AMAP supports its peer review process by drawing on an international network of more than 800 specialists [arc2025:p143:text:000].",
+    "citations": [
+      "arc2025:p143:text:000"
+    ],
+    "citation_evidence": [
+      {
+        "chunk_id": "arc2025:p143:text:000",
+        "page": 143,
+        "modality": "text",
+        "crop_path": null,
+        "bbox": [
+          72.0,
+          70.3,
+          541.3,
+          320.5
+        ]
+      }
+    ],
+    "num_searches": 1,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "get_page_chunks",
+        "args": {
+          "page": 143
+        },
+        "results": [
+          {
+            "id": "arc2025:p143:text:000",
+            "page": 143,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p143:text:001",
+            "page": 143,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p143:text:002",
+            "page": 143,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.11
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "context": "[arc2025:p143:text:000 | ArcticReportCard_full_report2025.pdf | page 143]\nAMAP and the Arctic Report Card: A Collaboration that is 20 Years Strong\n\nhttps://doi.org/10.25923/mj1c-j447\n\nThe Arctic Report Card (ARC) occupies a unique and highly valuable position within the broader, international framework of climate assessment and scientific outreach. Since its inception in 2006, it has provided annual, authoritative updates on the state of the Arctic, a region experiencing some of the most rapid and consequential climate-driven changes on the planet. This steady cadence distinguishes the ARC from other major reporting frameworks, such as the Arctic Monitoring and Assessment Programme (AMAP) comprehensive Arctic assessments or the Intergovernmental Panel on Climate Change (IPCC) global assessment cycles, which are published on multi-year timelines.\n\nAMAP is proud to support the work of the Arctic Report Card, particularly by facilitating the behind-the- scenes peer review process, drawing on an international network of more than 800 specialists. This collaboration exemplifies the strength of multidisciplinary, international partnerships in advancing Arctic science.\n\n[arc2025:p143:text:001 | ArcticReportCard_full_report2025.pdf | page 143]\nThe Arctic Report Card’s importance lies in its ability to deliver timely, science-based insights that track evolving conditions in near real time. By focusing on key indicators—such as sea ice extent, permafrost stability, ocean temperature, and ecosystem health—it offers a concise yet robust snapshot of trends that have both regional and global implications. This immediacy is critical for informing decision-makers, researchers, Arctic residents, and stakeholders who require up-to-date information to guide policy and adaptation strategies.\n\nFurther, the Arctic Report Card increasingly weaves together physical sciences, social sciences, and Indigenous Knowledge, recognizing the leadership and contributions of Indigenous Peoples in advancing understanding of the changes being observed across the Arctic.\n\nEqually significant is its role in science communication and accessibility. The Report Card is designed to be understandable to a broad audience, combining rigorous peer-reviewed science with clear language and compelling visuals. This approach bridges the gap between complex climate data and actionable knowledge, making it an effective tool for outreach and education.\n\n[arc2025:p143:text:002 | ArcticReportCard_full_report2025.pdf | page 143]\nIn the constellation of climate reporting, the Arctic Report Card complements the depth of AMAP’s periodic assessments and the global perspective of IPCC reports. Together, these products form a layered system of knowledge: annual snapshots for rapid awareness, regional deep dives for detailed understanding, and global syntheses for comprehensive context. This synergy ensures that the accelerating changes in the Arctic remain visible, understood, and integrated into global climate discourse. By providing timely and credible information, the Arctic Report Card strengthens the scientific foundation for evidence-based policy decisions in a region critical to global climate stability.\n\nOn behalf of AMAP, we warmly congratulate NOAA and the entire team on the 20th edition of the Arctic Report Card. Over two decades, this initiative has become an indispensable resource for the scientific community and policymakers alike, offering clarity and continuity in a time of unprecedented environmental change. The Arctic Report Card’s commitment to scientific integrity, transparency, and\n\n141",
+    "context_ids": [
+      "arc2025:p143:text:000",
+      "arc2025:p143:text:001",
+      "arc2025:p143:text:002"
+    ],
+    "elapsed_ms": 1875.34,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2100,
+      "output_tokens": 133,
+      "llm_seconds": 1.8748263000015868
+    }
+  },
+  {
+    "query_id": "adv_dev_unans_01",
+    "split": "dev",
+    "group": "unanswerable",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the provided document.",
+    "citations": [],
+    "citation_evidence": [],
+    "abstain_reason": "The term 'penguin' does not appear in the 2025 Arctic Report Card, as penguins are not native to the Arctic.",
+    "raw_model_citations": null,
+    "num_searches": 2,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "args": {
+          "query": "penguin"
+        },
+        "results": [],
+        "elapsed_ms": 0.34
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "args": {
+          "query": "penguin colony breeding counts"
+        },
+        "results": [
+          {
+            "id": "arc2025:p027:text:000",
+            "page": 27,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p079:text:002",
+            "page": 79,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p027:text:002",
+            "page": 27,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p102:text:001",
+            "page": 102,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p065:text:002",
+            "page": 65,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 45.49
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "context": "[arc2025:p027:text:000 | ArcticReportCard_full_report2025.pdf | page 27]\nMethods and data\n\n[arc2025:p079:text:002 | ArcticReportCard_full_report2025.pdf | page 79]\nMethods and data\n\n[arc2025:p027:text:002 | ArcticReportCard_full_report2025.pdf | page 27]\nuse both products were impacted by missing data during World War II.\n\n[arc2025:p102:text:001 | ArcticReportCard_full_report2025.pdf | page 102]\nEnvironmental drivers\n\nIn the Chukchi Sea, bottom temperatures in September show no long-term trends due to high variation among years, but temperatures increased from 2013 to 2019; whereas in the northern Bering Sea, temperatures decreased into the late 2000s and early 2010s before increasing (Fig. 2). Spring sea ice declined in both regions during the study period.\n\n100\n\n[arc2025:p065:text:002 | ArcticReportCard_full_report2025.pdf | page 65]\n63",
+    "context_ids": [
+      "arc2025:p027:text:000",
+      "arc2025:p079:text:002",
+      "arc2025:p027:text:002",
+      "arc2025:p102:text:001",
+      "arc2025:p065:text:002"
+    ],
+    "elapsed_ms": 2647.35,
+    "token_usage": {
+      "llm_calls": 3,
+      "prompt_tokens": 2343,
+      "output_tokens": 92,
+      "llm_seconds": 2.6010293000144884
+    }
+  },
+  {
+    "query_id": "adv_dev_unans_02",
+    "split": "dev",
+    "group": "unanswerable",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the provided document.",
+    "citations": [],
+    "citation_evidence": [],
+    "abstain_reason": "The 150-page NOAA Arctic Report Card 2025 does not contain information regarding funding allocated by Norway to expand its Arctic icebreaker fleet in 2025.",
+    "raw_model_citations": null,
+    "num_searches": 2,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "args": {
+          "query": "Norway icebreaker funding 2025"
+        },
+        "results": [
+          {
+            "id": "arc2025:p137:text:001",
+            "page": 137,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p140:text:000",
+            "page": 140,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p145:text:001",
+            "page": 145,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p091:text:000",
+            "page": 91,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p138:text:000",
+            "page": 138,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 2.48
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "args": {
+          "query": "Norway icebreaker fleet funding 2025"
+        },
+        "results": [
+          {
+            "id": "arc2025:p140:text:000",
+            "page": 140,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p052:text:001",
+            "page": 52,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p137:text:001",
+            "page": 137,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p002:text:001",
+            "page": 2,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p087:text:002",
+            "page": 87,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 653.46
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "context": "[arc2025:p137:text:001 | ArcticReportCard_full_report2025.pdf | page 137]\nRisk of losing adequately trained staff, particularly experienced pilots, alongside continued funding reductions. Due to staffing shortages and funding uncertainty, summer 2025 goose monitoring and fieldwork activities were canceled at multiple locations. This follows years of static funding, which results in decreased funds due to inflation. In some proposed FY 2026 budgets, many of these programs, such as the USGS's Ecosystem Mission Area and Cooperative Research Units and the USFWS's North American Wetland Conservation Act and Migratory Bird Joint Venture Programs, among others, were slated for either reduced funding or elimination.\n\n135\n\n[arc2025:p140:text:000 | ArcticReportCard_full_report2025.pdf | page 140]\nReport Card 2023, R. L. Thoman, T. A. Moon, and M. L. Druckenmiller, Eds., https://doi.org/10.25923/2sx6-kx89.\n\nInstitute for Defense Analyses (IDA), 2017: International Arctic Observations Assessment Framework. IDA Science and Technology Policy Institute, Washington, DC, U.S.A., and Sustaining Arctic Observing Networks, Oslo, Norway, 1-69, https://www.arcticobserving.org/news/268-international-arctic- observations-assessment-framework-released.\n\nMallory, M. L., H. G. Gilchrist, M. Janssen, H. L. Major, F. Merkel, J. F. Provencher, and H. Strøm, 2018: Financial costs of conducting science in the Arctic: examples from seabird research. Arct. Sci., 4(4), 624- 633, https://doi.org/10.1139/as-2017-0019.\n\nMarowitz, R., M. Fisher, H. Shapiro, and S. Starkweather, 2025: U.S. Arctic Observation Network Benefit Tool, Version v2.7.2 Software. Zenodo, accessed 29 September 2025, https://doi.org/10.5281/zenodo.8403759.\n\nMcManus, J., 2025: An update to the NSF Arctic Observing Network (AON) program. National Science Foundation, https://www.nsf.gov/funding/information/dcl-update-nsf-arctic-observing-network-aon- program.\n\n[arc2025:p145:text:001 | ArcticReportCard_full_report2025.pdf | page 145]\nS. Bigalke, Department of Geography, Portland State University, Portland, OR, USA\n\nA. Bishop, University of Alaska Anchorage, Anchorage, AK, USA\n\nJ. W. Bjerke, Norwegian Institute for Nature Research, FRAM – High North Research Centre for Climate and the Environment, Tromsø, Norway; Tromsø Arctic-Alpine Botanical Garden, The Arctic University Museum of Norway, UiT The Arctic University of Norway, Tromsø, Norway\n\nA. Bliss, Cryospheric Sciences Laboratory, Goddard Space Flight Center, NASA, Greenbelt, MD, USA\n\nB. A. Bluhm, Department of Arctic and Marine Biology, UiT The Arctic University of Norway, Tromsø, Norway\n\nJ. E. Box, Geological Survey of Denmark and Greenland, Copenhagen, Denmark\n\nB. Brettschneider, National Weather Service Alaska Region, NOAA, Anchorage, AK, USA\n\nD. Burgess, Geological Survey of Canada, Ottawa, ON, Canada\n\nM. P. Carey, U.S. Geological Survey, Alaska Science Center, Anchorage, AK, USA\n\n143\n\n[arc2025:p091:text:000 | ArcticReportCard_full_report2025.pdf | page 91]\nFig. 2. Atlantic Water temperature anomalies in the Arctic Ocean based on historical data, including Nansen’s observations from Fram (vessel on the left) in 1893-96 and modern measurements (indicated by icebreaker). The time series have been filtered with a 7-year running average, and the dashed-dotted line indicates sparse observations in the early part of the record. Uncertainties due to limited observations are discussed in Polyakov et al. (2012). See Methods and data for data source information.\n\n89\n\n[arc2025:p138:text:000 | ArcticReportCard_full_report2025.pdf | page 138]\nIndicator Type Essay Topic\n\nWhat is at risk and criticality information Further explanation of risk\n\nPollinators\n\nFunded by agencies or programs facing major budget cuts.\n\nCBMP Arctic Pollinator Expert Network, an international collaboration related to Arctic pollinators, is at risk.\n\nBeavers\n\nFunding opportunities with the NSF-AON program, which has supported the A-BON, are on pause for the 2025 calendar year (McManus 2025).\n\nA-BON - an organization created to \"coordinate research and action among stakeholders\" related to beavers in the circumpolar Arctic, is at risk.\n\n[arc2025:p052:text:001 | ArcticReportCard_full_report2025.pdf | page 52]\nTschudi, M., W. N. Meier, J. S. Stewart, C. Fowler, and J. Maslanik, 2019a: EASE-Grid Sea Ice Age, Version 4. NASA National Snow and Ice Data Center Distributed Active Archive Center, Boulder, CO, USA, accessed 5 September 2025, https://doi.org/10.5067/UTAV7490FEPB.\n\nTschudi, M., W. N. Meier, and J. S. Stewart, 2019b: Quicklook Arctic Weekly EASE-Grid Sea Ice Age, Version 1. NASA National Snow and Ice Data Center Distributed Active Archive Center, Boulder, CO, USA, accessed 2 October 2025, https://doi.org/10.5067/2XXGZY3DUGNQ.\n\nZhao, P., Y. Li, and Y. Zhang, 2024: Ships are projected to navigate whole year-round along the North Sea route by 2100. Commun. Earth Environ., 5, 407, https://doi.org/10.1038/s43247-024-01557-7.\n\nDecember 10, 2025\n\n50\n\n[arc2025:p002:text:001 | ArcticReportCard_full_report2025.pdf | page 2]\nFunding Acknowledgments for the Arctic Report Card Financial support for Arctic Report Card 2025 was provided by NOAA’s Global Ocean Monitoring and Observing (GOMO) Arctic Research Program, including content editing funded through the Cooperative Institute for Earth System Research and Data Science (CIESRDS) via NOAA Cooperative Agreement NA22OAR4320151 (Druckenmiller and Moon) and by the Cooperative Institute for Climate, Ocean, and Ecosystem Studies (CICOES) under NOAA Cooperative Agreement NA20OAR4320271 (Thoman). The editors thank the Arctic Monitoring and Assessment Programme (AMAP) Secretariat for organizing the independent peer review and all the reviewers. The editors also recognize the contribution of coordinating editors Mary Beth Armstrong and Cynthia Garcia from the Arctic Research Program in NOAA’s GOMO, who coordinated and managed the various elements of the ARC’s production process, and the entire ARC production team for the professionalism, dedication, and enthusiasm in producing each year’s Report.\n\n[arc2025:p087:text:002 | ArcticReportCard_full_report2025.pdf | page 87]\nKjøllmoen, B. (Ed.), L. M. Andreassen, and H. Elvehøy, 2025: Glaciological investigations in Norway 2024. NVE Rapport 27-2025, 110 pp +app. Norwegian Water resources and Energy Directorate, Oslo, https://publikasjoner.nve.no/rapport/2025/rapport2025_27.pdf.\n\nMasson-Delmotte, V., P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M. I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J. B. R. Matthews, T. K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, and B. Zhou, eds., 2021: Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press, Cambridge, UK and New York, NY, USA, 2391 pp., https://doi.org/10.1017/9781009157896.\n\nRGI Consortium, 2023: Randolph Glacier Inventory – A Dataset of Global Glacier Outlines, Version 7.0. Boulder, CO, USA. NSIDC: National Snow and Ice Data Center, Online access: https://doi.org/10.5067/f6jmovy5navz.\n\n85",
+    "context_ids": [
+      "arc2025:p137:text:001",
+      "arc2025:p140:text:000",
+      "arc2025:p145:text:001",
+      "arc2025:p091:text:000",
+      "arc2025:p138:text:000",
+      "arc2025:p052:text:001",
+      "arc2025:p002:text:001",
+      "arc2025:p087:text:002"
+    ],
+    "elapsed_ms": 3527.56,
+    "token_usage": {
+      "llm_calls": 3,
+      "prompt_tokens": 6455,
+      "output_tokens": 117,
+      "llm_seconds": 2.8709192000096664
+    }
+  },
+  {
+    "query_id": "adv_dev_unans_03",
+    "split": "dev",
+    "group": "unanswerable",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the provided document.",
+    "citations": [],
+    "citation_evidence": [],
+    "abstain_reason": "A search of the 150-page report for 'microplastic' yielded no results, and Table 2 (found on page 135) pertains to risks to physical and ecological indicators, not microplastic concentrations.",
+    "raw_model_citations": null,
+    "num_searches": 3,
+    "visual_inspections": 0,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "args": {
+          "query": "surface ocean microplastic fiber concentration Table 2"
+        },
+        "results": [
+          {
+            "id": "arc2025:p064:fig:00",
+            "page": 64,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p064_fig_00.png"
+          },
+          {
+            "id": "arc2025:p059:text:002",
+            "page": 59,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p135:table:00",
+            "page": 135,
+            "modality": "table",
+            "crop_path": "data/adv_index/crops/p135_table_00.png"
+          },
+          {
+            "id": "arc2025:p069:table:00",
+            "page": 69,
+            "modality": "table",
+            "crop_path": "data/adv_index/crops/p069_table_00.png"
+          },
+          {
+            "id": "arc2025:p002:text:002",
+            "page": 2,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 474.54
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "args": {
+          "query": "microplastic fiber concentration"
+        },
+        "results": [
+          {
+            "id": "arc2025:p045:fig:00",
+            "page": 45,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p045_fig_00.png"
+          },
+          {
+            "id": "arc2025:p045:text:000",
+            "page": 45,
+            "modality": "text",
+            "crop_path": null
+          },
+          {
+            "id": "arc2025:p056:fig:00",
+            "page": 56,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p056_fig_00.png"
+          },
+          {
+            "id": "arc2025:p064:fig:00",
+            "page": 64,
+            "modality": "visual",
+            "crop_path": "data/adv_index/crops/p064_fig_00.png"
+          },
+          {
+            "id": "arc2025:p058:text:002",
+            "page": 58,
+            "modality": "text",
+            "crop_path": null
+          }
+        ],
+        "elapsed_ms": 0.86
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "args": {
+          "query": "microplastic"
+        },
+        "results": [],
+        "elapsed_ms": 0.38
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "context": "[arc2025:p064:fig:00 | ArcticReportCard_full_report2025.pdf | page 64]\n[VISUAL:MAP] Page 64 (Arctic Ocean Primary Productivity: The Response of Marine Algae to Climate Warming and Sea Ice Decline)\nCaption: Fig. 2. Sea ice concentration anomalies (%) in 2025 (compared to a 2003-22 mean reference period) for (a) May, (b) June, (c) July, and (d) August. Data source: SSM/I and SSMIS passive microwave data, calculated using the Goddard Bootstrap (SB2) algorithm (Comiso et al. 2017).\nTitle: Fig. 2. Sea ice concentration anomalies (%) in 2025 (compared to a 2003-22 mean reference period)\nAxes/Units/Legend: Legend range: -100 to 100 with steps at -100, -80, -60, -40, -20, 0, 20, 40, 60, 80, 100 (%). Red colors denote negative anomalies (less sea ice), blue colors denote positive anomalies (more sea ice).\nDetails: Four circular polar map panels labeled (a) May, (b) June, (c) July, and (d) August showing 2025 sea ice concentration anomalies (%). Panel (a) contains labeled regional seas including Sea of Okhotsk, East Siberian Sea, Bering Sea, Chukchi Sea, Beaufort Sea, Hudson Bay, Baffin Bay, Greenland Sea, Labrador Sea, Barents Sea, Kara Sea, Laptev Sea. Maps display varying degrees of negative anomalies (red) and positive anomalies (blue) across the Arctic basin over the four months.\n\n[arc2025:p059:text:002 | ArcticReportCard_full_report2025.pdf | page 59]\nMeier, W. N., F. Fetterer, A. K. Windnagel, and J. S. Stewart, 2021b: Near-Real-Time NOAA/NSIDC Climate Data Record of Passive Microwave Sea Ice Concentration, Version 2. [1982-2021], NSIDC: National Snow and Ice Data Center, Boulder, CO, USA, accessed 4 September 2025, https://doi.org/10.7265/tgam-yv28.\n\nMercator Ocean International, 2025: Ocean Temperature Bulletin – August 2025. European Union, Copernicus Marine Service. https://www.mercator-ocean.eu/bulletin/ocean-temperature-bulletin-august- 2025/, accessed 17 September 2025.\n\nNOAA, 2024: Optimum Interpolation Sea Surface Temperature (OISST) high resolution dataset, version 2.1. NOAA/PSL, accessed 4 September 2025, https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html.\n\n57\n\n[arc2025:p135:table:00 | ArcticReportCard_full_report2025.pdf | page 135]\n[TABLE] Page 135 (Assessing the State of the Arctic Observing Network: Strengths, Gaps and Risks to Systems that Track Arctic Change)\nCaption: Table 2. Risks to physical indicators (blue) and ecological indicators (green) and the observing and data products that support them.\n| IndicatorType | EssayTopic |  |  | Whatisatriskandcriticality information | Furtherexplanationofrisk |\n| --- | --- | --- | --- | --- | --- |\n| Physical Indicators |  | SurfaceAir |  | Norisksnoted | — |\n|  |  | Temperature |  |  |  |\n|  | Precipitation |  |  | MeteorologicalStations CollectingPrecipitationData-a highlycriticalobservingsystem forthePrecipitationessay | Potentialimpactsasprecipitation dataarecollectedorfundedby agenciesorprogramsfacingmajor budgetcuts |\n\n[arc2025:p069:table:00 | ArcticReportCard_full_report2025.pdf | page 69]\n[TABLE] Page 69 (Arctic Ocean Primary Productivity: The Response of Marine Algae to Climate Warming and Sea Ice Decline)\nCaption: Table 1. Linear trends, statistical significance, and percent change in primary productivity (2003-25) and primary productivity anomalies for 2025 (March-September) in the nine regions as shown in Fig. 4. Values in bold are statistically significant (p<0.05) using the Mann-Kendall test for trend. The percentage change was estimated from the linear regression of the 23-year time series. The units for the Total Arctic differ because they represent annual net primary production across the Arctic (60-90° N) (as shown in Fig. 5) rather than average regional production rates (as shown in Fig. 4). September 2025 chlorophyll-a data (inputs into the primary productivity algorithm) were only available as Near Real Time (not final) data at the timing of this publication.\n| EurasianArctic 3440 <00001 802 . . . |  |  |  |  |  |  |  |  |  |  |  | 6052 1482 . . |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | AmerasianArctic |  |  | 103 - . |  |  | 0566 . |  |  | 30 - . |  |  | 860 - . |  |  | 886 . |  |\n| SeaofOkhotsk 2219 0004 244 . . . |  |  |  |  |  |  |  |  |  |  |  | 6905 1317 . . |  |  |  |  |  |\n|  | BeringSea |  |  | 1797 . |  |  | 0005 . |  |  | 263 . |  |  | 4653 . |  |  | 1280 . |  |\n| BarentsSea 2293 <00001 338 . . . |  |  |  |  |  |  |  |  |  |  |  | 5064 1300 . . |  |  |  |  |  |\n|  | GreenlandSea |  |  | 727 . |  |  | 0172 . |  |  | 112 . |  |  | 3571 . |  |  | 1242 . |  |\n| HudsonBay 1124 0039 271 . . . |  |  |  |  |  |  |  |  |  |  |  | 2128 1213 . . |  |  |  |  |  |\n|  | BaffinBay/LabradorSea |  |  | 593 . |  |  | 0044 . |  |  | 104 . |  |  | 1018 . |  |  | 1078 . |  |\n| NorthAtlantic 785 0050 84 . . . |  |  |  |  |  |  |  |  |  |  |  | 967 1046 . . |  |  |  |  |  |\n| TotalArctic(>60°N) 216* <00001 305 . . . |  |  |  |  |  |  |  |  |  |  |  | 47890** 1273 . . |  |  |  |  |  |\n\n[arc2025:p002:text:002 | ArcticReportCard_full_report2025.pdf | page 2]\nMention of a commercial company or product does not constitute an endorsement by NOAA/OAR. Use of information from this publication concerning proprietary products or the tests of such products for publicity or advertising purposes is not authorized. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Oceanic and Atmospheric Administration.\n\n[arc2025:p045:fig:00 | ArcticReportCard_full_report2025.pdf | page 45]\n[VISUAL:MAP] Page 45 (Sea Ice)\nCaption: Fig. 1. Sea ice concentration anomaly for (a) March 2025 and (b) September 2025 relative to the 1991-2020 average. The extreme negative anomalies (less than -25%) indicate regions where there is ice in the climatology, but no ice present in 2025.\nTitle: Sea ice concentration anomaly for (a) March 2025 and (b) September 2025 relative to the 1991-2020 average\nAxes/Units/Legend: Concentration Anomaly (%) ranging from -25 (blue) to 0 (white) to +25 (red)\nDetails: Two polar projection maps showing Arctic sea ice concentration anomalies for (a) March 2025 and (b) September 2025 relative to the 1991-2020 average. A color bar at the bottom indicates concentration anomaly percentages spanning from -25% (blue) through 0% (white) to +25% (red).\n\n[arc2025:p045:text:000 | ArcticReportCard_full_report2025.pdf | page 45]\nSea ice extent\n\nSea ice extent, derived from sea ice concentration fields and defined as the total area covered by ice of at least 15% concentration, is an iconic indicator of long-term Arctic sea ice conditions. The primary source of extent observations is the 47-year record derived from satellite-borne passive microwave sensors, beginning in 1979.\n\n[arc2025:p056:fig:00 | ArcticReportCard_full_report2025.pdf | page 56]\n[VISUAL:MAP] Page 56 (Sea Surface Temperature)\nCaption: Fig. 2. Sea-surface temperature (SST) anomalies (°C) for (a) June 2025, (b) July 2025, and (c) August 2025 relative to the 1991-2020 mean for the respective months. Note a difference in the color bar scale compared to Fig. 1c,e. The mean sea-ice concentration for the corresponding month is also shown.\nTitle: Fig. 2. Sea-surface temperature (SST) anomalies (°C) for June 2025, July 2025, and August 2025\nAxes/Units/Legend: SST Anomaly (°C) scale from -3 to 3 with intervals at -3, -2, -1, 0, 1, 2, 3; Sea-Ice Concentration (%) scale from 15 to 95 with intervals at 15, 35, 55, 75, 95\nDetails: The figure displays three circular Arctic maps labeled (a) Jun. 2025 relative to 1991-2020, (b) Jul. 2025 relative to 1991-2020, and (c) Aug. 2025 relative to 1991-2020. The maps show sea-surface temperature (SST) anomalies in °C ranging from -3 (blue/cooler) to 3 (brown/warmer) relative to the 1991-2020 mean, alongside sea-ice concentration percentages represented in the central regions (white/shaded tones).\n\n[arc2025:p058:text:002 | ArcticReportCard_full_report2025.pdf | page 58]\nFor setting a proxy SST in sea-ice covered regions, OISST Version 2.1 sets SST equal to the freezing temperature (computed using a climatological sea-surface salinity) where ice concentrations are greater than 35% (see Banzon et al. 2020). Therefore, uncertainty in inferring SSTs (and SST trends) may be significant in the vicinity of the sea-ice edge, which varies in location each year, and when sea ice covers a significant portion of the region of interest.\n\nSea-ice concentration data are the Near-Real-Time NOAA/NSIDC Climate Data Record of Passive Microwave Sea Ice Concentration, Version 3 (https://nsidc.org/data/g10016/versions/3) (Peng et al. 2013; Meier et al. 2021a,b). The 1991-2020 median ice edge is derived from the NOAA/NSIDC Climate Data\n\n56",
+    "context_ids": [
+      "arc2025:p064:fig:00",
+      "arc2025:p059:text:002",
+      "arc2025:p135:table:00",
+      "arc2025:p069:table:00",
+      "arc2025:p002:text:002",
+      "arc2025:p045:fig:00",
+      "arc2025:p045:text:000",
+      "arc2025:p056:fig:00",
+      "arc2025:p058:text:002"
+    ],
+    "elapsed_ms": 44612.23,
+    "token_usage": {
+      "llm_calls": 4,
+      "prompt_tokens": 12950,
+      "output_tokens": 137,
+      "llm_seconds": 4.3839718000235735
+    }
+  }
+]

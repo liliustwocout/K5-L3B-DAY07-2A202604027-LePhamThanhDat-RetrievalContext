@@ -1,0 +1,5 @@
+psycopg[binary]==3.3.8
+python-dotenv>=1,<2
+google-genai>=1.0.0
+pymupdf>=2.1
+pillow>=11.0.0

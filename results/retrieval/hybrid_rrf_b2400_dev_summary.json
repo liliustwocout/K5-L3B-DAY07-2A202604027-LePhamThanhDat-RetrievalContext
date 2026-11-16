@@ -1,0 +1,23 @@
+{
+  "config": "hybrid_rrf_b2400",
+  "description": "Context budget tuning: Hybrid RRF top_k=3 with budget=2400 chars (prevents dropping >740-char Strategy C chunks)",
+  "split": "dev",
+  "n": 18,
+  "hit1": "14/18",
+  "hit1_rate": 0.7778,
+  "evidence_hit3": "16/18",
+  "evidence_hit3_rate": 0.8889,
+  "context_evidence_rate": "14/18",
+  "context_evidence_pct": 0.7778,
+  "avg_context_chars": 1960,
+  "median_ms": 28.46,
+  "total_seconds": 0.48,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 18,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

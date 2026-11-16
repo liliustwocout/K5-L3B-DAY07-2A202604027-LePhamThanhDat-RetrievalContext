@@ -1,0 +1,23 @@
+{
+  "config": "hybrid_cross_rerank_neighbor_b4200",
+  "description": "Improvement 2 (Context Engineering): Hybrid + Cross-Feature Rerank + Adjacent Chunk Expansion (window=1, anchors=2), budget=4200 chars",
+  "split": "dev",
+  "n": 18,
+  "hit1": "13/18",
+  "hit1_rate": 0.7222,
+  "evidence_hit3": "15/18",
+  "evidence_hit3_rate": 0.8333,
+  "context_evidence_rate": "16/18",
+  "context_evidence_pct": 0.8889,
+  "avg_context_chars": 3832.6,
+  "median_ms": 25.74,
+  "total_seconds": 0.56,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 18,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

@@ -1,0 +1,23 @@
+{
+  "config": "hybrid_rrf_neighbor_b4800",
+  "description": "Improvement 2 (Selected): Hybrid RRF (top_k=3) + Rank-1 Adjacent Chunk Expansion (+1/-1) + budget=4800 chars",
+  "split": "test",
+  "n": 6,
+  "hit1": "4/6",
+  "hit1_rate": 0.6667,
+  "evidence_hit3": "6/6",
+  "evidence_hit3_rate": 1.0,
+  "context_evidence_rate": "6/6",
+  "context_evidence_pct": 1.0,
+  "avg_context_chars": 4056.7,
+  "median_ms": 38.07,
+  "total_seconds": 0.248,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 6,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

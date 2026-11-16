@@ -1,0 +1,19 @@
+{
+  "config": "tfidf_b800",
+  "description": "Lexical TF-IDF cosine with metadata filter, top_k=3, budget=800 chars",
+  "split": "dev",
+  "n": 18,
+  "hit1": "11/18",
+  "hit1_rate": 0.6111,
+  "evidence_hit3": "13/18",
+  "evidence_hit3_rate": 0.7222,
+  "context_evidence_rate": "2/18",
+  "context_evidence_pct": 0.1111,
+  "avg_context_chars": 301.7,
+  "median_ms": 0.72,
+  "total_seconds": 0.014,
+  "embed_stats": null,
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

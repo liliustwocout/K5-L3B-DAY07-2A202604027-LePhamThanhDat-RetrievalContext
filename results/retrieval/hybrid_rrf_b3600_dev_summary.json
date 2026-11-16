@@ -1,0 +1,23 @@
+{
+  "config": "hybrid_rrf_b3600",
+  "description": "Improvement 1 (Context Budget): Hybrid RRF top_k=3 with budget=3600 chars (fits all top-3 Strategy C chunks)",
+  "split": "dev",
+  "n": 18,
+  "hit1": "14/18",
+  "hit1_rate": 0.7778,
+  "evidence_hit3": "16/18",
+  "evidence_hit3_rate": 0.8889,
+  "context_evidence_rate": "17/18",
+  "context_evidence_pct": 0.9444,
+  "avg_context_chars": 2940.9,
+  "median_ms": 31.64,
+  "total_seconds": 0.551,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 18,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

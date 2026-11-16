@@ -1,0 +1,1184 @@
+[
+  {
+    "query_id": "q07",
+    "split": "test",
+    "status": "answered",
+    "answer": "When an explanation lacks 100 percent explanation accuracy, it can be exploited by adversaries who manipulate a classifier's output on small perturbations of an input in order to hide a system's biases [nist-ir-8312:p022:para:000]. Fairwashing specifically exploits this by taking a closed-box model and producing an ensemble of interpretable models that approximate the original model while appearing much fairer, thereby hiding the unfairness of the original model [nist-ir-8312:p022:para:001].",
+    "citations": [
+      "nist-ir-8312:p022:para:000",
+      "nist-ir-8312:p022:para:001"
+    ],
+    "context": "[nist-ir-8312:p022:para:000 | starter/data/NIST.IR.8312.pdf | page 22]\n6.3 Adversarial Attacks on Explainability Explanation accuracy (Principle 3) is an important component of explanations. Sometimes, if an explanation does not have 100 percent explanation accuracy, it can be exploited by adversaries who manipulate a classifier’s output on small perturbations of an input to hide the biases of a system. First, Lakkaraju and Bastani [69] observes that even if an expla- nation can mimic the predictions of the closed-box that this is insufficient for explanation accuracy and such systems can produce explanations that may mislead users. An approach to generate misleading explanations is demonstrated in Slack et al. [124]. They do this by producing a scaffolding around a given classifier that matches the classification on all input data instances but changes outputs for small perturbations of input points, which can obfuscate global system behavior when only queried locally.\n\n[nist-ir-8312:p011:para:002 | starter/data/NIST.IR.8312.pdf | page 11]\n2.3 Explanation Accuracy Together, the Explanation and Meaningful principles only call for a system to produce explanations that are intelligible to the intended audience. These two principles do not require that an explanation correctly reflects a system’s process for generating its output. The Explanation Accuracy principle imposes veracity on a system’s explanations. Explanation accuracy is a distinct concept from decision accuracy. Decision accuracy refers to whether the system’s judgment is correct or incorrect. Regardless of the system’s decision accuracy, the corresponding explanation may or may not accurately describe how the system came to its conclusion or action. Researchers in AI have developed standard measures of algorithm and system accuracy [23, 29, 52, 96, 97, 99, 103, 114]. While these established decision accuracy metrics exist, researchers are in the process of developing performance metrics for explanation accuracy. In Section 7.2, we review current work on this subject.\n\n[nist-ir-8312:p012:para:000 | starter/data/NIST.IR.8312.pdf | page 12]\nnuances may only be meaningful to certain audiences, such as experts of the system. This is similar to how humans approach explaining complex topics. A professor of neuroscience may explain a new finding with extensive and technical details to a colleague. That same finding will likely be distilled and changed for presenting to an undergraduate student in order to present the pertinent and higher level details. That same professor may explain the finding very differently to their untrained friends and parents.\n\nTogether, this highlights the point that explanation accuracy and meaningfulness inter- act. A detailed explanation may accurately reflect the system’s processing, but sacrifice how useful and accessible it is to certain audiences. Likewise, a brief, simple explanation may be highly understandable but would not fully characterize the system. Given these considerations, this principle allows for flexibility in explanation accuracy metrics.\n\n[nist-ir-8312:p022:para:001 | starter/data/NIST.IR.8312.pdf | page 22]\nThis means that if the sys- tem is anticipating being explained by a tool such as LIME that gives similar instances to training set instances as inputs, the system will develop an alternative protocol to decide those instances that differ from how they will classify trials in the training and test sets. This can mislead the explainer by anticipating which trials the system might be asked to classify. Another similar approach is demonstrated in Aivodji et al. [5]. They fairwash a model by taking a closed-box model and produce an ensemble of interpretable models that approximate the original model but are much fairer, which then hide the unfairness of the original model. Another example of slightly perturbing a model to manipulate explanations is demonstrated in Dimanov et al. [24]. The ability for developers to cover up unfairness in closed-box models is one of the several vulnerabilities of explainable AI discussed in Hall et al. [41]. Kindermans et al. [57] shows that many saliency pixel explanations lack input invariance, meaning that a small change to the input can greatly change the output and the attribution to relevant pixels.\n\n[nist-ir-8312:p025:para:000 | starter/data/NIST.IR.8312.pdf | page 25]\nthe inputs and measuring how much the explanation changes. Adebayo et al. [3] evaluated explanation accuracy of saliency pixel explanations for deep neural networks by measur- ing the amount the explanation changed relative to how the trained models differed. Sixt et al. [122] evaluated the quality of saliency pixels by randomizing middle convolutional layers and comparing saliency pixels. They also compared the saliency pixels when the labels are the actual labels vs. random. Qi et al. [104] evaluated explanation accuracy by adding or deleting image pixels deemed relevant by the explanation. They then compared the system’s scores on the new images. Bhatt et al. [12] evaluated the explanation accuracy of “feature importance” explanations by both checking sensitivity, meaning similar inputs have similar feature importance explanations, and faithfulness, meaning the change in the explanations should correlate to the change in inputs.",
+    "context_ids": [
+      "nist-ir-8312:p022:para:000",
+      "nist-ir-8312:p011:para:002",
+      "nist-ir-8312:p012:para:000",
+      "nist-ir-8312:p022:para:001",
+      "nist-ir-8312:p025:para:000"
+    ],
+    "num_searches": 2,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "fairwashing explanation accuracy vulnerability",
+        "args": {
+          "query": "fairwashing explanation accuracy vulnerability",
+          "top_k": 5
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ir-8312:p022:para:000",
+            "source_id": "nist-ir-8312",
+            "page": 22,
+            "score": 0.031514
+          },
+          {
+            "id": "nist-ir-8312:p011:para:002",
+            "source_id": "nist-ir-8312",
+            "page": 11,
+            "score": 0.030679
+          },
+          {
+            "id": "nist-ir-8312:p012:para:000",
+            "source_id": "nist-ir-8312",
+            "page": 12,
+            "score": 0.029911
+          },
+          {
+            "id": "nist-ir-8312:p022:para:001",
+            "source_id": "nist-ir-8312",
+            "page": 22,
+            "score": 0.016393
+          },
+          {
+            "id": "nist-ir-8312:p025:para:000",
+            "source_id": "nist-ir-8312",
+            "page": 25,
+            "score": 0.016129
+          }
+        ],
+        "context_ids": [
+          "nist-ir-8312:p022:para:000",
+          "nist-ir-8312:p011:para:002",
+          "nist-ir-8312:p012:para:000",
+          "nist-ir-8312:p022:para:001",
+          "nist-ir-8312:p025:para:000"
+        ],
+        "context": "[nist-ir-8312:p022:para:000 | starter/data/NIST.IR.8312.pdf | page 22]\n6.3 Adversarial Attacks on Explainability Explanation accuracy (Principle 3) is an important component of explanations. Sometimes, if an explanation does not have 100 percent explanation accuracy, it can be exploited by adversaries who manipulate a classifier’s output on small perturbations of an input to hide the biases of a system. First, Lakkaraju and Bastani [69] observes that even if an expla- nation can mimic the predictions of the closed-box that this is insufficient for explanation accuracy and such systems can produce explanations that may mislead users. An approach to generate misleading explanations is demonstrated in Slack et al. [124]. They do this by producing a scaffolding around a given classifier that matches the classification on all input data instances but changes outputs for small perturbations of input points, which can obfuscate global system behavior when only queried locally.\n\n[nist-ir-8312:p011:para:002 | starter/data/NIST.IR.8312.pdf | page 11]\n2.3 Explanation Accuracy Together, the Explanation and Meaningful principles only call for a system to produce explanations that are intelligible to the intended audience. These two principles do not require that an explanation correctly reflects a system’s process for generating its output. The Explanation Accuracy principle imposes veracity on a system’s explanations. Explanation accuracy is a distinct concept from decision accuracy. Decision accuracy refers to whether the system’s judgment is correct or incorrect. Regardless of the system’s decision accuracy, the corresponding explanation may or may not accurately describe how the system came to its conclusion or action. Researchers in AI have developed standard measures of algorithm and system accuracy [23, 29, 52, 96, 97, 99, 103, 114]. While these established decision accuracy metrics exist, researchers are in the process of developing performance metrics for explanation accuracy. In Section 7.2, we review current work on this subject.\n\n[nist-ir-8312:p012:para:000 | starter/data/NIST.IR.8312.pdf | page 12]\nnuances may only be meaningful to certain audiences, such as experts of the system. This is similar to how humans approach explaining complex topics. A professor of neuroscience may explain a new finding with extensive and technical details to a colleague. That same finding will likely be distilled and changed for presenting to an undergraduate student in order to present the pertinent and higher level details. That same professor may explain the finding very differently to their untrained friends and parents.\n\nTogether, this highlights the point that explanation accuracy and meaningfulness inter- act. A detailed explanation may accurately reflect the system’s processing, but sacrifice how useful and accessible it is to certain audiences. Likewise, a brief, simple explanation may be highly understandable but would not fully characterize the system. Given these considerations, this principle allows for flexibility in explanation accuracy metrics.\n\n[nist-ir-8312:p022:para:001 | starter/data/NIST.IR.8312.pdf | page 22]\nThis means that if the sys- tem is anticipating being explained by a tool such as LIME that gives similar instances to training set instances as inputs, the system will develop an alternative protocol to decide those instances that differ from how they will classify trials in the training and test sets. This can mislead the explainer by anticipating which trials the system might be asked to classify. Another similar approach is demonstrated in Aivodji et al. [5]. They fairwash a model by taking a closed-box model and produce an ensemble of interpretable models that approximate the original model but are much fairer, which then hide the unfairness of the original model. Another example of slightly perturbing a model to manipulate explanations is demonstrated in Dimanov et al. [24]. The ability for developers to cover up unfairness in closed-box models is one of the several vulnerabilities of explainable AI discussed in Hall et al. [41]. Kindermans et al. [57] shows that many saliency pixel explanations lack input invariance, meaning that a small change to the input can greatly change the output and the attribution to relevant pixels.\n\n[nist-ir-8312:p025:para:000 | starter/data/NIST.IR.8312.pdf | page 25]\nthe inputs and measuring how much the explanation changes. Adebayo et al. [3] evaluated explanation accuracy of saliency pixel explanations for deep neural networks by measur- ing the amount the explanation changed relative to how the trained models differed. Sixt et al. [122] evaluated the quality of saliency pixels by randomizing middle convolutional layers and comparing saliency pixels. They also compared the saliency pixels when the labels are the actual labels vs. random. Qi et al. [104] evaluated explanation accuracy by adding or deleting image pixels deemed relevant by the explanation. They then compared the system’s scores on the new images. Bhatt et al. [12] evaluated the explanation accuracy of “feature importance” explanations by both checking sensitivity, meaning similar inputs have similar feature importance explanations, and faithfulness, meaning the change in the explanations should correlate to the change in inputs.",
+        "elapsed_ms": 562.23
+      },
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "fairwashing exploit explanation accuracy",
+        "args": {
+          "top_k": 3,
+          "query": "fairwashing exploit explanation accuracy"
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-ir-8312:p022:para:000",
+            "source_id": "nist-ir-8312",
+            "page": 22,
+            "score": 0.030769
+          },
+          {
+            "id": "nist-ir-8312:p012:para:000",
+            "source_id": "nist-ir-8312",
+            "page": 12,
+            "score": 0.029631
+          },
+          {
+            "id": "nist-ir-8312:p011:para:002",
+            "source_id": "nist-ir-8312",
+            "page": 11,
+            "score": 0.016393
+          }
+        ],
+        "context_ids": [
+          "nist-ir-8312:p022:para:000",
+          "nist-ir-8312:p011:para:002",
+          "nist-ir-8312:p012:para:000",
+          "nist-ir-8312:p022:para:001",
+          "nist-ir-8312:p025:para:000"
+        ],
+        "context": "[nist-ir-8312:p022:para:000 | starter/data/NIST.IR.8312.pdf | page 22]\n6.3 Adversarial Attacks on Explainability Explanation accuracy (Principle 3) is an important component of explanations. Sometimes, if an explanation does not have 100 percent explanation accuracy, it can be exploited by adversaries who manipulate a classifier’s output on small perturbations of an input to hide the biases of a system. First, Lakkaraju and Bastani [69] observes that even if an expla- nation can mimic the predictions of the closed-box that this is insufficient for explanation accuracy and such systems can produce explanations that may mislead users. An approach to generate misleading explanations is demonstrated in Slack et al. [124]. They do this by producing a scaffolding around a given classifier that matches the classification on all input data instances but changes outputs for small perturbations of input points, which can obfuscate global system behavior when only queried locally.\n\n[nist-ir-8312:p011:para:002 | starter/data/NIST.IR.8312.pdf | page 11]\n2.3 Explanation Accuracy Together, the Explanation and Meaningful principles only call for a system to produce explanations that are intelligible to the intended audience. These two principles do not require that an explanation correctly reflects a system’s process for generating its output. The Explanation Accuracy principle imposes veracity on a system’s explanations. Explanation accuracy is a distinct concept from decision accuracy. Decision accuracy refers to whether the system’s judgment is correct or incorrect. Regardless of the system’s decision accuracy, the corresponding explanation may or may not accurately describe how the system came to its conclusion or action. Researchers in AI have developed standard measures of algorithm and system accuracy [23, 29, 52, 96, 97, 99, 103, 114]. While these established decision accuracy metrics exist, researchers are in the process of developing performance metrics for explanation accuracy. In Section 7.2, we review current work on this subject.\n\n[nist-ir-8312:p012:para:000 | starter/data/NIST.IR.8312.pdf | page 12]\nnuances may only be meaningful to certain audiences, such as experts of the system. This is similar to how humans approach explaining complex topics. A professor of neuroscience may explain a new finding with extensive and technical details to a colleague. That same finding will likely be distilled and changed for presenting to an undergraduate student in order to present the pertinent and higher level details. That same professor may explain the finding very differently to their untrained friends and parents.\n\nTogether, this highlights the point that explanation accuracy and meaningfulness inter- act. A detailed explanation may accurately reflect the system’s processing, but sacrifice how useful and accessible it is to certain audiences. Likewise, a brief, simple explanation may be highly understandable but would not fully characterize the system. Given these considerations, this principle allows for flexibility in explanation accuracy metrics.\n\n[nist-ir-8312:p022:para:001 | starter/data/NIST.IR.8312.pdf | page 22]\nThis means that if the sys- tem is anticipating being explained by a tool such as LIME that gives similar instances to training set instances as inputs, the system will develop an alternative protocol to decide those instances that differ from how they will classify trials in the training and test sets. This can mislead the explainer by anticipating which trials the system might be asked to classify. Another similar approach is demonstrated in Aivodji et al. [5]. They fairwash a model by taking a closed-box model and produce an ensemble of interpretable models that approximate the original model but are much fairer, which then hide the unfairness of the original model. Another example of slightly perturbing a model to manipulate explanations is demonstrated in Dimanov et al. [24]. The ability for developers to cover up unfairness in closed-box models is one of the several vulnerabilities of explainable AI discussed in Hall et al. [41]. Kindermans et al. [57] shows that many saliency pixel explanations lack input invariance, meaning that a small change to the input can greatly change the output and the attribution to relevant pixels.\n\n[nist-ir-8312:p025:para:000 | starter/data/NIST.IR.8312.pdf | page 25]\nthe inputs and measuring how much the explanation changes. Adebayo et al. [3] evaluated explanation accuracy of saliency pixel explanations for deep neural networks by measur- ing the amount the explanation changed relative to how the trained models differed. Sixt et al. [122] evaluated the quality of saliency pixels by randomizing middle convolutional layers and comparing saliency pixels. They also compared the saliency pixels when the labels are the actual labels vs. random. Qi et al. [104] evaluated explanation accuracy by adding or deleting image pixels deemed relevant by the explanation. They then compared the system’s scores on the new images. Bhatt et al. [12] evaluated the explanation accuracy of “feature importance” explanations by both checking sensitivity, meaning similar inputs have similar feature importance explanations, and faithfulness, meaning the change in the explanations should correlate to the change in inputs.",
+        "elapsed_ms": 456.98
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 4350.58,
+    "token_usage": {
+      "llm_calls": 3,
+      "prompt_tokens": 6047,
+      "output_tokens": 229,
+      "llm_seconds": 3.321303500008071
+    }
+  },
+  {
+    "query_id": "q08",
+    "split": "test",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu được cung cấp để trả lời câu hỏi này.",
+    "citations": [],
+    "abstain_reason": "invalid_or_missing_citations",
+    "raw_model_citations": [
+      "nist-ir-8312:p025:para:002",
+      "nist-ir-8312:p027:para:003",
+      "nist-ir-8312:p029:para:001",
+      "nist-ir-8312:p029:para:002"
+    ],
+    "context": "[nist-ir-8312:p029:para:001 | starter/data/NIST.IR.8312.pdf | page 29]\nThere are different approaches and philosophies for developing and evaluating explain- able AI. Computer science approaches tackle the problem of explainable AI from a variety of computational and graphical techniques and perspectives, which may lead to promising breakthroughs. A blossoming field puts humans at the forefront when considering the ef- fectiveness of AI explanations and the human factors behind their effectiveness. Our four principles provide a multidisciplinary framework with which to explore this type of human- machine interaction. The practical needs of the system will influence how these principles are addressed (or dismissed). With these needs in mind, the community will ultimately adapt and apply the four principles to capture a wide scope of applications. The focus of explainable AI has been to advance the capability of the systems to pro- duce a quality explanation. Here, we addressed whether humans can meet the same set of principles we set forth for AI. We showed that humans demonstrate only limited ability to meet the principles outlined here. This provides a benchmark with which to compare AI systems.\n\n[nist-ir-8312:p025:para:002 | starter/data/NIST.IR.8312.pdf | page 25]\nIndependent of AI, humans operating alone also make high stakes decisions with the expectation that they be explainable. For example, physicians, judges, lawyers, and foren- sic scientists are often expected to provide a rationale for their judgments. How do these proffered explanations adhere to our four principles? We focused strictly on human expla- nations of their own judgments and decisions (e.g.,“why did you arrive at this conclusion or choice?”), not of external events (e.g., “why is the sky blue?” or “why did an event oc- cur?”). External events accompanied by explanations can be helpful for human reasoning and formulating predictions [80]. This is consistent with a desire for explainable AI. How- ever, as outlined in what follows, human-produced explanations for their own judgments, decisions, and conclusions are largely unreliable. Humans as a comparison group for ex- plainable AI can inform the development of benchmark metrics for explainable AI systems; and lead to a better understanding of the dynamics of human-machine collaboration.\n\n[nist-ir-8312:p025:para:003 | starter/data/NIST.IR.8312.pdf | page 25]\n18 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312\n\n[nist-ir-8312:p025:para:001 | starter/data/NIST.IR.8312.pdf | page 25]\nThe quality of counterfactual explanations were tested in Wachter et al. [140]. A coun- terfactual explanation should answer, “what is the minimum amount an input would need to change for the system to change its decision on that input?” Therefore, they tested how far away the counterfactual was from the original data point.\n\n8. Humans as a Comparison Group for Explainable AI When considering the performance of humans and AI systems, there are fairly significant differences of opinion regarding performance expectations. Some argue that we should hold machines to a much higher standard than humans, while others believe it is suffi- cient for machines to simply be as good as humans. A cascade of interesting and difficult questions arise from this overarching philosophical divide, such as how much better do machines have to be than humans? In what way(s) must they be better? How do we mea- sure “as good as”? Regardless of where one falls on this particular philosophical debate, it is nonetheless helpful to consider human performance as a baseline. In this section, we describe human decision-making with respect to the extent humans explanations line up with our four principles.\n\n[nist-ir-8312:p028:para:000 | starter/data/NIST.IR.8312.pdf | page 28]\nHere, we focused on whether humans correctly assess their own ability and accuracy, and whether they know when to report that they do not know an answer. There are several ways to test whether people can evaluate their own knowledge limits. One method is to ask participants to predict how well they believe they performed or will perform on a task, relative to others (e.g., in what percentile will their scores fall relative to other task-takers). Another way to test the awareness of knowledge limits is to obtain a measure of their response confidence, with higher confidence indicating that a person believes with greater likelihood that they are correct.\n\n[nist-ir-8312:p027:para:003 | starter/data/NIST.IR.8312.pdf | page 27]\nBased on our definition of explanation accuracy, these findings do not support the idea that humans reliably meet this criteria. As is the case with algorithms, human decision accuracy and explanation accuracy are distinct. For numerous tasks, humans can be highly accurate but cannot verbalize their decision process.\n\n8.4 Knowledge Limits This principle states that the system only operates 1) under the conditions it was designed and 2) when it reaches a sufficient confidence in its output or actions. For this principle, we narrowed down the broad field of metacognition, or thinking about one’s own thinking. 20 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312",
+    "context_ids": [
+      "nist-ir-8312:p029:para:001",
+      "nist-ir-8312:p025:para:002",
+      "nist-ir-8312:p025:para:003",
+      "nist-ir-8312:p025:para:001",
+      "nist-ir-8312:p028:para:000",
+      "nist-ir-8312:p027:para:003"
+    ],
+    "num_searches": 3,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "human-produced explanations four AI principles benchmark conclusion human-machine collaboration",
+        "args": {
+          "top_k": 5,
+          "query": "human-produced explanations four AI principles benchmark conclusion human-machine collaboration"
+        },
+        "filter": {
+          "year": 2021
+        },
+        "results": [
+          {
+            "id": "nist-ir-8312:p029:para:001",
+            "source_id": "nist-ir-8312",
+            "page": 29,
+            "score": 0.032522
+          },
+          {
+            "id": "nist-ir-8312:p025:para:002",
+            "source_id": "nist-ir-8312",
+            "page": 25,
+            "score": 0.032266
+          },
+          {
+            "id": "nist-ir-8312:p029:para:002",
+            "source_id": "nist-ir-8312",
+            "page": 29,
+            "score": 0.031281
+          },
+          {
+            "id": "nist-ir-8312:p009:para:001",
+            "source_id": "nist-ir-8312",
+            "page": 9,
+            "score": 0.031025
+          },
+          {
+            "id": "nist-ir-8312:p029:para:004",
+            "source_id": "nist-ir-8312",
+            "page": 29,
+            "score": 0.030331
+          }
+        ],
+        "context_ids": [
+          "nist-ir-8312:p029:para:001",
+          "nist-ir-8312:p025:para:002",
+          "nist-ir-8312:p029:para:002",
+          "nist-ir-8312:p009:para:001",
+          "nist-ir-8312:p029:para:004"
+        ],
+        "context": "[nist-ir-8312:p029:para:001 | starter/data/NIST.IR.8312.pdf | page 29]\nThere are different approaches and philosophies for developing and evaluating explain- able AI. Computer science approaches tackle the problem of explainable AI from a variety of computational and graphical techniques and perspectives, which may lead to promising breakthroughs. A blossoming field puts humans at the forefront when considering the ef- fectiveness of AI explanations and the human factors behind their effectiveness. Our four principles provide a multidisciplinary framework with which to explore this type of human- machine interaction. The practical needs of the system will influence how these principles are addressed (or dismissed). With these needs in mind, the community will ultimately adapt and apply the four principles to capture a wide scope of applications. The focus of explainable AI has been to advance the capability of the systems to pro- duce a quality explanation. Here, we addressed whether humans can meet the same set of principles we set forth for AI. We showed that humans demonstrate only limited ability to meet the principles outlined here. This provides a benchmark with which to compare AI systems.\n\n[nist-ir-8312:p025:para:002 | starter/data/NIST.IR.8312.pdf | page 25]\nIndependent of AI, humans operating alone also make high stakes decisions with the expectation that they be explainable. For example, physicians, judges, lawyers, and foren- sic scientists are often expected to provide a rationale for their judgments. How do these proffered explanations adhere to our four principles? We focused strictly on human expla- nations of their own judgments and decisions (e.g.,“why did you arrive at this conclusion or choice?”), not of external events (e.g., “why is the sky blue?” or “why did an event oc- cur?”). External events accompanied by explanations can be helpful for human reasoning and formulating predictions [80]. This is consistent with a desire for explainable AI. How- ever, as outlined in what follows, human-produced explanations for their own judgments, decisions, and conclusions are largely unreliable. Humans as a comparison group for ex- plainable AI can inform the development of benchmark metrics for explainable AI systems; and lead to a better understanding of the dynamics of human-machine collaboration.\n\n[nist-ir-8312:p029:para:002 | starter/data/NIST.IR.8312.pdf | page 29]\nIn reflection of societal expectations, recent regulations have imposed a degree of accountability on AI systems via the requirement for explainable AI [1]. As advances are made in explainable AI, we may find that certain parts of AI systems are better able to meet societal expectations and goals compared to humans. By understanding the ex- plainability of both the AI system and the human in the human-machine collaboration, this opens the door to pursue implementations which incorporate the strengths of each, poten- tially improving explainability beyond the capability of either the human or AI system in isolation.\n\n[nist-ir-8312:p009:para:001 | starter/data/NIST.IR.8312.pdf | page 9]\n2. Four Principles of Explainable AI We present four fundamental principles for explainable AI systems. These principles are heavily influenced by considering the AI system’s interaction with the human recipient of the information. The requirements of the given situation, the task at hand, and the consumer will all influence the type of explanation deemed appropriate for the situation. These situa- tions can include, but are not limited to, regulator and legal requirements, quality control of an AI system, and customer relations. Our four principles are intended to capture a broad set of motivations, reasons, and perspectives. Our principles apply to systems that produce explanations, and they support the full range of AI techniques, not only machine learning ones.\n\n[nist-ir-8312:p029:para:004 | starter/data/NIST.IR.8312.pdf | page 29]\nConsidering these human factors within the context of explainable AI has only just begun.\n\nTo succeed in explainable AI, the community needs to study the interface between hu- mans and AI systems. Human-machine collaborations have shown to be highly effective in terms of accuracy [98]. There may be similar breakthroughs for AI explainability in human-machine collaborations. The principles defined here provide guidance and a phi- losophy for driving explainable AI toward a safer world by giving users a deeper under- 22 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312",
+        "elapsed_ms": 470.17
+      },
+      {
+        "event": "search",
+        "tool": "get_adjacent_chunks",
+        "query": "neighbors(nist-ir-8312:p025:para:002, w=1)",
+        "args": {
+          "window": 1,
+          "chunk_id": "nist-ir-8312:p025:para:002"
+        },
+        "filter": {
+          "year": 2021
+        },
+        "results": [
+          {
+            "id": "nist-ir-8312:p025:para:003",
+            "source_id": "nist-ir-8312",
+            "page": 25,
+            "score": null
+          },
+          {
+            "id": "nist-ir-8312:p025:para:001",
+            "source_id": "nist-ir-8312",
+            "page": 25,
+            "score": null
+          }
+        ],
+        "context_ids": [
+          "nist-ir-8312:p029:para:001",
+          "nist-ir-8312:p025:para:002",
+          "nist-ir-8312:p029:para:002",
+          "nist-ir-8312:p009:para:001",
+          "nist-ir-8312:p025:para:003",
+          "nist-ir-8312:p025:para:001"
+        ],
+        "context": "[nist-ir-8312:p029:para:001 | starter/data/NIST.IR.8312.pdf | page 29]\nThere are different approaches and philosophies for developing and evaluating explain- able AI. Computer science approaches tackle the problem of explainable AI from a variety of computational and graphical techniques and perspectives, which may lead to promising breakthroughs. A blossoming field puts humans at the forefront when considering the ef- fectiveness of AI explanations and the human factors behind their effectiveness. Our four principles provide a multidisciplinary framework with which to explore this type of human- machine interaction. The practical needs of the system will influence how these principles are addressed (or dismissed). With these needs in mind, the community will ultimately adapt and apply the four principles to capture a wide scope of applications. The focus of explainable AI has been to advance the capability of the systems to pro- duce a quality explanation. Here, we addressed whether humans can meet the same set of principles we set forth for AI. We showed that humans demonstrate only limited ability to meet the principles outlined here. This provides a benchmark with which to compare AI systems.\n\n[nist-ir-8312:p025:para:002 | starter/data/NIST.IR.8312.pdf | page 25]\nIndependent of AI, humans operating alone also make high stakes decisions with the expectation that they be explainable. For example, physicians, judges, lawyers, and foren- sic scientists are often expected to provide a rationale for their judgments. How do these proffered explanations adhere to our four principles? We focused strictly on human expla- nations of their own judgments and decisions (e.g.,“why did you arrive at this conclusion or choice?”), not of external events (e.g., “why is the sky blue?” or “why did an event oc- cur?”). External events accompanied by explanations can be helpful for human reasoning and formulating predictions [80]. This is consistent with a desire for explainable AI. How- ever, as outlined in what follows, human-produced explanations for their own judgments, decisions, and conclusions are largely unreliable. Humans as a comparison group for ex- plainable AI can inform the development of benchmark metrics for explainable AI systems; and lead to a better understanding of the dynamics of human-machine collaboration.\n\n[nist-ir-8312:p029:para:002 | starter/data/NIST.IR.8312.pdf | page 29]\nIn reflection of societal expectations, recent regulations have imposed a degree of accountability on AI systems via the requirement for explainable AI [1]. As advances are made in explainable AI, we may find that certain parts of AI systems are better able to meet societal expectations and goals compared to humans. By understanding the ex- plainability of both the AI system and the human in the human-machine collaboration, this opens the door to pursue implementations which incorporate the strengths of each, poten- tially improving explainability beyond the capability of either the human or AI system in isolation.\n\n[nist-ir-8312:p009:para:001 | starter/data/NIST.IR.8312.pdf | page 9]\n2. Four Principles of Explainable AI We present four fundamental principles for explainable AI systems. These principles are heavily influenced by considering the AI system’s interaction with the human recipient of the information. The requirements of the given situation, the task at hand, and the consumer will all influence the type of explanation deemed appropriate for the situation. These situa- tions can include, but are not limited to, regulator and legal requirements, quality control of an AI system, and customer relations. Our four principles are intended to capture a broad set of motivations, reasons, and perspectives. Our principles apply to systems that produce explanations, and they support the full range of AI techniques, not only machine learning ones.\n\n[nist-ir-8312:p025:para:003 | starter/data/NIST.IR.8312.pdf | page 25]\n18 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312\n\n[nist-ir-8312:p025:para:001 | starter/data/NIST.IR.8312.pdf | page 25]\nThe quality of counterfactual explanations were tested in Wachter et al. [140]. A coun- terfactual explanation should answer, “what is the minimum amount an input would need to change for the system to change its decision on that input?” Therefore, they tested how far away the counterfactual was from the original data point.\n\n8. Humans as a Comparison Group for Explainable AI When considering the performance of humans and AI systems, there are fairly significant differences of opinion regarding performance expectations. Some argue that we should hold machines to a much higher standard than humans, while others believe it is suffi- cient for machines to simply be as good as humans. A cascade of interesting and difficult questions arise from this overarching philosophical divide, such as how much better do machines have to be than humans? In what way(s) must they be better? How do we mea- sure “as good as”? Regardless of where one falls on this particular philosophical debate, it is nonetheless helpful to consider human performance as a baseline. In this section, we describe human decision-making with respect to the extent humans explanations line up with our four principles.",
+        "elapsed_ms": 0.11
+      },
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "humans demonstrate only limited ability to meet the principles outlined here",
+        "args": {
+          "top_k": 3,
+          "query": "humans demonstrate only limited ability to meet the principles outlined here"
+        },
+        "filter": {
+          "year": 2021
+        },
+        "results": [
+          {
+            "id": "nist-ir-8312:p029:para:001",
+            "source_id": "nist-ir-8312",
+            "page": 29,
+            "score": 0.032522
+          },
+          {
+            "id": "nist-ir-8312:p028:para:000",
+            "source_id": "nist-ir-8312",
+            "page": 28,
+            "score": 0.031025
+          },
+          {
+            "id": "nist-ir-8312:p027:para:003",
+            "source_id": "nist-ir-8312",
+            "page": 27,
+            "score": 0.030679
+          }
+        ],
+        "context_ids": [
+          "nist-ir-8312:p029:para:001",
+          "nist-ir-8312:p025:para:002",
+          "nist-ir-8312:p025:para:003",
+          "nist-ir-8312:p025:para:001",
+          "nist-ir-8312:p028:para:000",
+          "nist-ir-8312:p027:para:003"
+        ],
+        "context": "[nist-ir-8312:p029:para:001 | starter/data/NIST.IR.8312.pdf | page 29]\nThere are different approaches and philosophies for developing and evaluating explain- able AI. Computer science approaches tackle the problem of explainable AI from a variety of computational and graphical techniques and perspectives, which may lead to promising breakthroughs. A blossoming field puts humans at the forefront when considering the ef- fectiveness of AI explanations and the human factors behind their effectiveness. Our four principles provide a multidisciplinary framework with which to explore this type of human- machine interaction. The practical needs of the system will influence how these principles are addressed (or dismissed). With these needs in mind, the community will ultimately adapt and apply the four principles to capture a wide scope of applications. The focus of explainable AI has been to advance the capability of the systems to pro- duce a quality explanation. Here, we addressed whether humans can meet the same set of principles we set forth for AI. We showed that humans demonstrate only limited ability to meet the principles outlined here. This provides a benchmark with which to compare AI systems.\n\n[nist-ir-8312:p025:para:002 | starter/data/NIST.IR.8312.pdf | page 25]\nIndependent of AI, humans operating alone also make high stakes decisions with the expectation that they be explainable. For example, physicians, judges, lawyers, and foren- sic scientists are often expected to provide a rationale for their judgments. How do these proffered explanations adhere to our four principles? We focused strictly on human expla- nations of their own judgments and decisions (e.g.,“why did you arrive at this conclusion or choice?”), not of external events (e.g., “why is the sky blue?” or “why did an event oc- cur?”). External events accompanied by explanations can be helpful for human reasoning and formulating predictions [80]. This is consistent with a desire for explainable AI. How- ever, as outlined in what follows, human-produced explanations for their own judgments, decisions, and conclusions are largely unreliable. Humans as a comparison group for ex- plainable AI can inform the development of benchmark metrics for explainable AI systems; and lead to a better understanding of the dynamics of human-machine collaboration.\n\n[nist-ir-8312:p025:para:003 | starter/data/NIST.IR.8312.pdf | page 25]\n18 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312\n\n[nist-ir-8312:p025:para:001 | starter/data/NIST.IR.8312.pdf | page 25]\nThe quality of counterfactual explanations were tested in Wachter et al. [140]. A coun- terfactual explanation should answer, “what is the minimum amount an input would need to change for the system to change its decision on that input?” Therefore, they tested how far away the counterfactual was from the original data point.\n\n8. Humans as a Comparison Group for Explainable AI When considering the performance of humans and AI systems, there are fairly significant differences of opinion regarding performance expectations. Some argue that we should hold machines to a much higher standard than humans, while others believe it is suffi- cient for machines to simply be as good as humans. A cascade of interesting and difficult questions arise from this overarching philosophical divide, such as how much better do machines have to be than humans? In what way(s) must they be better? How do we mea- sure “as good as”? Regardless of where one falls on this particular philosophical debate, it is nonetheless helpful to consider human performance as a baseline. In this section, we describe human decision-making with respect to the extent humans explanations line up with our four principles.\n\n[nist-ir-8312:p028:para:000 | starter/data/NIST.IR.8312.pdf | page 28]\nHere, we focused on whether humans correctly assess their own ability and accuracy, and whether they know when to report that they do not know an answer. There are several ways to test whether people can evaluate their own knowledge limits. One method is to ask participants to predict how well they believe they performed or will perform on a task, relative to others (e.g., in what percentile will their scores fall relative to other task-takers). Another way to test the awareness of knowledge limits is to obtain a measure of their response confidence, with higher confidence indicating that a person believes with greater likelihood that they are correct.\n\n[nist-ir-8312:p027:para:003 | starter/data/NIST.IR.8312.pdf | page 27]\nBased on our definition of explanation accuracy, these findings do not support the idea that humans reliably meet this criteria. As is the case with algorithms, human decision accuracy and explanation accuracy are distinct. For numerous tasks, humans can be highly accurate but cannot verbalize their decision process.\n\n8.4 Knowledge Limits This principle states that the system only operates 1) under the conditions it was designed and 2) when it reaches a sufficient confidence in its output or actions. For this principle, we narrowed down the broad field of metacognition, or thinking about one’s own thinking. 20 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312",
+        "elapsed_ms": 535.34
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 5673.61,
+    "token_usage": {
+      "llm_calls": 4,
+      "prompt_tokens": 9129,
+      "output_tokens": 473,
+      "llm_seconds": 4.66706309998699
+    }
+  },
+  {
+    "query_id": "q15",
+    "split": "test",
+    "status": "answered",
+    "answer": "There is an inherent incompatibility between two mathematical fairness conditions: calibration and balancing the positive and negative classes [nist-sp-1270:p041:para:000]. However, this impossibility does not prevent achieving both mitigated bias and good performance, as mitigated bias and good performance can be achieved simultaneously [nist-sp-1270:p041:para:000].",
+    "citations": [
+      "nist-sp-1270:p041:para:000"
+    ],
+    "context": "[nist-sp-1270:p041:para:000 | starter/data/NIST.SP.1270.pdf | page 41]\nWhen deciding which fairness metric to adopt, it is important to recognize the impossibility of satisfying certain mathemat- ical fairness constraints at once except in highly constrained special cases [207]. For example, there is an inherent incom- patibility between two conditions: calibration and balancing the positive and negative classes. These conditions cannot be satisfied simultaneously unless under certain constraints [78]. While not all mathematical fairness desiderata can be achieved simultaneously, it is important to note that mitigated bias and good performance can be achieved simultaneously [208].\n\nThe plethora of fairness metric definitions illustrates that fairness cannot be reduced to a concise mathematical definition. Fairness is dynamic, social in nature, application and context specific, and not just an abstract or universal statistical problem. Therefore, it is important to adopt a socio-technical approach to fairness in order to have realistic fair- ness definitions for different contexts as well as task-specific datasets for machine learning model development and evaluation.\n\n3.3 Who makes decisions and how do they make them? Human Factors in AI Bias\n\n[nist-sp-1270:p040:para:000 | starter/data/NIST.SP.1270.pdf | page 40]\nWhile academic research into mathematical notions of fairness has blossomed in recent years, procedures for testing fairness in regulatory and litigation settings such as employ- ment and consumer finance have been operational for decades, and reached a level of ma- turity before the recent increase in interest on the topic. In these areas, statistical tests can be applied to determine whether some automated decision-making system is acting out- side the bounds of applicable law. t-tests, χ2-tests, analysis of regression coefficients, and other traditional statistical tests can be used to show a statistically significant difference be- tween ML system outcomes across demographic groups. In some cases, measurements of differential validity are also used to ensure that applicants and employees receive roughly equal service from systems in employment, where system performance quality is evaluated across demographic groups.15 Credible attempts at bias mitigation should maintain align- ment with acknowledged legal standards.\n\n[nist-sp-1270:p039:para:001 | starter/data/NIST.SP.1270.pdf | page 39]\nFairness metrics From a computational standpoint, defining a fairness metric for ML requires developing a formal mathematical model to achieve desired predictive goals on a given dataset and associated task. Numerous fairness metrics are proposed in the literature [85, 191, 194, 197–199]. Much of the work in determining fairness criteria involves supervised learning, but the labeled data required for these tasks may not be readily available. This is particularly true for large language models, where the sheer scale of the datasets used for training is prohibitive for proper data labeling. This has a direct impact on both representativeness of the training data and, in turn, its impact on the representativeness of the generated model might exacerbate discriminatory outcomes, as large language models are adapted to specific datasets and tasks. Moreover, even if datasets are representative they may still exhibit biases or improperly utilize protected attributes, which in turn may lead to discrimination. Proxies may be used for hiding protected attributes and care should be taken to avoid discrimination resulting from badly chosen proxies [59, 136, 147, 200, 201].\n\n[nist-sp-1270:p034:para:003 | starter/data/NIST.SP.1270.pdf | page 34]\nValidity Ultimately, AI systems should demonstrate that they perform accurately, but how do we know what constitutes a “right answer”? Validating performance is a difficult but nec- essary endeavor for any system being deployed to the public and effective management and mitigation of AI bias. Many difficulties and flaws can arise in system validation. A common challenge in system testing is a lack of ground truth, or noisy labeling and other annotation factors which make it difficult to know what is accurate. The use of proxy vari- ables compounds this difficulty, since what is being measured isn’t directly observable. Performing system tests under optimal conditions — or conditions that are not close to the deployed state — is another challenging design flaw. System performance metrics are also difficult to generalize and can lead to issues with unintended use. Due to these challenges, subject matter experts should be relied upon during validation to create and oversee the most realistic possible validation processes [102]. Also the practice of “stratified perfor- 25/77\n\n[nist-sp-1270:p021:para:000 | starter/data/NIST.SP.1270.pdf | page 21]\nAI bias extends beyond computational algorithms and models, and the datasets upon which they are built. The assumptions and decisions made within the pro- cesses used to develop technology are key factors, as well as how AI technology is used and interpreted once deployed. The idea that quantitative measures are better and more objective than other observations is known as the M CNAMARA FALLACY . This fallacy, and the related concept TECHNOCHAUVINISM [35], are at the center of many of the issues related to algorithmic bias. Traditional ML approaches attempt to turn ambiguity, context, human subjectivity, and cate- gorical observations into objectively measurable quantities based on numerical mathematical models of their representations. This well-intentioned process enables data-driven modeling but it also inadvertently creates new challenges for socio-technical systems. Representing these complex human phenomena with mathematical models comes at the cost of disentangling the context necessary for understanding individual and societal impact and contributes to a fallacy of objectivity [121].",
+    "context_ids": [
+      "nist-sp-1270:p041:para:000",
+      "nist-sp-1270:p040:para:000",
+      "nist-sp-1270:p039:para:001",
+      "nist-sp-1270:p034:para:003",
+      "nist-sp-1270:p021:para:000"
+    ],
+    "num_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "mathematical fairness conditions inherently incompatible good performance mitigated bias",
+        "args": {
+          "query": "mathematical fairness conditions inherently incompatible good performance mitigated bias",
+          "top_k": 5
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-1270:p041:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 41,
+            "score": 0.032787
+          },
+          {
+            "id": "nist-sp-1270:p040:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 40,
+            "score": 0.032258
+          },
+          {
+            "id": "nist-sp-1270:p039:para:001",
+            "source_id": "nist-sp-1270",
+            "page": 39,
+            "score": 0.029851
+          },
+          {
+            "id": "nist-sp-1270:p034:para:003",
+            "source_id": "nist-sp-1270",
+            "page": 34,
+            "score": 0.029274
+          },
+          {
+            "id": "nist-sp-1270:p021:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 21,
+            "score": 0.029236
+          }
+        ],
+        "context_ids": [
+          "nist-sp-1270:p041:para:000",
+          "nist-sp-1270:p040:para:000",
+          "nist-sp-1270:p039:para:001",
+          "nist-sp-1270:p034:para:003",
+          "nist-sp-1270:p021:para:000"
+        ],
+        "context": "[nist-sp-1270:p041:para:000 | starter/data/NIST.SP.1270.pdf | page 41]\nWhen deciding which fairness metric to adopt, it is important to recognize the impossibility of satisfying certain mathemat- ical fairness constraints at once except in highly constrained special cases [207]. For example, there is an inherent incom- patibility between two conditions: calibration and balancing the positive and negative classes. These conditions cannot be satisfied simultaneously unless under certain constraints [78]. While not all mathematical fairness desiderata can be achieved simultaneously, it is important to note that mitigated bias and good performance can be achieved simultaneously [208].\n\nThe plethora of fairness metric definitions illustrates that fairness cannot be reduced to a concise mathematical definition. Fairness is dynamic, social in nature, application and context specific, and not just an abstract or universal statistical problem. Therefore, it is important to adopt a socio-technical approach to fairness in order to have realistic fair- ness definitions for different contexts as well as task-specific datasets for machine learning model development and evaluation.\n\n3.3 Who makes decisions and how do they make them? Human Factors in AI Bias\n\n[nist-sp-1270:p040:para:000 | starter/data/NIST.SP.1270.pdf | page 40]\nWhile academic research into mathematical notions of fairness has blossomed in recent years, procedures for testing fairness in regulatory and litigation settings such as employ- ment and consumer finance have been operational for decades, and reached a level of ma- turity before the recent increase in interest on the topic. In these areas, statistical tests can be applied to determine whether some automated decision-making system is acting out- side the bounds of applicable law. t-tests, χ2-tests, analysis of regression coefficients, and other traditional statistical tests can be used to show a statistically significant difference be- tween ML system outcomes across demographic groups. In some cases, measurements of differential validity are also used to ensure that applicants and employees receive roughly equal service from systems in employment, where system performance quality is evaluated across demographic groups.15 Credible attempts at bias mitigation should maintain align- ment with acknowledged legal standards.\n\n[nist-sp-1270:p039:para:001 | starter/data/NIST.SP.1270.pdf | page 39]\nFairness metrics From a computational standpoint, defining a fairness metric for ML requires developing a formal mathematical model to achieve desired predictive goals on a given dataset and associated task. Numerous fairness metrics are proposed in the literature [85, 191, 194, 197–199]. Much of the work in determining fairness criteria involves supervised learning, but the labeled data required for these tasks may not be readily available. This is particularly true for large language models, where the sheer scale of the datasets used for training is prohibitive for proper data labeling. This has a direct impact on both representativeness of the training data and, in turn, its impact on the representativeness of the generated model might exacerbate discriminatory outcomes, as large language models are adapted to specific datasets and tasks. Moreover, even if datasets are representative they may still exhibit biases or improperly utilize protected attributes, which in turn may lead to discrimination. Proxies may be used for hiding protected attributes and care should be taken to avoid discrimination resulting from badly chosen proxies [59, 136, 147, 200, 201].\n\n[nist-sp-1270:p034:para:003 | starter/data/NIST.SP.1270.pdf | page 34]\nValidity Ultimately, AI systems should demonstrate that they perform accurately, but how do we know what constitutes a “right answer”? Validating performance is a difficult but nec- essary endeavor for any system being deployed to the public and effective management and mitigation of AI bias. Many difficulties and flaws can arise in system validation. A common challenge in system testing is a lack of ground truth, or noisy labeling and other annotation factors which make it difficult to know what is accurate. The use of proxy vari- ables compounds this difficulty, since what is being measured isn’t directly observable. Performing system tests under optimal conditions — or conditions that are not close to the deployed state — is another challenging design flaw. System performance metrics are also difficult to generalize and can lead to issues with unintended use. Due to these challenges, subject matter experts should be relied upon during validation to create and oversee the most realistic possible validation processes [102]. Also the practice of “stratified perfor- 25/77\n\n[nist-sp-1270:p021:para:000 | starter/data/NIST.SP.1270.pdf | page 21]\nAI bias extends beyond computational algorithms and models, and the datasets upon which they are built. The assumptions and decisions made within the pro- cesses used to develop technology are key factors, as well as how AI technology is used and interpreted once deployed. The idea that quantitative measures are better and more objective than other observations is known as the M CNAMARA FALLACY . This fallacy, and the related concept TECHNOCHAUVINISM [35], are at the center of many of the issues related to algorithmic bias. Traditional ML approaches attempt to turn ambiguity, context, human subjectivity, and cate- gorical observations into objectively measurable quantities based on numerical mathematical models of their representations. This well-intentioned process enables data-driven modeling but it also inadvertently creates new challenges for socio-technical systems. Representing these complex human phenomena with mathematical models comes at the cost of disentangling the context necessary for understanding individual and societal impact and contributes to a fallacy of objectivity [121].",
+        "elapsed_ms": 423.96
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 2572.88,
+    "token_usage": {
+      "llm_calls": 2,
+      "prompt_tokens": 2984,
+      "output_tokens": 167,
+      "llm_seconds": 2.148341700012679
+    }
+  },
+  {
+    "query_id": "q16",
+    "split": "test",
+    "status": "answered",
+    "answer": "The \"three lines of defense\" model helps sustain a culture of effective challenge by systematically implementing model risk management frameworks through separate teams that are held accountable for different aspects of the model lifecycle [nist-sp-1270:p055:para:001]. Specifically, accountability is assigned as follows: the first line of defense focuses on model development, the second line focuses on risk management, and the third line focuses on auditing [nist-sp-1270:p055:para:001]. While this approach may be impractical for smaller organizations, creating these separate teams and encouraging critical thinking and review at organizational and procedural levels helps organizations anticipate and mitigate risks before they materialize [nist-sp-1270:p055:para:001].",
+    "citations": [
+      "nist-sp-1270:p055:para:001"
+    ],
+    "context": "[nist-sp-1270:p055:para:001 | starter/data/NIST.SP.1270.pdf | page 55]\nThree lines of defense Because culture can be difficult to map or measure directly, one way to encourage this approach is to incentivize critical thinking and review at an or- ganizational and procedural level. Model risk management frameworks, for example, are often systematically implemented through the so-called “three lines of defense,” which creates separate teams that are held accountable for different aspects of the model lifecy- cle. Typically, the first line of defense focuses on model development, the second on risk management, and the third on auditing. 24 While a traditional three-lines approach may be impractical for smaller organizations, ensuring that a culture of effective challenge is encouraged and sustained can help organizations to anticipate, and therefore to effectively mitigate, risks of bias before they materialize.\n\n[nist-sp-1270:p055:para:000 | starter/data/NIST.SP.1270.pdf | page 55]\nEffective challenge The principal of effective challenge is a central component of model risk management frameworks. This practice is heavily relied on by the financial sector to mitigate algorithmic risk, and mandates that important model design and im- plementation decisions be questioned by experts with the authority and stature to make changes in design and implementation.23 Fostering a culture of effective challenge encour- ages actively challenging and questioning steps in the development of AI systems, and can help to raise issues of AI bias before they materialize in deployed systems. An organiza- tional culture that encourages serious questioning of AI system designs will be more likely to identify problems before they turn into harmful incidents. Relatedly, while individuals who are part of the development of AI systems may be knowledgeable about the potential harmful impacts of the technology they build, impact assessments should not be exclu- sively developed by these teams due to increased likelihood of confirmation bias and other incentives that may cause conflicts of interest.\n\n[nist-sp-1270:p056:para:000 | starter/data/NIST.SP.1270.pdf | page 56]\nmechanisms—like the three lines of defense—are truly motivated to use sound develop- ment approaches, test rigorously and audit thoroughly.27\n\nInformation Sharing As described in a NIST special publication [265], sharing cyber threat information helps organizations improve both their own security postures, and those of other organizations. Identifying internal mechanisms for teams to share information about bias incidents or other harmful impacts from AI helps to elevate the importance of AI risks and provides information for teams to avoid past failed designs. Some initial efforts are already under- way [266]. As teams begin to create norms for tracking such incidents, it can potentially transform AI practices and the organizational culture. Improving awareness of how bias presents in deployed AI and its related impacts can enhance knowledge and capabilities, and prevent incidents. Fostering a culture of information sharing can also serve as a new area for community engagement.\n\n[nist-sp-1270:p054:para:000 | starter/data/NIST.SP.1270.pdf | page 54]\nAccountability Accountability plays a critical role in governance efforts [257]. Governance without ac- countability is, in practice, unlikely to be effective. Ensuring that a specific team, and often, a specific individual – such as a Chief Model Risk Officer, as is now common in large consumer finance organizations – is responsible for bias management in AI systems is a fundamental accountability mechanism. 22 Ensuring individuals or teams bear respon- sibility for risks and associated harms provides a direct incentive for their mitigation. Put simply, when someone’s boss is accountable for bias issues, they too are accountable for bias issues—and this phenomenon promulgates down to front-line practitioners. Account- ability for AI bias cannot lie on the shoulders of a single individual, which is why account- ability mandates should also be embedded within and across the various teams involved in the training and deployment of AI systems.\n\n[nist-sp-1270:p055:para:002 | starter/data/NIST.SP.1270.pdf | page 55]\nRisk Mitigation, Risk Tiering & Incentive Structures Some applications of AI are high-risk. 25 A central cultural component of effective risk management for AI bias lies in a clear acknowledgment that risk mitigation, rather than risk avoidance, is often the most effective factor in managing such risks. 26 Developing a risk mitigation mindset, meaning a clear acceptance that incidents can and will occur, and emphasizing practical detection and mitigation once they do, can help ensure that any risks of bias are quickly mitigated in practice. This acknowledgement enables a clear triag- ing of risks which can enable organizations to focus finite resources on the risks of bias that are most material, and therefore most likely to cause real-world harm. An additional component of effective organizational culture includes aligning pay and promotion incen- tives across teams to AI risk mitigation efforts, such that participants in the risk mitigation 23Id.\n\n24Off. Superintendent Fin. Inst. Canada, Enterprise-Wide Model Risk Management for Deposit-Taking Institutions, E-23 (Sept. 2017).",
+    "context_ids": [
+      "nist-sp-1270:p055:para:001",
+      "nist-sp-1270:p055:para:000",
+      "nist-sp-1270:p056:para:000",
+      "nist-sp-1270:p054:para:000",
+      "nist-sp-1270:p055:para:002"
+    ],
+    "num_searches": 2,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "three lines of defense model accountability effective challenge culture",
+        "args": {
+          "top_k": 5,
+          "query": "three lines of defense model accountability effective challenge culture"
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-1270:p055:para:001",
+            "source_id": "nist-sp-1270",
+            "page": 55,
+            "score": 0.032787
+          },
+          {
+            "id": "nist-sp-1270:p055:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 55,
+            "score": 0.032002
+          },
+          {
+            "id": "nist-sp-1270:p056:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 56,
+            "score": 0.032002
+          },
+          {
+            "id": "nist-sp-1270:p054:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 54,
+            "score": 0.03101
+          },
+          {
+            "id": "nist-sp-1270:p054:para:002",
+            "source_id": "nist-sp-1270",
+            "page": 54,
+            "score": 0.03055
+          }
+        ],
+        "context_ids": [
+          "nist-sp-1270:p055:para:001",
+          "nist-sp-1270:p055:para:000",
+          "nist-sp-1270:p056:para:000",
+          "nist-sp-1270:p054:para:000",
+          "nist-sp-1270:p054:para:002"
+        ],
+        "context": "[nist-sp-1270:p055:para:001 | starter/data/NIST.SP.1270.pdf | page 55]\nThree lines of defense Because culture can be difficult to map or measure directly, one way to encourage this approach is to incentivize critical thinking and review at an or- ganizational and procedural level. Model risk management frameworks, for example, are often systematically implemented through the so-called “three lines of defense,” which creates separate teams that are held accountable for different aspects of the model lifecy- cle. Typically, the first line of defense focuses on model development, the second on risk management, and the third on auditing. 24 While a traditional three-lines approach may be impractical for smaller organizations, ensuring that a culture of effective challenge is encouraged and sustained can help organizations to anticipate, and therefore to effectively mitigate, risks of bias before they materialize.\n\n[nist-sp-1270:p055:para:000 | starter/data/NIST.SP.1270.pdf | page 55]\nEffective challenge The principal of effective challenge is a central component of model risk management frameworks. This practice is heavily relied on by the financial sector to mitigate algorithmic risk, and mandates that important model design and im- plementation decisions be questioned by experts with the authority and stature to make changes in design and implementation.23 Fostering a culture of effective challenge encour- ages actively challenging and questioning steps in the development of AI systems, and can help to raise issues of AI bias before they materialize in deployed systems. An organiza- tional culture that encourages serious questioning of AI system designs will be more likely to identify problems before they turn into harmful incidents. Relatedly, while individuals who are part of the development of AI systems may be knowledgeable about the potential harmful impacts of the technology they build, impact assessments should not be exclu- sively developed by these teams due to increased likelihood of confirmation bias and other incentives that may cause conflicts of interest.\n\n[nist-sp-1270:p056:para:000 | starter/data/NIST.SP.1270.pdf | page 56]\nmechanisms—like the three lines of defense—are truly motivated to use sound develop- ment approaches, test rigorously and audit thoroughly.27\n\nInformation Sharing As described in a NIST special publication [265], sharing cyber threat information helps organizations improve both their own security postures, and those of other organizations. Identifying internal mechanisms for teams to share information about bias incidents or other harmful impacts from AI helps to elevate the importance of AI risks and provides information for teams to avoid past failed designs. Some initial efforts are already under- way [266]. As teams begin to create norms for tracking such incidents, it can potentially transform AI practices and the organizational culture. Improving awareness of how bias presents in deployed AI and its related impacts can enhance knowledge and capabilities, and prevent incidents. Fostering a culture of information sharing can also serve as a new area for community engagement.\n\n[nist-sp-1270:p054:para:000 | starter/data/NIST.SP.1270.pdf | page 54]\nAccountability Accountability plays a critical role in governance efforts [257]. Governance without ac- countability is, in practice, unlikely to be effective. Ensuring that a specific team, and often, a specific individual – such as a Chief Model Risk Officer, as is now common in large consumer finance organizations – is responsible for bias management in AI systems is a fundamental accountability mechanism. 22 Ensuring individuals or teams bear respon- sibility for risks and associated harms provides a direct incentive for their mitigation. Put simply, when someone’s boss is accountable for bias issues, they too are accountable for bias issues—and this phenomenon promulgates down to front-line practitioners. Account- ability for AI bias cannot lie on the shoulders of a single individual, which is why account- ability mandates should also be embedded within and across the various teams involved in the training and deployment of AI systems.\n\n[nist-sp-1270:p054:para:002 | starter/data/NIST.SP.1270.pdf | page 54]\nFundamentally, accountability requires a clear assessment of the role of the AI system itself. For example, decision-support systems, which may be claimed not to result in direct decision-making and therefore pose less risks, can easily become overly relied upon by users, or misused or abused. In these cases, the AI system would generate similar harms as if it were engaging in decision-making directly. Model or algorithmic audits [260] can be used to assess and document such crucial accountability considerations. There are several notions of audits commonly discussed in the responsible and trustworthy AI communities. Audit may refer to a traditional internal audit function employed to track issues of model risk, as in traditional model governance. Audit may refer to a structured and principled application of lessons learned in financial audit practices to AI systems [261]. Alternatively, audit may refer to some general documentation and transparency approach. Audits can be an effective accountability, bias, and general risk mitigation mechanism. Indeed, laws are being passed that demand bias audits of AI-based systems used in employment [262].",
+        "elapsed_ms": 458.07
+      },
+      {
+        "event": "search",
+        "tool": "get_adjacent_chunks",
+        "query": "neighbors(nist-sp-1270:p055:para:001, w=1)",
+        "args": {
+          "window": 1,
+          "chunk_id": "nist-sp-1270:p055:para:001"
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-1270:p055:para:002",
+            "source_id": "nist-sp-1270",
+            "page": 55,
+            "score": null
+          },
+          {
+            "id": "nist-sp-1270:p055:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 55,
+            "score": null
+          }
+        ],
+        "context_ids": [
+          "nist-sp-1270:p055:para:001",
+          "nist-sp-1270:p055:para:000",
+          "nist-sp-1270:p056:para:000",
+          "nist-sp-1270:p054:para:000",
+          "nist-sp-1270:p055:para:002"
+        ],
+        "context": "[nist-sp-1270:p055:para:001 | starter/data/NIST.SP.1270.pdf | page 55]\nThree lines of defense Because culture can be difficult to map or measure directly, one way to encourage this approach is to incentivize critical thinking and review at an or- ganizational and procedural level. Model risk management frameworks, for example, are often systematically implemented through the so-called “three lines of defense,” which creates separate teams that are held accountable for different aspects of the model lifecy- cle. Typically, the first line of defense focuses on model development, the second on risk management, and the third on auditing. 24 While a traditional three-lines approach may be impractical for smaller organizations, ensuring that a culture of effective challenge is encouraged and sustained can help organizations to anticipate, and therefore to effectively mitigate, risks of bias before they materialize.\n\n[nist-sp-1270:p055:para:000 | starter/data/NIST.SP.1270.pdf | page 55]\nEffective challenge The principal of effective challenge is a central component of model risk management frameworks. This practice is heavily relied on by the financial sector to mitigate algorithmic risk, and mandates that important model design and im- plementation decisions be questioned by experts with the authority and stature to make changes in design and implementation.23 Fostering a culture of effective challenge encour- ages actively challenging and questioning steps in the development of AI systems, and can help to raise issues of AI bias before they materialize in deployed systems. An organiza- tional culture that encourages serious questioning of AI system designs will be more likely to identify problems before they turn into harmful incidents. Relatedly, while individuals who are part of the development of AI systems may be knowledgeable about the potential harmful impacts of the technology they build, impact assessments should not be exclu- sively developed by these teams due to increased likelihood of confirmation bias and other incentives that may cause conflicts of interest.\n\n[nist-sp-1270:p056:para:000 | starter/data/NIST.SP.1270.pdf | page 56]\nmechanisms—like the three lines of defense—are truly motivated to use sound develop- ment approaches, test rigorously and audit thoroughly.27\n\nInformation Sharing As described in a NIST special publication [265], sharing cyber threat information helps organizations improve both their own security postures, and those of other organizations. Identifying internal mechanisms for teams to share information about bias incidents or other harmful impacts from AI helps to elevate the importance of AI risks and provides information for teams to avoid past failed designs. Some initial efforts are already under- way [266]. As teams begin to create norms for tracking such incidents, it can potentially transform AI practices and the organizational culture. Improving awareness of how bias presents in deployed AI and its related impacts can enhance knowledge and capabilities, and prevent incidents. Fostering a culture of information sharing can also serve as a new area for community engagement.\n\n[nist-sp-1270:p054:para:000 | starter/data/NIST.SP.1270.pdf | page 54]\nAccountability Accountability plays a critical role in governance efforts [257]. Governance without ac- countability is, in practice, unlikely to be effective. Ensuring that a specific team, and often, a specific individual – such as a Chief Model Risk Officer, as is now common in large consumer finance organizations – is responsible for bias management in AI systems is a fundamental accountability mechanism. 22 Ensuring individuals or teams bear respon- sibility for risks and associated harms provides a direct incentive for their mitigation. Put simply, when someone’s boss is accountable for bias issues, they too are accountable for bias issues—and this phenomenon promulgates down to front-line practitioners. Account- ability for AI bias cannot lie on the shoulders of a single individual, which is why account- ability mandates should also be embedded within and across the various teams involved in the training and deployment of AI systems.\n\n[nist-sp-1270:p055:para:002 | starter/data/NIST.SP.1270.pdf | page 55]\nRisk Mitigation, Risk Tiering & Incentive Structures Some applications of AI are high-risk. 25 A central cultural component of effective risk management for AI bias lies in a clear acknowledgment that risk mitigation, rather than risk avoidance, is often the most effective factor in managing such risks. 26 Developing a risk mitigation mindset, meaning a clear acceptance that incidents can and will occur, and emphasizing practical detection and mitigation once they do, can help ensure that any risks of bias are quickly mitigated in practice. This acknowledgement enables a clear triag- ing of risks which can enable organizations to focus finite resources on the risks of bias that are most material, and therefore most likely to cause real-world harm. An additional component of effective organizational culture includes aligning pay and promotion incen- tives across teams to AI risk mitigation efforts, such that participants in the risk mitigation 23Id.\n\n24Off. Superintendent Fin. Inst. Canada, Enterprise-Wide Model Risk Management for Deposit-Taking Institutions, E-23 (Sept. 2017).",
+        "elapsed_ms": 0.1
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 3672.88,
+    "token_usage": {
+      "llm_calls": 3,
+      "prompt_tokens": 5767,
+      "output_tokens": 273,
+      "llm_seconds": 3.213961700006621
+    }
+  },
+  {
+    "query_id": "q23",
+    "split": "test",
+    "status": "answered",
+    "answer": "Under secure coding practice PW.5.1 (specifically under the AI-specific recommendations for handling code and inputs/outputs), AI model inputs (including prompts and user data) and outputs should be handled carefully by adhering to the following practices:\n- Code the handling of inputs and outputs carefully [nist-sp-800-218a:p024:para:000].\n- Log, analyze, and validate all inputs and outputs within the context of the AI model, and sanitize or drop those with issues [nist-sp-800-218a:p024:para:001].\n- Encode inputs and outputs to prevent the execution of unauthorized code [nist-sp-800-218a:p024:para:001].",
+    "citations": [
+      "nist-sp-800-218a:p024:para:000",
+      "nist-sp-800-218a:p024:para:001"
+    ],
+    "context": "[nist-sp-800-218a:p024:para:000 | starter/data/NIST.SP.800-218A.pdf | page 24]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 16 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References requirements, as defined by the organization, throughout their life cycles.\n\nreward models; adaptation layers; and configuration parameters — before using them.\n\nR2: Scan and thoroughly test acquired AI models and their components for vulnerabilities and malicious content before use.\n\nCreate Source Code by Adhering to Secure\n\nCoding Practices (PW.5): Decrease the number of security vulnerabilities in the software, and reduce costs by minimizing vulnerabilities introduced during source code creation that meet or exceed organization-defined vulnerability severity criteria.\n\nPW.5.1: Follow all secure coding practices that are appropriate to the development languages and environment to meet the organization’s requirements.\n\nHigh R1: Expand secure coding practices to include AI technology-specific considerations.\n\nR2: Code the handling of inputs (including prompts and user data) and outputs carefully.\n\n[nist-sp-800-218a:p024:para:001 | starter/data/NIST.SP.800-218A.pdf | page 24]\nAll inputs and outputs should be logged, analyzed, and validated within the context of the AI model, and those with issues should be sanitized or dropped.\n\nR3: Encode inputs and outputs to prevent the execution of unauthorized code.\n\nAI RMF:\n\nManage 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM01, LLM02, LLM04-1, LLM06, LLM07, LLM09-9,\n\nLLM10\n\nConfigure the Compilation, Interpreter, and\n\nBuild Processes to Improve Executable\n\nSecurity (PW.6): Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.\n\nPW.6.1: Use compiler, interpreter, and build tools that offer features to improve executable security.\n\nLow C1: Consider using secure model serialization mechanisms that reduce or eliminate vectors for the introduction of malicious content.\n\nPW.6.2: Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved configurations.\n\nLow C1: Consider capturing compiler, interpreter, and build tool versions and features as part of the provenance tracking.\n\nReview and/or Analyze Human-Readable\n\nCode to Identify Vulnerabilities and Verify\n\n[nist-sp-800-218a:p021:para:002 | starter/data/NIST.SP.800-218A.pdf | page 21]\nPW.1.1: Use forms of risk modeling – such as threat modeling, attack modeling, or attack surface mapping – to help assess the security risk for the software.\n\nHigh R1: Incorporate relevant AI model-specific vulnerability and threat types in risk modeling.\n\nExamples of these vulnerability and threat types include poisoning of training data, malicious code or other unwanted content in inputs and outputs, denial-of-service conditions arising from adversarial prompts, supply chain attacks, unauthorized information disclosure, theft of AI model weights, and misconfiguration of data pipelines. [3]\n\nAI RMF:\n\nGovern 4.1, 4.2; Map 5.1; Measure 1.1; Manage 1.2, 1.3\n\nOWASP:\n\nLLM01, LLM02, LLM03, LLM04, LLM05, LLM06,\n\n[nist-sp-800-218a:p024:para:003 | starter/data/NIST.SP.800-218A.pdf | page 24]\nPW.7.2: Perform the code review and/or code analysis based on the organization’s secure coding standards, and record and triage all discovered issues and recommended remediations in the High R1: Scan all AI models for malware, vulnerabilities, backdoors, and other security issues in accordance with the organization’s code review and analysis policies or guidelines.\n\nAI RMF:\n\nMeasure 2.3, 2.7; Manage 1.1, 1.2, 1.3, 1.4\n\n[nist-sp-800-218a:p023:para:002 | starter/data/NIST.SP.800-218A.pdf | page 23]\nPW.4.1: Acquire and maintain well- secured software components (e.g., software libraries, modules, middleware, frameworks) from commercial, open- source, and other third-party developers for use by the organization’s software.\n\nMedium C1: Consider using an existing AI model instead of creating a new one.\n\nOWASP: LLM05\n\nPW.4.2: Create and maintain well-secured software components in-house following\n\nSDLC processes to meet common internal software development needs that cannot be better met by third-party software components.\n\nLow No additions to SSDF 1.1\n\nPW.4.4: Verify that acquired commercial, open-source, and all other third-party software components comply with the\n\nHigh R1: Verify the integrity, provenance, and security of an existing AI model or any other acquired AI components — including training, testing, fine-tuning, and aligning datasets;\n\nOWASP:\n\nLLM05-2,\n\nLLM05-6\n\nAdv ML",
+    "context_ids": [
+      "nist-sp-800-218a:p024:para:000",
+      "nist-sp-800-218a:p024:para:001",
+      "nist-sp-800-218a:p021:para:002",
+      "nist-sp-800-218a:p024:para:003",
+      "nist-sp-800-218a:p023:para:002"
+    ],
+    "num_searches": 2,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "PW.5.1 secure coding practice AI model inputs prompts outputs encoded",
+        "args": {
+          "query": "PW.5.1 secure coding practice AI model inputs prompts outputs encoded"
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p024:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 24,
+            "score": 0.032522
+          },
+          {
+            "id": "nist-sp-800-218a:p024:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 24,
+            "score": 0.032018
+          },
+          {
+            "id": "nist-sp-800-218a:p021:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 21,
+            "score": 0.031754
+          },
+          {
+            "id": "nist-sp-800-218a:p024:para:003",
+            "source_id": "nist-sp-800-218a",
+            "page": 24,
+            "score": 0.029857
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p024:para:000",
+          "nist-sp-800-218a:p024:para:001",
+          "nist-sp-800-218a:p021:para:002",
+          "nist-sp-800-218a:p024:para:003"
+        ],
+        "context": "[nist-sp-800-218a:p024:para:000 | starter/data/NIST.SP.800-218A.pdf | page 24]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 16 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References requirements, as defined by the organization, throughout their life cycles.\n\nreward models; adaptation layers; and configuration parameters — before using them.\n\nR2: Scan and thoroughly test acquired AI models and their components for vulnerabilities and malicious content before use.\n\nCreate Source Code by Adhering to Secure\n\nCoding Practices (PW.5): Decrease the number of security vulnerabilities in the software, and reduce costs by minimizing vulnerabilities introduced during source code creation that meet or exceed organization-defined vulnerability severity criteria.\n\nPW.5.1: Follow all secure coding practices that are appropriate to the development languages and environment to meet the organization’s requirements.\n\nHigh R1: Expand secure coding practices to include AI technology-specific considerations.\n\nR2: Code the handling of inputs (including prompts and user data) and outputs carefully.\n\n[nist-sp-800-218a:p024:para:001 | starter/data/NIST.SP.800-218A.pdf | page 24]\nAll inputs and outputs should be logged, analyzed, and validated within the context of the AI model, and those with issues should be sanitized or dropped.\n\nR3: Encode inputs and outputs to prevent the execution of unauthorized code.\n\nAI RMF:\n\nManage 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM01, LLM02, LLM04-1, LLM06, LLM07, LLM09-9,\n\nLLM10\n\nConfigure the Compilation, Interpreter, and\n\nBuild Processes to Improve Executable\n\nSecurity (PW.6): Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.\n\nPW.6.1: Use compiler, interpreter, and build tools that offer features to improve executable security.\n\nLow C1: Consider using secure model serialization mechanisms that reduce or eliminate vectors for the introduction of malicious content.\n\nPW.6.2: Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved configurations.\n\nLow C1: Consider capturing compiler, interpreter, and build tool versions and features as part of the provenance tracking.\n\nReview and/or Analyze Human-Readable\n\nCode to Identify Vulnerabilities and Verify\n\n[nist-sp-800-218a:p021:para:002 | starter/data/NIST.SP.800-218A.pdf | page 21]\nPW.1.1: Use forms of risk modeling – such as threat modeling, attack modeling, or attack surface mapping – to help assess the security risk for the software.\n\nHigh R1: Incorporate relevant AI model-specific vulnerability and threat types in risk modeling.\n\nExamples of these vulnerability and threat types include poisoning of training data, malicious code or other unwanted content in inputs and outputs, denial-of-service conditions arising from adversarial prompts, supply chain attacks, unauthorized information disclosure, theft of AI model weights, and misconfiguration of data pipelines. [3]\n\nAI RMF:\n\nGovern 4.1, 4.2; Map 5.1; Measure 1.1; Manage 1.2, 1.3\n\nOWASP:\n\nLLM01, LLM02, LLM03, LLM04, LLM05, LLM06,\n\n[nist-sp-800-218a:p024:para:003 | starter/data/NIST.SP.800-218A.pdf | page 24]\nPW.7.2: Perform the code review and/or code analysis based on the organization’s secure coding standards, and record and triage all discovered issues and recommended remediations in the High R1: Scan all AI models for malware, vulnerabilities, backdoors, and other security issues in accordance with the organization’s code review and analysis policies or guidelines.\n\nAI RMF:\n\nMeasure 2.3, 2.7; Manage 1.1, 1.2, 1.3, 1.4",
+        "elapsed_ms": 543.31
+      },
+      {
+        "event": "search",
+        "tool": "get_adjacent_chunks",
+        "query": "neighbors(nist-sp-800-218a:p024:para:000, w=1)",
+        "args": {
+          "window": 1,
+          "chunk_id": "nist-sp-800-218a:p024:para:000"
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p024:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 24,
+            "score": null
+          },
+          {
+            "id": "nist-sp-800-218a:p023:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 23,
+            "score": null
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p024:para:000",
+          "nist-sp-800-218a:p024:para:001",
+          "nist-sp-800-218a:p021:para:002",
+          "nist-sp-800-218a:p024:para:003",
+          "nist-sp-800-218a:p023:para:002"
+        ],
+        "context": "[nist-sp-800-218a:p024:para:000 | starter/data/NIST.SP.800-218A.pdf | page 24]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 16 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References requirements, as defined by the organization, throughout their life cycles.\n\nreward models; adaptation layers; and configuration parameters — before using them.\n\nR2: Scan and thoroughly test acquired AI models and their components for vulnerabilities and malicious content before use.\n\nCreate Source Code by Adhering to Secure\n\nCoding Practices (PW.5): Decrease the number of security vulnerabilities in the software, and reduce costs by minimizing vulnerabilities introduced during source code creation that meet or exceed organization-defined vulnerability severity criteria.\n\nPW.5.1: Follow all secure coding practices that are appropriate to the development languages and environment to meet the organization’s requirements.\n\nHigh R1: Expand secure coding practices to include AI technology-specific considerations.\n\nR2: Code the handling of inputs (including prompts and user data) and outputs carefully.\n\n[nist-sp-800-218a:p024:para:001 | starter/data/NIST.SP.800-218A.pdf | page 24]\nAll inputs and outputs should be logged, analyzed, and validated within the context of the AI model, and those with issues should be sanitized or dropped.\n\nR3: Encode inputs and outputs to prevent the execution of unauthorized code.\n\nAI RMF:\n\nManage 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM01, LLM02, LLM04-1, LLM06, LLM07, LLM09-9,\n\nLLM10\n\nConfigure the Compilation, Interpreter, and\n\nBuild Processes to Improve Executable\n\nSecurity (PW.6): Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.\n\nPW.6.1: Use compiler, interpreter, and build tools that offer features to improve executable security.\n\nLow C1: Consider using secure model serialization mechanisms that reduce or eliminate vectors for the introduction of malicious content.\n\nPW.6.2: Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved configurations.\n\nLow C1: Consider capturing compiler, interpreter, and build tool versions and features as part of the provenance tracking.\n\nReview and/or Analyze Human-Readable\n\nCode to Identify Vulnerabilities and Verify\n\n[nist-sp-800-218a:p021:para:002 | starter/data/NIST.SP.800-218A.pdf | page 21]\nPW.1.1: Use forms of risk modeling – such as threat modeling, attack modeling, or attack surface mapping – to help assess the security risk for the software.\n\nHigh R1: Incorporate relevant AI model-specific vulnerability and threat types in risk modeling.\n\nExamples of these vulnerability and threat types include poisoning of training data, malicious code or other unwanted content in inputs and outputs, denial-of-service conditions arising from adversarial prompts, supply chain attacks, unauthorized information disclosure, theft of AI model weights, and misconfiguration of data pipelines. [3]\n\nAI RMF:\n\nGovern 4.1, 4.2; Map 5.1; Measure 1.1; Manage 1.2, 1.3\n\nOWASP:\n\nLLM01, LLM02, LLM03, LLM04, LLM05, LLM06,\n\n[nist-sp-800-218a:p024:para:003 | starter/data/NIST.SP.800-218A.pdf | page 24]\nPW.7.2: Perform the code review and/or code analysis based on the organization’s secure coding standards, and record and triage all discovered issues and recommended remediations in the High R1: Scan all AI models for malware, vulnerabilities, backdoors, and other security issues in accordance with the organization’s code review and analysis policies or guidelines.\n\nAI RMF:\n\nMeasure 2.3, 2.7; Manage 1.1, 1.2, 1.3, 1.4\n\n[nist-sp-800-218a:p023:para:002 | starter/data/NIST.SP.800-218A.pdf | page 23]\nPW.4.1: Acquire and maintain well- secured software components (e.g., software libraries, modules, middleware, frameworks) from commercial, open- source, and other third-party developers for use by the organization’s software.\n\nMedium C1: Consider using an existing AI model instead of creating a new one.\n\nOWASP: LLM05\n\nPW.4.2: Create and maintain well-secured software components in-house following\n\nSDLC processes to meet common internal software development needs that cannot be better met by third-party software components.\n\nLow No additions to SSDF 1.1\n\nPW.4.4: Verify that acquired commercial, open-source, and all other third-party software components comply with the\n\nHigh R1: Verify the integrity, provenance, and security of an existing AI model or any other acquired AI components — including training, testing, fine-tuning, and aligning datasets;\n\nOWASP:\n\nLLM05-2,\n\nLLM05-6\n\nAdv ML",
+        "elapsed_ms": 0.12
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 4012.39,
+    "token_usage": {
+      "llm_calls": 3,
+      "prompt_tokens": 5616,
+      "output_tokens": 331,
+      "llm_seconds": 3.468209200014826
+    }
+  },
+  {
+    "query_id": "q24",
+    "split": "test",
+    "status": "answered",
+    "answer": "For analyzing vulnerabilities under task RV.2.1, deep analysis of generative AI and dual-use foundation model input and output is noted to detect deviations from normal behavior [nist-sp-800-218a:p026:para:001]. For planning risk responses under task RV.2.2, risk responses for AI models must consider the time and expenses that may be associated with rebuilding them [nist-sp-800-218a:p026:para:002].",
+    "citations": [
+      "nist-sp-800-218a:p026:para:001",
+      "nist-sp-800-218a:p026:para:002"
+    ],
+    "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\n[nist-sp-800-218a:p026:para:001 | starter/data/NIST.SP.800-218A.pdf | page 26]\nR2: Rely mainly on automation for ongoing scanning and testing, and involve a human-in- the-loop as needed.\n\nR3: Conduct periodic audits of AI models.\n\nAI RMF:\n\nGovern 4.3; Measure 1.3, 2.4, 2.7, 3.1;\n\nManage 4.1\n\nOWASP:\n\nLLM03-7b,\n\nLLM03-7d\n\nRV.1.3: Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that policy.\n\nMedium R1: Include AI model vulnerabilities in organization vulnerability disclosure and remediation policies.\n\nR2: Make users of AI models aware of their inherent limitations and how to report any cybersecurity problems that they encounter.\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1; Measure 3.1, 3.3; Manage 4.3\n\nAssess, Prioritize, and Remediate\n\nVulnerabilities (RV.2): Help ensure that vulnerabilities are remediated in accordance with risk to reduce the window of opportunity for attackers.\n\nRV.2.1: Analyze each vulnerability to gather sufficient information about risk to plan its remediation or other risk response.\n\nMedium N1: This may include deep analysis of generative AI and dual-use foundation model input and output to detect deviations from normal behavior.\n\nAI RMF:",
+    "context_ids": [
+      "nist-sp-800-218a:p027:para:001",
+      "nist-sp-800-218a:p026:para:002",
+      "nist-sp-800-218a:p025:para:002",
+      "nist-sp-800-218a:p027:para:000",
+      "nist-sp-800-218a:p026:para:001"
+    ],
+    "num_searches": 3,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "RV.2.1 RV.2.2",
+        "args": {
+          "query": "RV.2.1 RV.2.2"
+        },
+        "filter": {
+          "category": "genai_security"
+        },
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p027:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 22.656099
+          },
+          {
+            "id": "nist-sp-800-218a:p026:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 26,
+            "score": 21.959252
+          },
+          {
+            "id": "nist-sp-800-218a:p025:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 25,
+            "score": 21.730416
+          },
+          {
+            "id": "nist-sp-800-218a:p027:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 21.627939
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p027:para:001",
+          "nist-sp-800-218a:p026:para:002",
+          "nist-sp-800-218a:p025:para:002",
+          "nist-sp-800-218a:p027:para:000"
+        ],
+        "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:",
+        "elapsed_ms": 0.65
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "RV.2.1",
+        "args": {
+          "query": "RV.2.1"
+        },
+        "filter": {
+          "category": "genai_security"
+        },
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p027:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 11.492719
+          },
+          {
+            "id": "nist-sp-800-218a:p025:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 25,
+            "score": 11.139844
+          },
+          {
+            "id": "nist-sp-800-218a:p026:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 26,
+            "score": 11.036981
+          },
+          {
+            "id": "nist-sp-800-218a:p027:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 10.98918
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p027:para:001",
+          "nist-sp-800-218a:p026:para:002",
+          "nist-sp-800-218a:p025:para:002",
+          "nist-sp-800-218a:p027:para:000"
+        ],
+        "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:",
+        "elapsed_ms": 0.62
+      },
+      {
+        "event": "search",
+        "tool": "get_adjacent_chunks",
+        "query": "neighbors(nist-sp-800-218a:p026:para:002, w=1)",
+        "args": {
+          "window": 1,
+          "chunk_id": "nist-sp-800-218a:p026:para:002"
+        },
+        "filter": {
+          "category": "genai_security"
+        },
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p027:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": null
+          },
+          {
+            "id": "nist-sp-800-218a:p026:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 26,
+            "score": null
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p027:para:001",
+          "nist-sp-800-218a:p026:para:002",
+          "nist-sp-800-218a:p025:para:002",
+          "nist-sp-800-218a:p027:para:000",
+          "nist-sp-800-218a:p026:para:001"
+        ],
+        "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\n[nist-sp-800-218a:p026:para:001 | starter/data/NIST.SP.800-218A.pdf | page 26]\nR2: Rely mainly on automation for ongoing scanning and testing, and involve a human-in- the-loop as needed.\n\nR3: Conduct periodic audits of AI models.\n\nAI RMF:\n\nGovern 4.3; Measure 1.3, 2.4, 2.7, 3.1;\n\nManage 4.1\n\nOWASP:\n\nLLM03-7b,\n\nLLM03-7d\n\nRV.1.3: Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that policy.\n\nMedium R1: Include AI model vulnerabilities in organization vulnerability disclosure and remediation policies.\n\nR2: Make users of AI models aware of their inherent limitations and how to report any cybersecurity problems that they encounter.\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1; Measure 3.1, 3.3; Manage 4.3\n\nAssess, Prioritize, and Remediate\n\nVulnerabilities (RV.2): Help ensure that vulnerabilities are remediated in accordance with risk to reduce the window of opportunity for attackers.\n\nRV.2.1: Analyze each vulnerability to gather sufficient information about risk to plan its remediation or other risk response.\n\nMedium N1: This may include deep analysis of generative AI and dual-use foundation model input and output to detect deviations from normal behavior.\n\nAI RMF:",
+        "elapsed_ms": 0.06
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 3702.47,
+    "token_usage": {
+      "llm_calls": 4,
+      "prompt_tokens": 11066,
+      "output_tokens": 270,
+      "llm_seconds": 3.700549700006377
+    }
+  },
+  {
+    "query_id": "u_test_01",
+    "split": "test",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the provided documents.",
+    "citations": [],
+    "abstain_reason": "Task RV.2.2 in NIST SP 800-218A states to 'Plan and implement risk responses for vulnerabilities' and notes that risk responses for AI models should consider time and expenses associated with rebuilding them [nist-sp-800-218a:p026:para:002], but the documents do not specify a timeframe of calendar days for patching or disclosing newly discovered critical AI model vulnerabilities.",
+    "raw_model_citations": null,
+    "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p026:para:001 | starter/data/NIST.SP.800-218A.pdf | page 26]\nR2: Rely mainly on automation for ongoing scanning and testing, and involve a human-in- the-loop as needed.\n\nR3: Conduct periodic audits of AI models.\n\nAI RMF:\n\nGovern 4.3; Measure 1.3, 2.4, 2.7, 3.1;\n\nManage 4.1\n\nOWASP:\n\nLLM03-7b,\n\nLLM03-7d\n\nRV.1.3: Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that policy.\n\nMedium R1: Include AI model vulnerabilities in organization vulnerability disclosure and remediation policies.\n\nR2: Make users of AI models aware of their inherent limitations and how to report any cybersecurity problems that they encounter.\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1; Measure 3.1, 3.3; Manage 4.3\n\nAssess, Prioritize, and Remediate\n\nVulnerabilities (RV.2): Help ensure that vulnerabilities are remediated in accordance with risk to reduce the window of opportunity for attackers.\n\nRV.2.1: Analyze each vulnerability to gather sufficient information about risk to plan its remediation or other risk response.\n\nMedium N1: This may include deep analysis of generative AI and dual-use foundation model input and output to detect deviations from normal behavior.\n\nAI RMF:",
+    "context_ids": [
+      "nist-sp-800-218a:p027:para:001",
+      "nist-sp-800-218a:p026:para:002",
+      "nist-sp-800-218a:p027:para:000",
+      "nist-sp-800-218a:p025:para:002",
+      "nist-sp-800-218a:p026:para:001"
+    ],
+    "num_searches": 3,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "RV.2.2",
+        "args": {
+          "query": "RV.2.2"
+        },
+        "filter": {
+          "year": 2024
+        },
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p027:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 11.163381
+          },
+          {
+            "id": "nist-sp-800-218a:p026:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 26,
+            "score": 10.922271
+          },
+          {
+            "id": "nist-sp-800-218a:p027:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 10.638759
+          },
+          {
+            "id": "nist-sp-800-218a:p025:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 25,
+            "score": 10.590572
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p027:para:001",
+          "nist-sp-800-218a:p026:para:002",
+          "nist-sp-800-218a:p027:para:000",
+          "nist-sp-800-218a:p025:para:002"
+        ],
+        "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;",
+        "elapsed_ms": 0.6
+      },
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "RV.2.2 calendar days patch disclose vulnerabilities",
+        "args": {
+          "query": "RV.2.2 calendar days patch disclose vulnerabilities"
+        },
+        "filter": {
+          "year": 2024
+        },
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p027:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 27,
+            "score": 0.032787
+          },
+          {
+            "id": "nist-sp-800-218a:p026:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 26,
+            "score": 0.031514
+          },
+          {
+            "id": "nist-sp-800-218a:p026:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 26,
+            "score": 0.031498
+          },
+          {
+            "id": "nist-sp-800-218a:p025:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 25,
+            "score": 0.031281
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p027:para:001",
+          "nist-sp-800-218a:p026:para:002",
+          "nist-sp-800-218a:p027:para:000",
+          "nist-sp-800-218a:p025:para:002",
+          "nist-sp-800-218a:p026:para:001"
+        ],
+        "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p026:para:001 | starter/data/NIST.SP.800-218A.pdf | page 26]\nR2: Rely mainly on automation for ongoing scanning and testing, and involve a human-in- the-loop as needed.\n\nR3: Conduct periodic audits of AI models.\n\nAI RMF:\n\nGovern 4.3; Measure 1.3, 2.4, 2.7, 3.1;\n\nManage 4.1\n\nOWASP:\n\nLLM03-7b,\n\nLLM03-7d\n\nRV.1.3: Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that policy.\n\nMedium R1: Include AI model vulnerabilities in organization vulnerability disclosure and remediation policies.\n\nR2: Make users of AI models aware of their inherent limitations and how to report any cybersecurity problems that they encounter.\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1; Measure 3.1, 3.3; Manage 4.3\n\nAssess, Prioritize, and Remediate\n\nVulnerabilities (RV.2): Help ensure that vulnerabilities are remediated in accordance with risk to reduce the window of opportunity for attackers.\n\nRV.2.1: Analyze each vulnerability to gather sufficient information about risk to plan its remediation or other risk response.\n\nMedium N1: This may include deep analysis of generative AI and dual-use foundation model input and output to detect deviations from normal behavior.\n\nAI RMF:",
+        "elapsed_ms": 741.0
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "calendar days",
+        "args": {
+          "query": "calendar days"
+        },
+        "filter": {
+          "year": 2024
+        },
+        "results": [],
+        "context_ids": [
+          "nist-sp-800-218a:p027:para:001",
+          "nist-sp-800-218a:p026:para:002",
+          "nist-sp-800-218a:p027:para:000",
+          "nist-sp-800-218a:p025:para:002",
+          "nist-sp-800-218a:p026:para:001"
+        ],
+        "context": "[nist-sp-800-218a:p027:para:001 | starter/data/NIST.SP.800-218A.pdf | page 27]\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.3\n\nRV.3.3: Review the software for similar vulnerabilities to eradicate a class of vulnerabilities, and proactively fix them rather than waiting for external reports.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 2.7, 3.1; Manage 4.1, 4.2, 4.3\n\nRV.3.4: Review the SDLC process, and update it if appropriate to prevent (or reduce the likelihood of) the root cause recurring in updates to the software or in new software that is created.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nGovern 5.2, 6.1; Measure 2.7, 3.1; Manage 4.2, 4.3\n\n[nist-sp-800-218a:p026:para:002 | starter/data/NIST.SP.800-218A.pdf | page 26]\nGovern 4.3, 5.1, 6.1; Measure 2.7, 3.1; Manage 1.2, 2.3, 4.1\n\nAdv ML\n\nRV.2.2: Plan and implement risk responses for vulnerabilities.\n\nHigh R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them.\n\nAI RMF:\n\nGovern 5.1, 5.2, 6.1; Measure 3.3;\n\n[nist-sp-800-218a:p027:para:000 | starter/data/NIST.SP.800-218A.pdf | page 27]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 19 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR2: Establish and implement criteria and processes for when to stop using an AI model and when to roll back to a previous version and its components.\n\nC1: Consider being prepared to stop using an AI model at any time and to continue operations through other means until the AI model’s risks are sufficiently addressed.\n\nManage 1.3, 2.1, 2.3, 2.4, 4.1\n\nAnalyze Vulnerabilities to Identify Their Root\n\nCauses (RV.3): Help reduce the frequency of vulnerabilities in the future.\n\nRV.3.1: Analyze identified vulnerabilities to determine their root causes.\n\nMedium N1: The ability to review training, testing, fine- tuning, and aligning data after the fact can help identify some root causes.\n\nAI RMF:\n\nGovern 5.1, 6.1; Measure 2.7, 3.1; Manage 2.3, 4.1\n\nRV.3.2: Analyze the root causes over time to identify patterns, such as a particular secure coding practice not being followed consistently.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p026:para:001 | starter/data/NIST.SP.800-218A.pdf | page 26]\nR2: Rely mainly on automation for ongoing scanning and testing, and involve a human-in- the-loop as needed.\n\nR3: Conduct periodic audits of AI models.\n\nAI RMF:\n\nGovern 4.3; Measure 1.3, 2.4, 2.7, 3.1;\n\nManage 4.1\n\nOWASP:\n\nLLM03-7b,\n\nLLM03-7d\n\nRV.1.3: Have a policy that addresses vulnerability disclosure and remediation, and implement the roles, responsibilities, and processes needed to support that policy.\n\nMedium R1: Include AI model vulnerabilities in organization vulnerability disclosure and remediation policies.\n\nR2: Make users of AI models aware of their inherent limitations and how to report any cybersecurity problems that they encounter.\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1; Measure 3.1, 3.3; Manage 4.3\n\nAssess, Prioritize, and Remediate\n\nVulnerabilities (RV.2): Help ensure that vulnerabilities are remediated in accordance with risk to reduce the window of opportunity for attackers.\n\nRV.2.1: Analyze each vulnerability to gather sufficient information about risk to plan its remediation or other risk response.\n\nMedium N1: This may include deep analysis of generative AI and dual-use foundation model input and output to detect deviations from normal behavior.\n\nAI RMF:",
+        "elapsed_ms": 0.34
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 94531.28,
+    "token_usage": {
+      "llm_calls": 4,
+      "prompt_tokens": 10277,
+      "output_tokens": 194,
+      "llm_seconds": 4.425557299982756
+    }
+  },
+  {
+    "query_id": "u_test_02",
+    "split": "test",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the provided documents.",
+    "citations": [],
+    "abstain_reason": "NIST SP 800-218A does not mention cryptographic watermarking or C2PA provenance metadata tags for generated images and audio.",
+    "raw_model_citations": null,
+    "context": "[nist-sp-800-218a:p009:para:000 | starter/data/NIST.SP.800-218A.pdf | page 9]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 1\n\n[nist-sp-800-218a:p012:para:000 | starter/data/NIST.SP.800-218A.pdf | page 12]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 4\n\n[nist-sp-800-218a:p021:para:000 | starter/data/NIST.SP.800-218A.pdf | page 21]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 13 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References help identify, analyze, and eliminate vulnerabilities discovered in the software after release.\n\nverification information, provenance data) to be retained for each software release.\n\ntransforms, collection) that support dataset creation and model training.\n\nR2: Include documentation of the justification for AI model selection in the retained information.\n\nR3: Include documentation of the entire training process, such as data preprocessing and model architecture.\n\nN1: AI models and their components may need to be added at this time to an organization’s asset inventories.\n\nPS.3.2: Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials [SBOM], through\n\nSupply-chain Levels for Software Artifacts [SLSA]). [Modified from SSDF 1.1]\n\n[nist-sp-800-218a:p018:para:000 | starter/data/NIST.SP.800-218A.pdf | page 18]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 10 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nPO.3.3: Configure tools to generate artifacts of their support of secure software development practices as defined by the organization.\n\nMedium N1: An artifact is “a piece of evidence” [16].\n\nEvidence is “grounds for belief or disbelief; data on which to base proof or to establish truth or falsehood” [17]. Artifacts provide records of secure software development practices.\n\nExamples of artifacts specific to AI model development include attestations of the integrity and provenance of training datasets.\n\nAI RMF:\n\nMeasure 2.1\n\nDefine and Use Criteria for Software Security\n\nChecks (PO.4): Help ensure that the software resulting from the SDLC meets the organization’s expectations by defining and using criteria for checking the software’s security during development.\n\nPO.4.1: Define criteria for software security checks and track throughout the SDLC.\n\n[nist-sp-800-218a:p023:para:000 | starter/data/NIST.SP.800-218A.pdf | page 23]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 15 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References being consumed as part of AI model training, testing, fine-tuning, and aligning. [Not part of\n\nSSDF 1.1] purposes, and mitigate the risks as necessary. [Not part of SSDF 1.1]\n\nR2: Select and apply appropriate methods for analyzing and altering the training, testing, fine- tuning, and aligning data for an AI model.\n\nExamples of methods include anomaly detection, bias detection, data cleaning, data curation, data filtering, data sanitization, fact- checking, and noise reduction.\n\nC1: Consider using a human-in-the-loop to examine data, such as with exploratory data analysis techniques [18].\n\nOWASP:\n\nLLM03, LLM06\n\nPW.3.2: Track the provenance, when known, of all training, testing, fine-tuning, and aligning data used for an AI model, and document which data do not have known provenance. [Not part of SSDF 1.1]\n\nMedium N1: Provenance verification is not possible in all cases because provenance is not always known.",
+    "context_ids": [
+      "nist-sp-800-218a:p009:para:000",
+      "nist-sp-800-218a:p012:para:000",
+      "nist-sp-800-218a:p021:para:000",
+      "nist-sp-800-218a:p018:para:000",
+      "nist-sp-800-218a:p023:para:000"
+    ],
+    "num_searches": 3,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "SP 800-218A cryptographic watermarking C2PA provenance metadata generated images audio",
+        "args": {
+          "query": "SP 800-218A cryptographic watermarking C2PA provenance metadata generated images audio",
+          "top_k": 5
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p009:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 9,
+            "score": 0.032787
+          },
+          {
+            "id": "nist-sp-800-218a:p012:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 12,
+            "score": 0.032002
+          },
+          {
+            "id": "nist-sp-800-218a:p021:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 21,
+            "score": 0.031754
+          },
+          {
+            "id": "nist-sp-800-218a:p018:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 18,
+            "score": 0.030777
+          },
+          {
+            "id": "nist-sp-800-218a:p023:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 23,
+            "score": 0.030579
+          }
+        ],
+        "context_ids": [
+          "nist-sp-800-218a:p009:para:000",
+          "nist-sp-800-218a:p012:para:000",
+          "nist-sp-800-218a:p021:para:000",
+          "nist-sp-800-218a:p018:para:000",
+          "nist-sp-800-218a:p023:para:000"
+        ],
+        "context": "[nist-sp-800-218a:p009:para:000 | starter/data/NIST.SP.800-218A.pdf | page 9]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 1\n\n[nist-sp-800-218a:p012:para:000 | starter/data/NIST.SP.800-218A.pdf | page 12]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 4\n\n[nist-sp-800-218a:p021:para:000 | starter/data/NIST.SP.800-218A.pdf | page 21]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 13 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References help identify, analyze, and eliminate vulnerabilities discovered in the software after release.\n\nverification information, provenance data) to be retained for each software release.\n\ntransforms, collection) that support dataset creation and model training.\n\nR2: Include documentation of the justification for AI model selection in the retained information.\n\nR3: Include documentation of the entire training process, such as data preprocessing and model architecture.\n\nN1: AI models and their components may need to be added at this time to an organization’s asset inventories.\n\nPS.3.2: Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials [SBOM], through\n\nSupply-chain Levels for Software Artifacts [SLSA]). [Modified from SSDF 1.1]\n\n[nist-sp-800-218a:p018:para:000 | starter/data/NIST.SP.800-218A.pdf | page 18]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 10 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nPO.3.3: Configure tools to generate artifacts of their support of secure software development practices as defined by the organization.\n\nMedium N1: An artifact is “a piece of evidence” [16].\n\nEvidence is “grounds for belief or disbelief; data on which to base proof or to establish truth or falsehood” [17]. Artifacts provide records of secure software development practices.\n\nExamples of artifacts specific to AI model development include attestations of the integrity and provenance of training datasets.\n\nAI RMF:\n\nMeasure 2.1\n\nDefine and Use Criteria for Software Security\n\nChecks (PO.4): Help ensure that the software resulting from the SDLC meets the organization’s expectations by defining and using criteria for checking the software’s security during development.\n\nPO.4.1: Define criteria for software security checks and track throughout the SDLC.\n\n[nist-sp-800-218a:p023:para:000 | starter/data/NIST.SP.800-218A.pdf | page 23]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 15 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References being consumed as part of AI model training, testing, fine-tuning, and aligning. [Not part of\n\nSSDF 1.1] purposes, and mitigate the risks as necessary. [Not part of SSDF 1.1]\n\nR2: Select and apply appropriate methods for analyzing and altering the training, testing, fine- tuning, and aligning data for an AI model.\n\nExamples of methods include anomaly detection, bias detection, data cleaning, data curation, data filtering, data sanitization, fact- checking, and noise reduction.\n\nC1: Consider using a human-in-the-loop to examine data, such as with exploratory data analysis techniques [18].\n\nOWASP:\n\nLLM03, LLM06\n\nPW.3.2: Track the provenance, when known, of all training, testing, fine-tuning, and aligning data used for an AI model, and document which data do not have known provenance. [Not part of SSDF 1.1]\n\nMedium N1: Provenance verification is not possible in all cases because provenance is not always known.",
+        "elapsed_ms": 30.59
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "watermarking",
+        "args": {
+          "query": "watermarking",
+          "top_k": 5
+        },
+        "filter": null,
+        "results": [],
+        "context_ids": [
+          "nist-sp-800-218a:p009:para:000",
+          "nist-sp-800-218a:p012:para:000",
+          "nist-sp-800-218a:p021:para:000",
+          "nist-sp-800-218a:p018:para:000",
+          "nist-sp-800-218a:p023:para:000"
+        ],
+        "context": "[nist-sp-800-218a:p009:para:000 | starter/data/NIST.SP.800-218A.pdf | page 9]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 1\n\n[nist-sp-800-218a:p012:para:000 | starter/data/NIST.SP.800-218A.pdf | page 12]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 4\n\n[nist-sp-800-218a:p021:para:000 | starter/data/NIST.SP.800-218A.pdf | page 21]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 13 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References help identify, analyze, and eliminate vulnerabilities discovered in the software after release.\n\nverification information, provenance data) to be retained for each software release.\n\ntransforms, collection) that support dataset creation and model training.\n\nR2: Include documentation of the justification for AI model selection in the retained information.\n\nR3: Include documentation of the entire training process, such as data preprocessing and model architecture.\n\nN1: AI models and their components may need to be added at this time to an organization’s asset inventories.\n\nPS.3.2: Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials [SBOM], through\n\nSupply-chain Levels for Software Artifacts [SLSA]). [Modified from SSDF 1.1]\n\n[nist-sp-800-218a:p018:para:000 | starter/data/NIST.SP.800-218A.pdf | page 18]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 10 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nPO.3.3: Configure tools to generate artifacts of their support of secure software development practices as defined by the organization.\n\nMedium N1: An artifact is “a piece of evidence” [16].\n\nEvidence is “grounds for belief or disbelief; data on which to base proof or to establish truth or falsehood” [17]. Artifacts provide records of secure software development practices.\n\nExamples of artifacts specific to AI model development include attestations of the integrity and provenance of training datasets.\n\nAI RMF:\n\nMeasure 2.1\n\nDefine and Use Criteria for Software Security\n\nChecks (PO.4): Help ensure that the software resulting from the SDLC meets the organization’s expectations by defining and using criteria for checking the software’s security during development.\n\nPO.4.1: Define criteria for software security checks and track throughout the SDLC.\n\n[nist-sp-800-218a:p023:para:000 | starter/data/NIST.SP.800-218A.pdf | page 23]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 15 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References being consumed as part of AI model training, testing, fine-tuning, and aligning. [Not part of\n\nSSDF 1.1] purposes, and mitigate the risks as necessary. [Not part of SSDF 1.1]\n\nR2: Select and apply appropriate methods for analyzing and altering the training, testing, fine- tuning, and aligning data for an AI model.\n\nExamples of methods include anomaly detection, bias detection, data cleaning, data curation, data filtering, data sanitization, fact- checking, and noise reduction.\n\nC1: Consider using a human-in-the-loop to examine data, such as with exploratory data analysis techniques [18].\n\nOWASP:\n\nLLM03, LLM06\n\nPW.3.2: Track the provenance, when known, of all training, testing, fine-tuning, and aligning data used for an AI model, and document which data do not have known provenance. [Not part of SSDF 1.1]\n\nMedium N1: Provenance verification is not possible in all cases because provenance is not always known.",
+        "elapsed_ms": 0.25
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "C2PA",
+        "args": {
+          "top_k": 5,
+          "query": "C2PA"
+        },
+        "filter": null,
+        "results": [],
+        "context_ids": [
+          "nist-sp-800-218a:p009:para:000",
+          "nist-sp-800-218a:p012:para:000",
+          "nist-sp-800-218a:p021:para:000",
+          "nist-sp-800-218a:p018:para:000",
+          "nist-sp-800-218a:p023:para:000"
+        ],
+        "context": "[nist-sp-800-218a:p009:para:000 | starter/data/NIST.SP.800-218A.pdf | page 9]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 1\n\n[nist-sp-800-218a:p012:para:000 | starter/data/NIST.SP.800-218A.pdf | page 12]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 4\n\n[nist-sp-800-218a:p021:para:000 | starter/data/NIST.SP.800-218A.pdf | page 21]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 13 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References help identify, analyze, and eliminate vulnerabilities discovered in the software after release.\n\nverification information, provenance data) to be retained for each software release.\n\ntransforms, collection) that support dataset creation and model training.\n\nR2: Include documentation of the justification for AI model selection in the retained information.\n\nR3: Include documentation of the entire training process, such as data preprocessing and model architecture.\n\nN1: AI models and their components may need to be added at this time to an organization’s asset inventories.\n\nPS.3.2: Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials [SBOM], through\n\nSupply-chain Levels for Software Artifacts [SLSA]). [Modified from SSDF 1.1]\n\n[nist-sp-800-218a:p018:para:000 | starter/data/NIST.SP.800-218A.pdf | page 18]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 10 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nPO.3.3: Configure tools to generate artifacts of their support of secure software development practices as defined by the organization.\n\nMedium N1: An artifact is “a piece of evidence” [16].\n\nEvidence is “grounds for belief or disbelief; data on which to base proof or to establish truth or falsehood” [17]. Artifacts provide records of secure software development practices.\n\nExamples of artifacts specific to AI model development include attestations of the integrity and provenance of training datasets.\n\nAI RMF:\n\nMeasure 2.1\n\nDefine and Use Criteria for Software Security\n\nChecks (PO.4): Help ensure that the software resulting from the SDLC meets the organization’s expectations by defining and using criteria for checking the software’s security during development.\n\nPO.4.1: Define criteria for software security checks and track throughout the SDLC.\n\n[nist-sp-800-218a:p023:para:000 | starter/data/NIST.SP.800-218A.pdf | page 23]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 15 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References being consumed as part of AI model training, testing, fine-tuning, and aligning. [Not part of\n\nSSDF 1.1] purposes, and mitigate the risks as necessary. [Not part of SSDF 1.1]\n\nR2: Select and apply appropriate methods for analyzing and altering the training, testing, fine- tuning, and aligning data for an AI model.\n\nExamples of methods include anomaly detection, bias detection, data cleaning, data curation, data filtering, data sanitization, fact- checking, and noise reduction.\n\nC1: Consider using a human-in-the-loop to examine data, such as with exploratory data analysis techniques [18].\n\nOWASP:\n\nLLM03, LLM06\n\nPW.3.2: Track the provenance, when known, of all training, testing, fine-tuning, and aligning data used for an AI model, and document which data do not have known provenance. [Not part of SSDF 1.1]\n\nMedium N1: Provenance verification is not possible in all cases because provenance is not always known.",
+        "elapsed_ms": 0.17
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 3589.24,
+    "token_usage": {
+      "llm_calls": 3,
+      "prompt_tokens": 5459,
+      "output_tokens": 149,
+      "llm_seconds": 3.557604799992987
+    }
+  },
+  {
+    "query_id": "u_test_03",
+    "split": "test",
+    "status": "abstain",
+    "answer": "Insufficient evidence in the provided documents.",
+    "citations": [],
+    "abstain_reason": "The provided documents do not contain any references or mapping information regarding ISO/IEC 42001 Clause 9.1 or its relationship to AI bias and explainability governance controls across the NIST publications.",
+    "raw_model_citations": null,
+    "context": "[nist-sp-1270:p021:para:003 | starter/data/NIST.SP.1270.pdf | page 21]\nAnother model of the AI lifecycle is currently under development with the Joint Technical Committee of the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).See Information technology — Artificial intelligence — AI system life cycle processes, ISO/IEC CD 5338 (under development, 1st ed.), https://www.iso.org/standard/81118.html. 12/77\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p019:para:000 | starter/data/NIST.SP.800-218A.pdf | page 19]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 11 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR4: Continuously monitor training-related activity in pipelines and model modifications in the model registry.\n\nR5: Follow recommended practices for securely configuring each environment.\n\nR6: Continuously monitor each environment for plaintext secrets.\n\nPO.5.2: Secure and harden development endpoints (endpoints for software designers, developers, testers, builders, etc.) to perform development tasks using a risk-based approach.\n\nMedium No additions to SSDF 1.1 OWASP:\n\nLLM01-1, LLM05-3, LLM05-9,\n\nLLM08\n\nPO.5.3: Continuously monitor software execution performance and behavior in software development environments to identify potential suspicious activity and other issues. [Not part of SSDF 1.1]\n\nHigh R1: Perform continuous security monitoring for all development environment components that host an AI model or related resources (e.g., model APIs, weights, configuration parameters, training datasets).\n\n[nist-sp-800-218a:p024:para:001 | starter/data/NIST.SP.800-218A.pdf | page 24]\nAll inputs and outputs should be logged, analyzed, and validated within the context of the AI model, and those with issues should be sanitized or dropped.\n\nR3: Encode inputs and outputs to prevent the execution of unauthorized code.\n\nAI RMF:\n\nManage 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM01, LLM02, LLM04-1, LLM06, LLM07, LLM09-9,\n\nLLM10\n\nConfigure the Compilation, Interpreter, and\n\nBuild Processes to Improve Executable\n\nSecurity (PW.6): Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.\n\nPW.6.1: Use compiler, interpreter, and build tools that offer features to improve executable security.\n\nLow C1: Consider using secure model serialization mechanisms that reduce or eliminate vectors for the introduction of malicious content.\n\nPW.6.2: Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved configurations.\n\nLow C1: Consider capturing compiler, interpreter, and build tool versions and features as part of the provenance tracking.\n\nReview and/or Analyze Human-Readable\n\nCode to Identify Vulnerabilities and Verify\n\n[nist-sp-800-218a:p025:para:001 | starter/data/NIST.SP.800-218A.pdf | page 25]\nHigh R1: Include AI models in code testing policies and guidelines. Several forms of code testing can be used for AI models, including unit testing, integration testing, penetration testing, red teaming, use case testing, and adversarial testing.\n\nC1: Consider automating tests within a development pipeline as part of regression testing where possible.\n\nPW.8.2: Scope the testing, design the tests, perform the testing, and document the results, including recording and triaging all discovered issues and recommended remediations in the development team’s workflow or issue tracking system.\n\nHigh R1: Test all AI models for vulnerabilities in accordance with the organization’s code testing policies or guidelines.\n\nR2: Retest AI models when they are retrained or new data sources are added.\n\nAI RMF:\n\nMeasure 2.2, 2.3, 2.7; Manage 1.1, 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM03-7d, LLM05-7,\n\nLLM07-4\n\nConfigure Software to Have Secure Settings by\n\nDefault (PW.9): Help improve the security of the software at the time of installation to reduce the likelihood of the software being deployed with weak security settings, putting it at greater risk of compromise.",
+    "context_ids": [
+      "nist-sp-1270:p021:para:003",
+      "nist-sp-800-218a:p025:para:002",
+      "nist-sp-800-218a:p019:para:000",
+      "nist-sp-800-218a:p024:para:001",
+      "nist-sp-800-218a:p025:para:001"
+    ],
+    "num_searches": 3,
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_hybrid",
+        "query": "ISO 42001 Clause 9.1 bias explainability NIST",
+        "args": {
+          "query": "ISO 42001 Clause 9.1 bias explainability NIST",
+          "top_k": 5
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-1270:p010:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 10,
+            "score": 0.03101
+          },
+          {
+            "id": "nist-sp-1270:p012:para:003",
+            "source_id": "nist-sp-1270",
+            "page": 12,
+            "score": 0.030077
+          },
+          {
+            "id": "nist-ir-8312:p016:para:004",
+            "source_id": "nist-ir-8312",
+            "page": 16,
+            "score": 0.028175
+          },
+          {
+            "id": "nist-ir-8312:p018:para:002",
+            "source_id": "nist-ir-8312",
+            "page": 18,
+            "score": 0.016393
+          },
+          {
+            "id": "nist-sp-1270:p056:para:002",
+            "source_id": "nist-sp-1270",
+            "page": 56,
+            "score": 0.016393
+          }
+        ],
+        "context_ids": [
+          "nist-sp-1270:p010:para:000",
+          "nist-sp-1270:p012:para:003",
+          "nist-ir-8312:p016:para:004",
+          "nist-ir-8312:p018:para:002",
+          "nist-sp-1270:p056:para:002"
+        ],
+        "context": "[nist-sp-1270:p010:para:000 | starter/data/NIST.SP.1270.pdf | page 10]\n1. Purpose and Scope In August 2019, fulfilling an assignment in an Executive Order on AI, 5 NIST released “A Plan for Federal Engagement in Developing Technical Standards and Related Tools” [1]. Based on broad public and private sector input, this plan recommended a deeper, more consistent, and long-term engagement in AI standards “to help the United States to speed the pace of reliable, robust, and trustworthy AI technology development.” NIST research in AI continues along this path to focus on how to measure, evaluate, and enhance the trustworthiness of AI systems and the responsible practices for designing, developing, and deploying such systems. Working with the AI community, NIST has identified the follow- ing technical and socio-technical characteristics needed to cultivate trust in AI systems: accuracy, explainability and interpretability, privacy, reliability, robustness, safety, and se- curity resilience—and that harmful biases are mitigated or controlled. While AI has significant potential as a transformative technology, it also poses inher- ent risks.\n\n[nist-sp-1270:p012:para:003 | starter/data/NIST.SP.1270.pdf | page 12]\nStatistical context In technical systems, bias is most commonly understood and treated as a statistical phe- nomenon. Bias is an effect that deprives a statistical result of representativeness by system- atically distorting it, as distinct from a random error, which may distort on any one occasion but balances out on the average [70]. The International Organization for Standardization (ISO) defines bias more generally as: “the degree to which a reference value deviates from the truth”[71]. In this context, an AI system is said to be biased when it exhibits system- atically inaccurate behavior. This statistical perspective does not sufficiently encompass or 3/77\n\n[nist-ir-8312:p016:para:004 | starter/data/NIST.IR.8312.pdf | page 16]\nIn face recognition, a human face examiner could receive information from an AI algo- rithm on which parts of the face are useful. An accurate explanation can help the examiner more accurately assess the pair of faces while an inaccurate explanation could lead to a wrong decision. In the judicial system, AI algorithms have been used in decision, such as if a defendant may be arrested again [8]. An inaccurate explanation of how the algorithm 9 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312\n\n[nist-ir-8312:p018:para:002 | starter/data/NIST.IR.8312.pdf | page 18]\nIn addition to discussing principles, they discuss different things that go into an explanation, including process-based explana- tions vs. outcome-based explanations, the rationale, the responsibility of who made what decisions, an explanation of the data, and design steps that maximize fairness, safety, and impact of the use of the system.\n\nBarredo Arrieta et al. [9] discuss these various terms used in different sources to de- scribe explainability or interpretability: understandability, comprehensibility, interpretabil- ity, explainability, and transparency. They discuss how these terms are all different yet tied together.\n\n[nist-sp-1270:p056:para:002 | starter/data/NIST.SP.1270.pdf | page 56]\nNIST has provided an initial socio-technical framing for AI bias in this document, in- cluding key context and terminology, highlights of the main challenges, and foundational directions for future guidance. This information is classified and discussed through the document according to three key areas:\n\n1. dataset availability, representativeness, and suitability in socio-technical contexts;\n\n2. TEVV considerations for measurement and metrics to support testing and evaluation; 3. human factors, including societal and historic biases within individuals and organiza- tions, participatory approaches such as human-centered design, and human–in–the– loop practices.\n\n27Id.\n\n47/77",
+        "elapsed_ms": 745.67
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "ISO/IEC 42001",
+        "args": {
+          "query": "ISO/IEC 42001",
+          "top_k": 5
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-1270:p021:para:003",
+            "source_id": "nist-sp-1270",
+            "page": 21,
+            "score": 18.020302
+          },
+          {
+            "id": "nist-sp-1270:p049:para:000",
+            "source_id": "nist-sp-1270",
+            "page": 49,
+            "score": 7.104029
+          },
+          {
+            "id": "nist-sp-1270:p012:para:003",
+            "source_id": "nist-sp-1270",
+            "page": 12,
+            "score": 4.892258
+          }
+        ],
+        "context_ids": [
+          "nist-sp-1270:p010:para:000",
+          "nist-sp-1270:p012:para:003",
+          "nist-ir-8312:p016:para:004",
+          "nist-ir-8312:p018:para:002",
+          "nist-sp-1270:p056:para:002",
+          "nist-sp-1270:p021:para:003",
+          "nist-sp-1270:p049:para:000"
+        ],
+        "context": "[nist-sp-1270:p010:para:000 | starter/data/NIST.SP.1270.pdf | page 10]\n1. Purpose and Scope In August 2019, fulfilling an assignment in an Executive Order on AI, 5 NIST released “A Plan for Federal Engagement in Developing Technical Standards and Related Tools” [1]. Based on broad public and private sector input, this plan recommended a deeper, more consistent, and long-term engagement in AI standards “to help the United States to speed the pace of reliable, robust, and trustworthy AI technology development.” NIST research in AI continues along this path to focus on how to measure, evaluate, and enhance the trustworthiness of AI systems and the responsible practices for designing, developing, and deploying such systems. Working with the AI community, NIST has identified the follow- ing technical and socio-technical characteristics needed to cultivate trust in AI systems: accuracy, explainability and interpretability, privacy, reliability, robustness, safety, and se- curity resilience—and that harmful biases are mitigated or controlled. While AI has significant potential as a transformative technology, it also poses inher- ent risks.\n\n[nist-sp-1270:p012:para:003 | starter/data/NIST.SP.1270.pdf | page 12]\nStatistical context In technical systems, bias is most commonly understood and treated as a statistical phe- nomenon. Bias is an effect that deprives a statistical result of representativeness by system- atically distorting it, as distinct from a random error, which may distort on any one occasion but balances out on the average [70]. The International Organization for Standardization (ISO) defines bias more generally as: “the degree to which a reference value deviates from the truth”[71]. In this context, an AI system is said to be biased when it exhibits system- atically inaccurate behavior. This statistical perspective does not sufficiently encompass or 3/77\n\n[nist-ir-8312:p016:para:004 | starter/data/NIST.IR.8312.pdf | page 16]\nIn face recognition, a human face examiner could receive information from an AI algo- rithm on which parts of the face are useful. An accurate explanation can help the examiner more accurately assess the pair of faces while an inaccurate explanation could lead to a wrong decision. In the judicial system, AI algorithms have been used in decision, such as if a defendant may be arrested again [8]. An inaccurate explanation of how the algorithm 9 ______________________________________________________________________________________________________ This publication is available free of charge from: https://doi.org/10.6028/NIST.IR.8312\n\n[nist-ir-8312:p018:para:002 | starter/data/NIST.IR.8312.pdf | page 18]\nIn addition to discussing principles, they discuss different things that go into an explanation, including process-based explana- tions vs. outcome-based explanations, the rationale, the responsibility of who made what decisions, an explanation of the data, and design steps that maximize fairness, safety, and impact of the use of the system.\n\nBarredo Arrieta et al. [9] discuss these various terms used in different sources to de- scribe explainability or interpretability: understandability, comprehensibility, interpretabil- ity, explainability, and transparency. They discuss how these terms are all different yet tied together.\n\n[nist-sp-1270:p056:para:002 | starter/data/NIST.SP.1270.pdf | page 56]\nNIST has provided an initial socio-technical framing for AI bias in this document, in- cluding key context and terminology, highlights of the main challenges, and foundational directions for future guidance. This information is classified and discussed through the document according to three key areas:\n\n1. dataset availability, representativeness, and suitability in socio-technical contexts;\n\n2. TEVV considerations for measurement and metrics to support testing and evaluation; 3. human factors, including societal and historic biases within individuals and organiza- tions, participatory approaches such as human-centered design, and human–in–the– loop practices.\n\n27Id.\n\n47/77\n\n[nist-sp-1270:p021:para:003 | starter/data/NIST.SP.1270.pdf | page 21]\nAnother model of the AI lifecycle is currently under development with the Joint Technical Committee of the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).See Information technology — Artificial intelligence — AI system life cycle processes, ISO/IEC CD 5338 (under development, 1st ed.), https://www.iso.org/standard/81118.html. 12/77\n\n[nist-sp-1270:p049:para:000 | starter/data/NIST.SP.1270.pdf | page 49]\nDesigned solu�ons meets user requirements\n\nEvaluate the design against requirements\n\nUnderstand and specify the context of use\n\nPlan the human‐centered design process\n\nSpecify the user requirements\n\nEvaluate the design against requirements\n\nIterate where appropriate\n\nFig. 6. Human-centered Design Process [ISO 9241-210:2019] As defined in International Organization for Standardization (ISO) standard 9241-210:2019 [248], HCD involves:\n\n• an explicit understanding of users, tasks and environments–the context of use;\n\n• the involvement of users throughout design and development;\n\n• a design driven and refined by human-centered evaluation;\n\n• an iterative process whereby a prototype is designed, tested and modified;\n\n• addressing the whole user experience;\n\n• a design team including multidisciplinary skills and perspectives. Based on the ISO standard, a HCD methodology for the development of AI systems could iteratively comprise the following, as shown in Fig. 7:\n\n• Defining the Context of Use, including operational environment, user characteristics, tasks, and social environment; 40/77",
+        "elapsed_ms": 0.45
+      },
+      {
+        "event": "search",
+        "tool": "search_lexical",
+        "query": "Clause 9.1",
+        "args": {
+          "top_k": 5,
+          "query": "Clause 9.1"
+        },
+        "filter": null,
+        "results": [
+          {
+            "id": "nist-sp-800-218a:p025:para:002",
+            "source_id": "nist-sp-800-218a",
+            "page": 25,
+            "score": 7.520374
+          },
+          {
+            "id": "nist-sp-800-218a:p019:para:000",
+            "source_id": "nist-sp-800-218a",
+            "page": 19,
+            "score": 5.269087
+          },
+          {
+            "id": "nist-sp-800-218a:p024:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 24,
+            "score": 5.088484
+          },
+          {
+            "id": "nist-sp-800-218a:p025:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 25,
+            "score": 5.003448
+          },
+          {
+            "id": "nist-sp-800-218a:p010:para:001",
+            "source_id": "nist-sp-800-218a",
+            "page": 10,
+            "score": 4.985492
+          }
+        ],
+        "context_ids": [
+          "nist-sp-1270:p021:para:003",
+          "nist-sp-800-218a:p025:para:002",
+          "nist-sp-800-218a:p019:para:000",
+          "nist-sp-800-218a:p024:para:001",
+          "nist-sp-800-218a:p025:para:001"
+        ],
+        "context": "[nist-sp-1270:p021:para:003 | starter/data/NIST.SP.1270.pdf | page 21]\nAnother model of the AI lifecycle is currently under development with the Joint Technical Committee of the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).See Information technology — Artificial intelligence — AI system life cycle processes, ISO/IEC CD 5338 (under development, 1st ed.), https://www.iso.org/standard/81118.html. 12/77\n\n[nist-sp-800-218a:p025:para:002 | starter/data/NIST.SP.800-218A.pdf | page 25]\nPW.9.1: Define a secure baseline by determining how to configure each setting that has an effect on security or a security- related setting so that the default settings are secure and do not weaken the security functions provided by the platform, network infrastructure, or services.\n\nMedium No additions to SSDF 1.1 AI RMF:\n\nMeasure 2.7\n\nPW.9.2: Implement the default settings (or groups of default settings, if applicable), and document each setting for software administrators.\n\nMedium N1: Documenting settings can be performed earlier in the process, such as when defining a secure baseline (see PW.9.1).\n\nAI RMF:\n\nMeasure 2.7; Manage 1.2, 1.3, 1.4\n\nRespond to Vulnerabilities (RV)\n\nIdentify and Confirm Vulnerabilities on an\n\nOngoing Basis (RV.1): Help ensure that vulnerabilities are identified more quickly so\n\nRV.1.1: Gather information from software acquirers, users, and public sources on potential vulnerabilities in the software\n\nHigh R1: Log, monitor, and analyze all inputs and outputs for AI models to detect possible security and performance issues (see PO.5.3).\n\nAI RMF:\n\nGovern 4.3, 5.1, 6.1, 6.2;\n\n[nist-sp-800-218a:p019:para:000 | starter/data/NIST.SP.800-218A.pdf | page 19]\nNIST SP 800-218A Secure Software Development Practices for\n\nJuly 2024 Generative AI and Dual-Use Foundation Models 11 Practice Task Priority Recommendations [R], Considerations [C], and Notes [N] Specific to AI Model Development Informative References\n\nR4: Continuously monitor training-related activity in pipelines and model modifications in the model registry.\n\nR5: Follow recommended practices for securely configuring each environment.\n\nR6: Continuously monitor each environment for plaintext secrets.\n\nPO.5.2: Secure and harden development endpoints (endpoints for software designers, developers, testers, builders, etc.) to perform development tasks using a risk-based approach.\n\nMedium No additions to SSDF 1.1 OWASP:\n\nLLM01-1, LLM05-3, LLM05-9,\n\nLLM08\n\nPO.5.3: Continuously monitor software execution performance and behavior in software development environments to identify potential suspicious activity and other issues. [Not part of SSDF 1.1]\n\nHigh R1: Perform continuous security monitoring for all development environment components that host an AI model or related resources (e.g., model APIs, weights, configuration parameters, training datasets).\n\n[nist-sp-800-218a:p024:para:001 | starter/data/NIST.SP.800-218A.pdf | page 24]\nAll inputs and outputs should be logged, analyzed, and validated within the context of the AI model, and those with issues should be sanitized or dropped.\n\nR3: Encode inputs and outputs to prevent the execution of unauthorized code.\n\nAI RMF:\n\nManage 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM01, LLM02, LLM04-1, LLM06, LLM07, LLM09-9,\n\nLLM10\n\nConfigure the Compilation, Interpreter, and\n\nBuild Processes to Improve Executable\n\nSecurity (PW.6): Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.\n\nPW.6.1: Use compiler, interpreter, and build tools that offer features to improve executable security.\n\nLow C1: Consider using secure model serialization mechanisms that reduce or eliminate vectors for the introduction of malicious content.\n\nPW.6.2: Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved configurations.\n\nLow C1: Consider capturing compiler, interpreter, and build tool versions and features as part of the provenance tracking.\n\nReview and/or Analyze Human-Readable\n\nCode to Identify Vulnerabilities and Verify\n\n[nist-sp-800-218a:p025:para:001 | starter/data/NIST.SP.800-218A.pdf | page 25]\nHigh R1: Include AI models in code testing policies and guidelines. Several forms of code testing can be used for AI models, including unit testing, integration testing, penetration testing, red teaming, use case testing, and adversarial testing.\n\nC1: Consider automating tests within a development pipeline as part of regression testing where possible.\n\nPW.8.2: Scope the testing, design the tests, perform the testing, and document the results, including recording and triaging all discovered issues and recommended remediations in the development team’s workflow or issue tracking system.\n\nHigh R1: Test all AI models for vulnerabilities in accordance with the organization’s code testing policies or guidelines.\n\nR2: Retest AI models when they are retrained or new data sources are added.\n\nAI RMF:\n\nMeasure 2.2, 2.3, 2.7; Manage 1.1, 1.2, 1.3, 1.4\n\nOWASP:\n\nLLM03-7d, LLM05-7,\n\nLLM07-4\n\nConfigure Software to Have Secure Settings by\n\nDefault (PW.9): Help improve the security of the software at the time of installation to reduce the likelihood of the software being deployed with weak security settings, putting it at greater risk of compromise.",
+        "elapsed_ms": 0.7
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "elapsed_ms": 5015.7,
+    "token_usage": {
+      "llm_calls": 4,
+      "prompt_tokens": 10517,
+      "output_tokens": 164,
+      "llm_seconds": 4.267900799997733
+    }
+  }
+]

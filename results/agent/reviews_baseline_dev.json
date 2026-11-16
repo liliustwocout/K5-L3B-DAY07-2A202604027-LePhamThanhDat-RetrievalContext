@@ -1,0 +1,23 @@
+[
+  {"query_id": "q01", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping Rank-1 chunk."},
+  {"query_id": "q02", "answer_grade": 2, "citation_support": [true], "note": "Accurately summarizes Knowledge Limits from p012:para:001."},
+  {"query_id": "q03", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p012:para:002."},
+  {"query_id": "q04", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p013:para:002/003."},
+  {"query_id": "q05", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all chunks > 800 chars)."},
+  {"query_id": "q06", "answer_grade": 2, "citation_support": [true], "note": "Complete SHAP explanation supported by p020:para:002."},
+  {"query_id": "q09", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all chunks > 800 chars)."},
+  {"query_id": "q10", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p018:para:000."},
+  {"query_id": "q11", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all chunks > 800 chars)."},
+  {"query_id": "q12", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p025:para:001."},
+  {"query_id": "q13", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all chunks > 800 chars)."},
+  {"query_id": "q14", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p038:para:000/002."},
+  {"query_id": "q17", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p009:para:001."},
+  {"query_id": "q18", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all chunks > 800 chars)."},
+  {"query_id": "q19", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p012:para:002/003."},
+  {"query_id": "q20", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p014:para:001/002."},
+  {"query_id": "q21", "answer_grade": 1, "citation_support": [true], "note": "Covers R2 and R3 from p018:para:002, omits C1 (environment separation) and R1 (resource limits)."},
+  {"query_id": "q22", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p023 chunks."},
+  {"query_id": "u_dev_01", "citation_support": [], "abstention_correct": true, "note": "Clean abstention without speculation."},
+  {"query_id": "u_dev_02", "citation_support": [], "abstention_correct": true, "note": "Clean abstention without speculation."},
+  {"query_id": "u_dev_03", "citation_support": [], "abstention_correct": true, "note": "Clean abstention without speculation."}
+]

@@ -1,0 +1,401 @@
+{
+  "split": "test",
+  "total": 30,
+  "passed": 25,
+  "failed": 5,
+  "accuracy": 0.8333333333333334,
+  "accuracy_pct": "83.33%",
+  "status_counts": {
+    "answered": 22,
+    "abstain": 6,
+    "error": 2
+  },
+  "avg_tool_calls": 2.63,
+  "avg_visual_inspections": 0.73,
+  "avg_elapsed_s": 16.12,
+  "token_usage": {
+    "prompt_tokens": 436105,
+    "output_tokens": 7185
+  },
+  "by_group": {
+    "table": {
+      "total": 6,
+      "passed": 5,
+      "failed": 1,
+      "answered": 5,
+      "abstain": 0,
+      "error": 1,
+      "accuracy": 0.8333333333333334
+    },
+    "image_diagram": {
+      "total": 5,
+      "passed": 4,
+      "failed": 1,
+      "answered": 5,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 0.8
+    },
+    "chart": {
+      "total": 5,
+      "passed": 3,
+      "failed": 2,
+      "answered": 5,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 0.6
+    },
+    "multi_hop": {
+      "total": 4,
+      "passed": 3,
+      "failed": 1,
+      "answered": 3,
+      "abstain": 0,
+      "error": 1,
+      "accuracy": 0.75
+    },
+    "text": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "answered": 4,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "unanswerable": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "answered": 0,
+      "abstain": 6,
+      "error": 0,
+      "accuracy": 1.0
+    }
+  },
+  "items": [
+    {
+      "query_id": "adv_test_table_01",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p046:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "All March & September Monthly Avg numbers, ranks, anomalies, trends, and steeper comparison accurate on p.46 [arc2025:p046:table:00]."
+    },
+    {
+      "query_id": "adv_test_table_02",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p069:text:000",
+        "arc2025:p069:text:001",
+        "arc2025:p069:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Amerasian Arctic (-1.03, 0.566, -3.0, -8.60, 88.6) and Total Arctic (21.6*, 478.90** with *Tg C/yr and **Tg C) accurate on p.69."
+    },
+    {
+      "query_id": "adv_test_table_03",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p083:table:00"
+      ],
+      "visual_inspections": 2,
+      "reason": "Langfjordjokelen (-4060, mean -953, diff 3107 mm w.e./yr) and Engabreen (-3855) accurate on p.83 [arc2025:p083:table:00]."
+    },
+    {
+      "query_id": "adv_test_table_04",
+      "group": "table",
+      "status": "error",
+      "verdict": "fail",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "System/network error: RemoteProtocolError: Server disconnected without sending a response."
+    },
+    {
+      "query_id": "adv_test_table_05",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p136:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Four Sea Ice satellites and DMSP SSM/I-SSMIS decommissioning impact across all 3 topics accurate on p.136."
+    },
+    {
+      "query_id": "adv_test_table_06",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p137:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "AVHRR GIMMS-3g NASA GSFC cuts and MODIS->VIIRS+PACE transition accurate on p.137."
+    },
+    {
+      "query_id": "adv_test_img_01",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p008:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "All 4 right-hand regional records and Greenland spring/summer summary accurate on p.8 [arc2025:p008:fig:00]."
+    },
+    {
+      "query_id": "adv_test_img_02",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p090:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Fram Strait, Barents Sea Opening, Franz Joseph Land-Novaya Zemlya passage, basins, Transpolar Drift accurate on p.90."
+    },
+    {
+      "query_id": "adv_test_img_03",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "fail",
+      "citations": [
+        "arc2025:p094:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Visual misread: reported Svalbard Archipelago instead of Chukchi Sea (wedge 6 on Svalbard is unfilled in Fig. 4 top panel, p.94)."
+    },
+    {
+      "query_id": "adv_test_img_04",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p115:fig:00"
+      ],
+      "visual_inspections": 3,
+      "reason": "Accurately identified truck/vehicle setting, tablet interaction, and read 'North Kuiu' (confirmed on 400dpi crop of p.115)."
+    },
+    {
+      "query_id": "adv_test_img_05",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p123:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Pyrite, dissolved iron(II), all 3 fish common+scientific names, and 3 impacts exact on p.123 [arc2025:p123:fig:00]."
+    },
+    {
+      "query_id": "adv_test_chart_01",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "fail",
+      "citations": [
+        "arc2025:p040:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Timing inaccuracy: tallest 46% peak sits mid-way between Jul 1 and Aug 1 (mid-July), stated as 'early July', and omitted SW margin positive anomalies."
+    },
+    {
+      "query_id": "adv_test_chart_02",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p046:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Deepest Feb & Jul (~-1.1), 2005 positive in Nov, and red 1979-2004 positive all 12 months accurate on p.46 Fig. 2."
+    },
+    {
+      "query_id": "adv_test_chart_03",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p070:text:000",
+        "arc2025:p070:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Annual Net Primary Production (Tg C), ~2230 Tg C above 2200, and 21.6 Tg C/yr trend exact on p.70 Fig. 5."
+    },
+    {
+      "query_id": "adv_test_chart_04",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p084:fig:00",
+        "arc2025:p084:text:002"
+      ],
+      "visual_inspections": 1,
+      "reason": "Alaska ~-38.5 m w.e., Arctic Canada ~-15.5 m w.e., Pan-Arctic ~-28 to -29 m w.e. accurate on p.84 Fig. 2."
+    },
+    {
+      "query_id": "adv_test_chart_05",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "fail",
+      "citations": [
+        "arc2025:p104:fig:00"
+      ],
+      "visual_inspections": 2,
+      "reason": "Subplot x-axis misalignment: reported ~2018 instead of 2015 for Chaetognatha (~100) and Euphausiacea (~65) spikes on p.104 Fig. 3."
+    },
+    {
+      "query_id": "adv_test_multihop_01",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p047:text:002",
+        "arc2025:p048:text:000"
+      ],
+      "visual_inspections": 1,
+      "reason": "21 May 2025 (2 days earlier), 95,000 km^2, 72% vs 2005-24, 95% vs 1985-2004 accurate across pp.47-48."
+    },
+    {
+      "query_id": "adv_test_multihop_02",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p054:text:001"
+      ],
+      "visual_inspections": 1,
+      "reason": "~12 C peak SST, ~7 C Kara Sea anomaly, and Pacific split anomalies accurate from p.54."
+    },
+    {
+      "query_id": "adv_test_multihop_03",
+      "group": "multi_hop",
+      "status": "error",
+      "verdict": "fail",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "System/parser error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)."
+    },
+    {
+      "query_id": "adv_test_multihop_04",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p089:text:001",
+        "arc2025:p093:text:000",
+        "arc2025:p093:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "AW 150-800 m, halocline ~50-150 m, Amerasian strengthened vs Eurasian weakened (~30% stability decline) accurate across pp.89-93."
+    },
+    {
+      "query_id": "adv_test_text_01",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p045:text:000"
+      ],
+      "visual_inspections": 0,
+      "reason": ">=15% concentration and 1979 start accurate on p.45."
+    },
+    {
+      "query_id": "adv_test_text_02",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p053:text:000"
+      ],
+      "visual_inspections": 0,
+      "reason": "~0.3 C per decade north of 65 N accurate on p.53."
+    },
+    {
+      "query_id": "adv_test_text_03",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p081:text:002"
+      ],
+      "visual_inspections": 0,
+      "reason": "60% by area accurate on p.81."
+    },
+    {
+      "query_id": "adv_test_text_04",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p120:text:000",
+        "arc2025:p121:text:000",
+        "arc2025:p121:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": ">200 rivers, red/blue reflectance ratio, >1.5 threshold accurate across pp.120-121."
+    },
+    {
+      "query_id": "adv_test_unans_01",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on Paris 1.5C / SSP5-8.5 projection year."
+    },
+    {
+      "query_id": "adv_test_unans_02",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on COP29/COP30 maritime carbon tax."
+    },
+    {
+      "query_id": "adv_test_unans_03",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on Beaufort Sea methane clathrate volume."
+    },
+    {
+      "query_id": "adv_test_unans_04",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on IMO Polar Code / UNCLOS spill response vessels."
+    },
+    {
+      "query_id": "adv_test_unans_05",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on SWOT/NISAR/Sentinel-6 Table 3."
+    },
+    {
+      "query_id": "adv_test_unans_06",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on snow leopard northward range shift."
+    }
+  ]
+}

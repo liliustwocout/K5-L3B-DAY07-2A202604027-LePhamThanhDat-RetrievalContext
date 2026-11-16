@@ -1,0 +1,23 @@
+{
+  "config": "dense_b800",
+  "description": "Baseline: Day 6 pgvector Dense (gemini-embedding-001, 768d) + SQL filter, top_k=3, budget=800 chars",
+  "split": "dev",
+  "n": 18,
+  "hit1": "12/18",
+  "hit1_rate": 0.6667,
+  "evidence_hit3": "15/18",
+  "evidence_hit3_rate": 0.8333,
+  "context_evidence_rate": "2/18",
+  "context_evidence_pct": 0.1111,
+  "avg_context_chars": 317.8,
+  "median_ms": 26.58,
+  "total_seconds": 0.457,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 18,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}
