@@ -1,0 +1,279 @@
+{
+  "split": "dev",
+  "total": 18,
+  "passed": 16,
+  "failed": 2,
+  "accuracy": 0.8888888888888888,
+  "accuracy_pct": "88.89%",
+  "status_counts": {
+    "answered": 15,
+    "abstain": 3,
+    "error": 0
+  },
+  "avg_tool_calls": 1.56,
+  "avg_visual_inspections": 0.0,
+  "avg_elapsed_s": 8.91,
+  "token_usage": {
+    "prompt_tokens": 81282,
+    "output_tokens": 3359
+  },
+  "by_group": {
+    "table": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "answered": 3,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "image_diagram": {
+      "total": 3,
+      "passed": 2,
+      "failed": 1,
+      "answered": 3,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 0.6666666666666666
+    },
+    "chart": {
+      "total": 3,
+      "passed": 2,
+      "failed": 1,
+      "answered": 3,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 0.6666666666666666
+    },
+    "multi_hop": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "answered": 3,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "text": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "answered": 3,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "unanswerable": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "answered": 0,
+      "abstain": 3,
+      "error": 0,
+      "accuracy": 1.0
+    }
+  },
+  "items": [
+    {
+      "query_id": "adv_dev_table_01",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p012:text:000",
+        "arc2025:p012:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "Exact 2016 and 2024 topics cited from page 12 chunks [arc2025:p012:text:000, arc2025:p012:text:001]."
+    },
+    {
+      "query_id": "adv_dev_table_02",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p102:text:000",
+        "arc2025:p102:table:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "All 4 Pelagic fish taxa and common names cited on p.102."
+    },
+    {
+      "query_id": "adv_dev_table_03",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p133:table:00",
+        "arc2025:p133:text:002"
+      ],
+      "visual_inspections": 0,
+      "reason": "Exact Lake Ice topic and Gaps entry for in situ + GMASI on p.133."
+    },
+    {
+      "query_id": "adv_dev_img_01",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p007:fig:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "All 8 Vital Signs and exact Snow Cover 50% trend cited from [arc2025:p007:fig:00]."
+    },
+    {
+      "query_id": "adv_dev_img_02",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "fail",
+      "citations": [
+        "arc2025:p075:fig:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "Severe visual hallucination without live vision inspection: claimed 'bright orange' backpack and 'laptop computer' inside black case instead of white backpack and white calibration panel."
+    },
+    {
+      "query_id": "adv_dev_img_03",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p112:text:000",
+        "arc2025:p112:fig:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "Text index description already covered 2 observers, blue barrel, and red container on p.112 [arc2025:p112:fig:00]."
+    },
+    {
+      "query_id": "adv_dev_chart_01",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p015:fig:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "Exact 0.87 vs 0.35 C dec^-1 and 0.52 difference matching p.15 Fig. 1(c)."
+    },
+    {
+      "query_id": "adv_dev_chart_02",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p030:fig:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "Both negative (-0.7 red, -1.4 black) matching p.30 Fig. 1(b)."
+    },
+    {
+      "query_id": "adv_dev_chart_03",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "fail",
+      "citations": [
+        "arc2025:p076:fig:00"
+      ],
+      "visual_inspections": 0,
+      "reason": "Wrong chart peak year: claimed MODIS Circumarctic peaks in 2024 instead of 2020 shown on p.76 Fig. 2."
+    },
+    {
+      "query_id": "adv_dev_multihop_01",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p021:text:000",
+        "arc2025:p022:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "All seasonal ranks and water-year wettest record accurately combined from pp.21-22."
+    },
+    {
+      "query_id": "adv_dev_multihop_02",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p036:text:001",
+        "arc2025:p037:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "-129+-50 vs -219+-16 Gt, 90 Gt difference, and ICESat-2 -2+-56 Gt accurate across pp.36-37."
+    },
+    {
+      "query_id": "adv_dev_multihop_03",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p110:text:000",
+        "arc2025:p111:text:001",
+        "arc2025:p111:text:002"
+      ],
+      "visual_inspections": 0,
+      "reason": "Full BRAIDED and ISN names, mercury at BSRC, and IDSov accurate across pp.110-111."
+    },
+    {
+      "query_id": "adv_dev_text_01",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p014:text:003"
+      ],
+      "visual_inspections": 0,
+      "reason": "Nearly three times faster accurately cited from [arc2025:p014:text:003]."
+    },
+    {
+      "query_id": "adv_dev_text_02",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p029:text:000",
+        "arc2025:p029:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "Half of six decades ago + surface albedo feedback on p.29."
+    },
+    {
+      "query_id": "adv_dev_text_03",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p143:text:000"
+      ],
+      "visual_inspections": 0,
+      "reason": "2006 inception and >800 specialists cited from [arc2025:p143:text:000]."
+    },
+    {
+      "query_id": "adv_dev_unans_01",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained after lexical search confirmed 'penguin' absent."
+    },
+    {
+      "query_id": "adv_dev_unans_02",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on absent Norway icebreaker budget."
+    },
+    {
+      "query_id": "adv_dev_unans_03",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Properly abstained on absent microplastic measurements."
+    }
+  ]
+}

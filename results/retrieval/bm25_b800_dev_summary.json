@@ -1,0 +1,19 @@
+{
+  "config": "bm25_b800",
+  "description": "Method 2: Okapi BM25 lexical + metadata filter, top_k=3, budget=800 chars",
+  "split": "dev",
+  "n": 18,
+  "hit1": "13/18",
+  "hit1_rate": 0.7222,
+  "evidence_hit3": "14/18",
+  "evidence_hit3_rate": 0.7778,
+  "context_evidence_rate": "2/18",
+  "context_evidence_pct": 0.1111,
+  "avg_context_chars": 317.3,
+  "median_ms": 0.79,
+  "total_seconds": 0.016,
+  "embed_stats": null,
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

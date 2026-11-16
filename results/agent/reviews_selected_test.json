@@ -1,0 +1,11 @@
+[
+  {"query_id": "q07", "answer_grade": 2, "citation_support": [true, true], "note": "Perturbation vulnerability (p022:para:000) and fairwashing ensemble mechanism (p022:para:001) fully supported."},
+  {"query_id": "q08", "answer_grade": 0, "citation_support": [], "note": "False abstention triggered by invalid_or_missing_citations: p029:para:002 was evicted from active_context_ids in Turn 3 while still cited from earlier turn."},
+  {"query_id": "q15", "answer_grade": 2, "citation_support": [true], "note": "Calibration vs balancing classes incompatibility and simultaneous bias mitigation + performance supported by p041:para:000."},
+  {"query_id": "q16", "answer_grade": 2, "citation_support": [true], "note": "Three lines of defense roles (model dev, risk management, auditing) and small-org note supported by p055:para:001."},
+  {"query_id": "q23", "answer_grade": 2, "citation_support": [true, true], "note": "PW.5.1 R2 input/output handling/logging/validation/sanitizing + R3 encoding supported by p024:para:000 and p024:para:001."},
+  {"query_id": "q24", "answer_grade": 2, "citation_support": [true, true], "note": "RV.2.1 deep I/O analysis (p026:para:001) and RV.2.2 rebuild time/expenses (p026:para:002) fully supported."},
+  {"query_id": "u_test_01", "citation_support": [], "abstention_correct": true, "note": "Cited RV.2.2 check and search_lexical('calendar days'); cleanly abstained without guessing SLA."},
+  {"query_id": "u_test_02", "citation_support": [], "abstention_correct": true, "note": "Verified watermarking/C2PA absent via search_lexical; cleanly abstained."},
+  {"query_id": "u_test_03", "citation_support": [], "abstention_correct": true, "note": "Verified ISO/IEC 42001 Clause 9.1 absent via search_lexical; cleanly abstained."}
+]

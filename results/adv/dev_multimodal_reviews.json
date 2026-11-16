@@ -1,0 +1,20 @@
+[
+  {"query_id": "adv_dev_table_01", "verdict": "pass", "reason": "Inspected p.12 table crop (vis=1) and cited exact 2016 and 2024 topics."},
+  {"query_id": "adv_dev_table_02", "verdict": "pass", "reason": "Inspected p.102 table crop (vis=1) and listed all 4 Pelagic fish taxa and common names."},
+  {"query_id": "adv_dev_table_03", "verdict": "pass", "reason": "Inspected p.133 table crop (vis=1) and cited Lake Ice topic + in situ + GMASI Gaps."},
+  {"query_id": "adv_dev_img_01", "verdict": "pass", "reason": "Inspected Vital Signs diagram crop (vis=1); exact 8 topics and Snow Cover 50% box."},
+  {"query_id": "adv_dev_img_02", "verdict": "pass", "reason": "Inspected Fig. 1 on p.75 (vis=1); correctly observed white backpack (black trim), handheld sensor, and white calibration panel inside open black case."},
+  {"query_id": "adv_dev_img_03", "verdict": "pass", "reason": "Inspected Fig. 2 on p.112 (vis=1); correctly identified 2 observers, blue plastic barrel, red plastic fuel jug/jerrycan."},
+  {"query_id": "adv_dev_chart_01", "verdict": "pass", "reason": "Inspected Fig. 1 on p.15 (vis=1); exact 0.87 vs 0.35 C dec^-1 and 0.52 difference."},
+  {"query_id": "adv_dev_chart_02", "verdict": "pass", "reason": "Inspected Fig. 1 on p.30 (vis=1); accurately read both negative anomalies (-0.7 red, -1.3 to -1.4 black)."},
+  {"query_id": "adv_dev_chart_03", "verdict": "pass", "reason": "Inspected p.76 Fig. 2 (vis=2); MODIS Eurasia highest, North America lowest, Circumarctic peaks ~0.52 in 2020."},
+  {"query_id": "adv_dev_multihop_01", "verdict": "pass", "reason": "Combined pp.21-22 accurately: wettest water year, spring #1, autumn/winter 4th, summer 35th unusually dry."},
+  {"query_id": "adv_dev_multihop_02", "verdict": "pass", "reason": "Combined pp.36-37 accurately (vis=1): -129+-50 vs -219+-16 Gt, 90 Gt difference, ICESat-2 -2+-56 Gt."},
+  {"query_id": "adv_dev_multihop_03", "verdict": "pass", "reason": "Combined pp.110-111 accurately: full BRAIDED & ISN names, mercury at BSRC, IDSov."},
+  {"query_id": "adv_dev_text_01", "verdict": "pass", "reason": "Nearly three times faster since 1980 on p.14."},
+  {"query_id": "adv_dev_text_02", "verdict": "pass", "reason": "Half of six decades ago + surface albedo feedback on p.29."},
+  {"query_id": "adv_dev_text_03", "verdict": "pass", "reason": "Since 2006 and >800 specialists on p.143."},
+  {"query_id": "adv_dev_unans_01", "verdict": "pass", "reason": "Properly abstained confirming no Arctic penguin data reported."},
+  {"query_id": "adv_dev_unans_02", "verdict": "pass", "reason": "Properly abstained on absent Norway icebreaker funding."},
+  {"query_id": "adv_dev_unans_03", "verdict": "pass", "reason": "Properly abstained after searching microplastic across report."}
+]

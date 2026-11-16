@@ -1,0 +1,23 @@
+{
+  "config": "hybrid_cross_rerank_b3600",
+  "description": "Method 4 / Improvement 1b: Hybrid RRF (fetch_k=12) + Cross-Feature Reranker (dense+BM25+bigram+IDs) -> top_k=3, budget=3600 chars",
+  "split": "dev",
+  "n": 18,
+  "hit1": "13/18",
+  "hit1_rate": 0.7222,
+  "evidence_hit3": "15/18",
+  "evidence_hit3_rate": 0.8333,
+  "context_evidence_rate": "15/18",
+  "context_evidence_pct": 0.8333,
+  "avg_context_chars": 3070.9,
+  "median_ms": 33.06,
+  "total_seconds": 0.607,
+  "embed_stats": {
+    "api_calls": 0,
+    "cache_hits": 18,
+    "api_seconds": 0.0
+  },
+  "rerank_stats": null,
+  "service_cost_usd": 0.0,
+  "cost_note": "Gemini API Free Tier ($0 billed); token/call counts logged in stats."
+}

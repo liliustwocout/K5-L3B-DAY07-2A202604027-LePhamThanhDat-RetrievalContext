@@ -1,0 +1,501 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "direct",
+    "question": "In explainable AI terminology, how are the three key terms \"explanation\", \"output\", and \"process\" operationally defined?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "An explanation is the evidence, support, or reasoning related to a system's output or process; the output is the outcome from or action taken by a machine or system performing a task; and the process refers to the procedures, design, and system workflow underlying the system (including documentation and data used or stored).",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 9,
+        "evidence": "An explanation is the evidence, support, or reasoning related to a system’s output or process."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "direct",
+    "question": "What does the Knowledge Limits principle require of an explainable AI system?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "A system only operates under conditions for which it was designed and when it reaches sufficient confidence in its output.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 10,
+        "evidence": "Knowledge Limits: A system only operates under conditions for which it was designed and when it reaches sufficient confidence in its output."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "conditional_or_exception",
+    "question": "What are the two distinct ways an AI system can reach or exceed its knowledge limits, and how should it respond in each situation?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "First, the operation or query may be outside the system's domain (such as an apple image passed to a bird classifier), so it should report that it cannot provide an answer. Second, the confidence of the most likely answer may fall below an internal confidence threshold (such as a blurry bird image), so it should note what it recognized while stating that low quality prevents specific identification.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 12,
+        "evidence": "There are two ways a system can reach or exceed its knowledge limits. In one way, the operation or query to the system can be outside its domain."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "How does a one-way interaction style differ from a declarative explanation in human-machine explanation delivery?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "In a declarative explanation, the system outputs a fixed explanation with no further interaction and the human cannot alter the underlying query; in a one-way interaction, the explanation is determined by a user-submitted query or question, allowing the consumer to probe further or submit different queries.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 13,
+        "evidence": "In a declarative explanation, the systems provides an explanation, and there is no further interaction."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Within explainability risk management, what potential negative intellectual property risk arises when a system provides multiple explanations across queries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "While a single explanation may not reveal internal workings, multiple explanations obtained from independent queries or through a two-way interaction can be connected to expose proprietary details or intellectual property.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 16,
+        "evidence": "A potential negative outcome of having an explanation is the exposure of proprietary details [85]. A single explanation may not expose the inner workings of the system."
+      }
+    ],
+    "filter": {
+      "category": "explainability"
+    }
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "How does SHAP compute per-feature importance for an individual prediction?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "SHAP converts the prediction scenario into a coalitional game from game theory—treating features as players, feature values versus a default value as strategies, and the system output as the payoff—and computes Shapley values from that game.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 20,
+        "evidence": "SHAP treats the features as the players, the features value vs. a default value as the strategies, and the system output as the payoff, forming a coalitional game from the input."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "test",
+    "type": "conditional_or_exception",
+    "question": "What vulnerability arises when an explanation lacks 100 percent accuracy, and how does fairwashing exploit it?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Adversaries can manipulate outputs on small input perturbations to hide biases; in fairwashing, a closed-box model is approximated using an ensemble of fairer interpretable models that conceal the unfairness of the original model.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 22,
+        "evidence": "They fairwash a model by taking a closed-box model and produce an ensemble of interpretable models that approximate the original model but are much fairer, which then hide the unfairness of the original model."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "What benchmark conclusion is drawn from comparing human-produced explanations to the four AI principles, and what does this imply for human-machine collaboration?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Humans demonstrate only limited ability to meet the four principles, establishing a baseline for comparing AI systems; understanding the explainability of both humans and AI opens the door to collaborations that outperform either alone.",
+    "gold": [
+      {
+        "source_id": "nist-ir-8312",
+        "page": 29,
+        "evidence": "We showed that humans demonstrate only limited ability to meet the principles outlined here. This provides a benchmark with which to compare AI systems."
+      }
+    ],
+    "filter": {
+      "year": 2021
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "direct",
+    "question": "What are the three dominant categories of AI bias identified beyond purely computational factors, and how is systemic bias defined?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "The three categories are systemic, statistical and computational, and human bias. Systemic biases result from institutional procedures and practices that advantage or favor certain social groups while disadvantaging or devaluing others, even without conscious prejudice.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 15,
+        "evidence": "Systemic biases result from procedures and practices of particular institutions that operate in ways which result in certain social groups being advantaged or favored"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "direct",
+    "question": "How do statistical and computational biases arise, and can they occur without discriminatory intent?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "They stem from systematic (as opposed to random) errors when a sample is not representative of the population or when algorithms cannot extrapolate beyond training data, and they can occur in the absence of prejudice, partiality, or discriminatory intent.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 18,
+        "evidence": "Statistical and computational biases stem from errors that result when the sample is not representative of the population. These biases arise from systematic as opposed to random error and can occur in the absence of prejudice, partiality, or discriminatory intent [97]."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What is \"techno-solutionism\" in the context of AI bias, and what model risk management control helps counter it?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Techno-solutionism is the tendency to assume technical code or algorithms alone can solve complex problems that have social, political, economic, or ethical dimensions; one mitigation control is establishing, documenting, and reviewing the anticipated real-world value of an AI system.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 20,
+        "evidence": "used in model risk management to mitigate against techno-solutionism and other anti-patterns, is to establish, document, and review the anticipated real-world value of an AI system."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "conditional_or_exception",
+    "question": "Why does excluding protected attributes such as race or gender from training datasets fail to prevent discrimination?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Protected attributes can still be inadvertently inferred through proxy or latent variables—such as inferring gender from browsing history or race from zip code—allowing models to still negatively impact individuals or groups.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 25,
+        "evidence": "Developers sometimes exclude protected attributes, associated with social groups which have historically been discriminated against. However, this does not remedy the problem, since the information can be inadvertently inferred in other ways through proxy or latent variables."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Why is the distinction between reducible epistemic uncertainty and irreducible aleatoric uncertainty described as not absolute in bias management?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Both uncertainties are highly context-dependent, so changing context can blur them or turn one into the other; for instance, embedding overlapping samples into higher dimensions reduces aleatoric uncertainty at the expense of higher epistemic uncertainty via overfitting.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 30,
+        "evidence": "Since these two types of uncertainties (EPISTEMIC and ALEATORIC ) are highly context-dependent, changing the context may blur the difference between them or even cause one to turn into the other. Thus, their characterization as reducible and irreducible is not absolute."
+      }
+    ],
+    "filter": {
+      "category": "bias_management"
+    }
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "In the field study on STEM career advertisements, why did more men than women see an ad intended for women, and what limitation of algorithmic transparency does this reveal?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Because women were more valuable targets for household purchase advertising, ad pricing differentials caused 20%+ more men to view the STEM ad; inspecting the code alone only showed ad cost minimization without economic context, demonstrating that transparency is not a direct bias mitigant and should not be mistaken for fairness.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 38,
+        "evidence": "While transparency into AI system mechanisms is rarely a direct bias mitigant, as explained above, transparency enables many critical AI governance functions. Transparency is very important, but should not be mistaken for fairness."
+      }
+    ],
+    "filter": {
+      "year": 2022
+    }
+  },
+  {
+    "id": "q15",
+    "split": "test",
+    "type": "conditional_or_exception",
+    "question": "Which two mathematical fairness conditions are inherently incompatible in general, and does this impossibility prevent achieving both mitigated bias and good performance?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Calibration and balancing the positive and negative classes cannot be satisfied simultaneously except under highly constrained special cases; however, mitigated bias and good performance can be achieved simultaneously.",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 41,
+        "evidence": "While not all mathematical fairness desiderata can be achieved simultaneously, it is important to note that mitigated bias and good performance can be achieved simultaneously [208]."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "type": "direct",
+    "question": "How does the \"three lines of defense\" model assign accountability across teams to sustain a culture of effective challenge?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "It separates responsibilities across three teams: the first line of defense focuses on model development, the second on risk management, and the third on auditing (though a full three-lines structure may be impractical for smaller organizations).",
+    "gold": [
+      {
+        "source_id": "nist-sp-1270",
+        "page": 55,
+        "evidence": "Typically, the first line of defense focuses on model development, the second on risk management, and the third on auditing."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "type": "direct",
+    "question": "Which Executive Order section prompted the secure generative AI development companion profile, and what unique boundary challenge exists in AI systems?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Section 4.1.a of Executive Order 14110 tasked NIST with developing this companion resource. A unique challenge is the blurring of traditional boundaries between system code and system data, alongside plain human language being used to interact with systems.",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 9,
+        "evidence": "A unique challenge for this community is the blurring of traditional boundaries between system code and system data, as well as the use of plain human language as the means of interaction with the systems."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "type": "conditional_or_exception",
+    "question": "Which lifecycle activities are excluded from the AI model development security profile, and does it treat AI-generated source code differently from human-written source code?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Deployment and operation of AI systems and most of the data governance and management lifecycle are out of scope. Practices and tasks do not distinguish between human-written and AI-generated source code because all source code should be evaluated for vulnerabilities before use.",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 10,
+        "evidence": "Practices and tasks in this Profile do not distinguish between human-written and AI-generated source code, because it is assumed that all source code should be evaluated for vulnerabilities and other issues before use."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q19",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Why is tracking model versioning, lineage, and reproducibility harder for final AI model weights than for model architecture source code?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Source code defining model architecture and binaries is amenable to standard secure software versioning and lineage practices, whereas final model weights are only defined after training and fine-tuning, where tracking all aspects of collection, processing, and training has limitations.",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 12,
+        "evidence": "However, the final model weights are defined only after the model is trained and fine-tuned; this is where limitations in tracking all aspects of collection, processing, and training arise."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "dev",
+    "type": "direct",
+    "question": "In the SSDF Community Profile table, what do the designation codes R, C, and N appended to a task ID represent?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "R stands for recommendation (something the organization should do), C stands for consideration (something the organization should consider doing), and N stands for note (additional information besides recommendations and considerations).",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 14,
+        "evidence": "An R, C, or N designation and its number can be appended to the task ID to create a unique identifier (e.g., “PO.1.2.R1” is the first recommendation for task PO.1.2)."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q21",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Under task PO.5.1 for securing development environments, what practices are recommended for protecting sensitive data, training pipelines, and model registries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Organizations should consider isolating execution environments (C1), monitor and limit resource usage and rates during development (R1), store sensitive data only in approved environments (R2), and protect training pipelines, model registries, and other components under the principle of least privilege (R3).",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 18,
+        "evidence": "R3: Protect all training pipelines, model registries, and other components within the environments according to the principle of least privilege."
+      }
+    ],
+    "filter": {
+      "category": "genai_security"
+    }
+  },
+  {
+    "id": "q22",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Under task PW.3.2, what should an organization still do when the provenance of training, testing, or fine-tuning data is unknown?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Even though provenance verification is not possible in all cases, organizations should track and verify provenance whenever possible and document which data do not have known provenance.",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 23,
+        "evidence": "Provenance verification is not possible in all cases because provenance is not always known. However, it is still beneficial for security purposes to track and verify provenance whenever possible, and to track when provenance is unknown."
+      }
+    ],
+    "filter": {
+      "year": 2024
+    },
+    "required_spans": [
+      "Provenance verification is not possible in all cases because provenance is not always known.",
+      "However, it is still beneficial for security purposes to track and verify provenance whenever possible, and to track when provenance is unknown."
+    ],
+    "multi_chunk_note": "Full evidence quote spans adjacent chunks p023:para:000 and p023:para:001 in Strategy C."
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "type": "direct",
+    "question": "Under secure coding practice PW.5.1, how should AI model inputs (including prompts) and outputs be handled and encoded?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "All inputs and outputs should be logged, analyzed, and validated within the context of the AI model, with problematic items sanitized or dropped, and inputs and outputs should be encoded to prevent unauthorized code execution.",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 24,
+        "evidence": "All inputs and outputs should be logged, analyzed, and validated within the context of the AI model, and those with issues should be sanitized or dropped."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "For analyzing vulnerabilities and planning risk responses in AI models (tasks RV.2.1 and RV.2.2), what input/output inspection is noted and what resource factor must risk responses consider?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Vulnerability analysis may include deep analysis of generative AI and dual-use foundation model inputs and outputs to detect deviations from normal behavior (RV.2.1), and risk responses for AI models should consider the time and expenses associated with rebuilding them (RV.2.2).",
+    "gold": [
+      {
+        "source_id": "nist-sp-800-218a",
+        "page": 26,
+        "evidence": "R1: Risk responses for AI models should consider the time and expenses that may be associated with rebuilding them."
+      }
+    ],
+    "filter": {
+      "category": "genai_security"
+    }
+  },
+  {
+    "id": "u_dev_01",
+    "split": "dev",
+    "type": "unanswerable_near_topic",
+    "question": "Under the GDPR mentions in the NIST explainability publication, what administrative fine percentages or maximum Euro penalties apply for violating GDPR Article 22 automated decision-making rules?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST IR 8312 briefly cites GDPR Article 13 in explainability context (pp. 8, 16, 30, 42), but GDPR Article 22, administrative fine percentages, and Euro penalties do not appear anywhere in the corpus.",
+    "verification_method": "Full-corpus regex scan across all 159 physical pages of NIST.IR.8312.pdf, NIST.SP.1270.pdf, and NIST.SP.800-218A.pdf for 'Article 22', 'penalty/penalties', 'euro/million' returned 0 matches.",
+    "filter": {
+      "category": "explainability"
+    }
+  },
+  {
+    "id": "u_dev_02",
+    "split": "dev",
+    "type": "unanswerable_near_topic",
+    "question": "According to the secure generative AI development practices profile, what specific KL-divergence penalty coefficient or PPO clipping epsilon is recommended during RLHF alignment?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST SP 800-218A discusses aligning and fine-tuning at a high-level SSDF practice level (e.g., PW.3.2), but specifies no RLHF algorithm hyperparameters such as KL penalty coefficients or PPO clipping epsilon.",
+    "verification_method": "Full-corpus regex scan across all 159 physical pages for 'RLHF', 'PPO', 'KL', 'clipping', and 'epsilon' returned 0 matches.",
+    "filter": {
+      "category": "genai_security"
+    }
+  },
+  {
+    "id": "u_dev_03",
+    "split": "dev",
+    "type": "unanswerable_near_topic",
+    "question": "How does the EU AI Act Article 52 transparency obligation or conformity assessment procedure map to the four explainable AI principles in the NIST documents?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The NIST documents cover explainability principles and transparency (IR 8312, SP 1270) but never mention or map to the EU AI Act, Article 52, or conformity assessment procedures.",
+    "verification_method": "Full-corpus regex scan across all 159 physical pages for 'EU AI Act', 'Article 52', and 'conformity assessment' returned 0 matches.",
+    "filter": null
+  },
+  {
+    "id": "u_test_01",
+    "split": "test",
+    "type": "unanswerable_near_topic",
+    "question": "Under task RV.2.2 of the generative AI secure development profile, within how many calendar days must an organization patch or disclose newly discovered critical AI model vulnerabilities?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST SP 800-218A RV.2.2 recommends considering time and rebuilding expenses in risk responses, but gives no numeric patch or disclosure SLA in calendar days.",
+    "verification_method": "Full-corpus regex scan across all 159 physical pages for '\\b\\d+\\s+(days?|hours?|months?)\\b' and 'calendar days' returned 0 matches.",
+    "filter": {
+      "year": 2024
+    }
+  },
+  {
+    "id": "u_test_02",
+    "split": "test",
+    "type": "unanswerable_near_topic",
+    "question": "In SP 800-218A, how does NIST specify implementing cryptographic watermarking or C2PA provenance metadata tags for generated images and audio?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST SP 800-218A addresses training/fine-tuning data provenance under PW.3.2, but contains no guidance on cryptographic watermarking or C2PA tags for generated media.",
+    "verification_method": "Full-corpus regex scan across all 159 physical pages for 'watermark' and 'C2PA' returned 0 matches.",
+    "filter": null
+  },
+  {
+    "id": "u_test_03",
+    "split": "test",
+    "type": "unanswerable_near_topic",
+    "question": "How does ISO/IEC 42001 Clause 9.1 map to the AI bias and explainability governance controls across the three NIST publications?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The three NIST publications discuss AI governance, bias, and explainability, but make no reference to ISO/IEC 42001 or Clause 9.1.",
+    "verification_method": "Full-corpus regex scan across all 159 physical pages for '42001' and 'Clause 9' returned 0 matches.",
+    "filter": null
+  }
+]

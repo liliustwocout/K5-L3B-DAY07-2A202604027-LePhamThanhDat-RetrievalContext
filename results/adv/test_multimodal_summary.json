@@ -1,0 +1,412 @@
+{
+  "split": "test",
+  "total": 30,
+  "passed": 29,
+  "failed": 1,
+  "accuracy": 0.9666666666666667,
+  "accuracy_pct": "96.67%",
+  "status_counts": {
+    "answered": 24,
+    "abstain": 6,
+    "error": 0
+  },
+  "avg_tool_calls": 2.2,
+  "avg_visual_inspections": 0.67,
+  "avg_elapsed_s": 15.43,
+  "token_usage": {
+    "prompt_tokens": 267647,
+    "output_tokens": 7338
+  },
+  "by_group": {
+    "table": {
+      "total": 6,
+      "passed": 5,
+      "failed": 1,
+      "answered": 6,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 0.8333333333333334
+    },
+    "image_diagram": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "answered": 5,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "chart": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "answered": 5,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "multi_hop": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "answered": 4,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "text": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "answered": 4,
+      "abstain": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "unanswerable": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "answered": 0,
+      "abstain": 6,
+      "error": 0,
+      "accuracy": 1.0
+    }
+  },
+  "items": [
+    {
+      "query_id": "adv_test_table_01",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p046:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.46 Table 1 crop (vis=1); exact March Daily Max (14.31, Rank 1, -1.05, -40,300) and Sept Daily Min (4.60, Rank 10, -0.78, -53,800) with steeper 1979-2005 comparison and [arc2025:p046:table:00] citation."
+    },
+    {
+      "query_id": "adv_test_table_02",
+      "group": "table",
+      "status": "answered",
+      "verdict": "fail",
+      "citations": [
+        "arc2025:p069:text:000",
+        "arc2025:p069:text:001"
+      ],
+      "visual_inspections": 1,
+      "reason": "Incomplete region citation per strict grading rule: inspected p.69 table crop (vis=1) and got all values right, but cited only [arc2025:p069:text:000, arc2025:p069:text:001] (which starts at Barents Sea and omits the Eurasian Arctic row) while omitting [arc2025:p069:table:00]."
+    },
+    {
+      "query_id": "adv_test_table_03",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p083:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.83 Table 1 crop (vis=1); exact Lemon Creek (-2360 mm w.e./yr, 72 yrs) and Melville S. Ice Cap (-1482 mm w.e./yr, 62 yrs) with [arc2025:p083:table:00]."
+    },
+    {
+      "query_id": "adv_test_table_04",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p134:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.134 Table 1 crop (vis=1); accurately reported complete Geese and Ship Traffic AIS gaps with [arc2025:p134:table:00]."
+    },
+    {
+      "query_id": "adv_test_table_05",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p135:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.135 Table 2 crop (vis=1); accurately contrasted 'No risks noted' for Surface Air Temp vs. Meteorological Stations Collecting Precipitation Data & budget cuts with [arc2025:p135:table:00]."
+    },
+    {
+      "query_id": "adv_test_table_06",
+      "group": "table",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p138:table:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.138 Table 2 crop (vis=1); exact CBMP Arctic Pollinator Expert Network, A-BON, and NSF-AON 2025 pause with [arc2025:p138:table:00]."
+    },
+    {
+      "query_id": "adv_test_img_01",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p096:fig:00",
+        "arc2025:p096:text:000"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.96 Fig. 5 (vis=1); exact Phase 1 vs Phase 2 halocline stratification, numbered items 1/2/3, stronger heat #2, and vertical upward shoaling of Nutrients profile (b->c)."
+    },
+    {
+      "query_id": "adv_test_img_02",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p113:text:000",
+        "arc2025:p113:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.113 Fig. 3 (vis=1); exact 6 surveyors (4 Sentinels, 2 NOAA NMFS), looking toward rookery/water, and accurately observed >=3 surveyors holding binoculars up to eyes."
+    },
+    {
+      "query_id": "adv_test_img_03",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p114:text:000",
+        "arc2025:p114:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.114 Fig. 4 (vis=1); accurately described standing on clear stream edge ice, using smartphone to log AWC data, snowy banks and background."
+    },
+    {
+      "query_id": "adv_test_img_04",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p129:text:000",
+        "arc2025:p129:text:001",
+        "arc2025:p129:text:002",
+        "arc2025:p129:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.129 Box 1 (vis=1); exact >150 objectives and all 12 Societal Benefit Areas verbatim with valid page region citations."
+    },
+    {
+      "query_id": "adv_test_img_05",
+      "group": "image_diagram",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p144:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.144 wheel diagram (vis=1); exact 'Coordinating Editor' outer ring and all 4 color-labeled quadrants with [arc2025:p144:fig:00]."
+    },
+    {
+      "query_id": "adv_test_chart_01",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p025:fig:00"
+      ],
+      "visual_inspections": 2,
+      "reason": "Inspected p.25 Fig. 3 (vis=2); exact 'Percent of 1991-2020 average' unit and GPCC >120% spikes in Winter (c) ~2020 and Spring (d) ~2012."
+    },
+    {
+      "query_id": "adv_test_chart_02",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p057:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.57 Fig. 3 (vis=1); exact SST Anomaly (C), 0.03+-0.01 (blue 65-90N), 0.03+-0.003 (red 0-65N), and prominent 2007 blue spike."
+    },
+    {
+      "query_id": "adv_test_chart_03",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p058:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.58 Fig. 4 (vis=1); all 4 exact linear trends (0.12+-0.03, 0.08+-0.02, 0.06+-0.02, 0.03+-0.03 C/yr) and grey Chukchi non-significance."
+    },
+    {
+      "query_id": "adv_test_chart_04",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p091:fig:00"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.91 Fig. 2 (vis=1); curve reaches near 1 C (~0.9 C on coarse -1/0/1 axis) in late 2000s and accurately names both top photos ('Fram 1893-1896' and 'Modern expeditions' U.S. Coast Guard icebreaker)."
+    },
+    {
+      "query_id": "adv_test_chart_05",
+      "group": "chart",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p122:fig:00",
+        "arc2025:p122:text:002"
+      ],
+      "visual_inspections": 1,
+      "reason": "Inspected p.122 Fig. 3 (vis=1); accurate pH (~2.5 Seep vs ~8.0 Unimpaired vs ~7.5 Impaired), log y-axis scale on (b)&(c), and all 7 pie slices with Fe/Al/Mn largest."
+    },
+    {
+      "query_id": "adv_test_multihop_01",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p017:text:001",
+        "arc2025:p039:text:000"
+      ],
+      "visual_inspections": 1,
+      "reason": "Accurately synthesized p.17 (4-6 C anomaly, Hudson Bay early ice retreat/marine heatwave) and p.39 (summer snowfall raised albedo vs late-Aug wildfire smoke lowered albedo)."
+    },
+    {
+      "query_id": "adv_test_multihop_02",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p038:text:001",
+        "arc2025:p042:text:000"
+      ],
+      "visual_inspections": 0,
+      "reason": "Accurately synthesized p.38 (34 stations, Summit Station April record) and p.42 (SSMIS 37 GHz decommissioned 24 Sep 2025, ending melt duration/extent product)."
+    },
+    {
+      "query_id": "adv_test_multihop_03",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p074:text:001",
+        "arc2025:p100:text:001",
+        "arc2025:p100:text:002"
+      ],
+      "visual_inspections": 1,
+      "reason": "Accurately synthesized p.74 (5.1 million km^2 tundra biome) and p.100 (pelagic-benthic coupling from spring blooms and southern species moving north)."
+    },
+    {
+      "query_id": "adv_test_multihop_04",
+      "group": "multi_hop",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p127:text:001",
+        "arc2025:p128:text:000",
+        "arc2025:p128:text:002"
+      ],
+      "visual_inspections": 0,
+      "reason": "Accurately synthesized p.127 (sparse precipitation gauges in complex terrain) and p.128 (3 satellite limitations + EU-PolarNet, INTAROS, Arctic PASSION)."
+    },
+    {
+      "query_id": "adv_test_text_01",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p031:text:000",
+        "arc2025:p031:text:002"
+      ],
+      "visual_inspections": 1,
+      "reason": "Exact April peak, above 1991-2020 baseline across NA & Eurasia, shortest 27-yr season in southern Canadian Arctic Archipelago on p.31."
+    },
+    {
+      "query_id": "adv_test_text_02",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p040:text:000"
+      ],
+      "visual_inspections": 0,
+      "reason": "Exact 491+-17 Gt/yr solid ice discharge (~1 SD above 458+-27 Gt/yr 1991-2020 mean) on p.40."
+    },
+    {
+      "query_id": "adv_test_text_03",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p062:text:000",
+        "arc2025:p062:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "Exact CDOM definition, enhance/inhibit dual effect, and trophic mismatches reducing carbon chain utilization on p.62."
+    },
+    {
+      "query_id": "adv_test_text_04",
+      "group": "text",
+      "status": "answered",
+      "verdict": "pass",
+      "citations": [
+        "arc2025:p115:text:001"
+      ],
+      "visual_inspections": 0,
+      "reason": "Exact nearly 100 samples, Nippon MA-Solo direct mercury analyzer, and uploaded to ISN on p.115."
+    },
+    {
+      "query_id": "adv_test_unans_01",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Clean abstention (status='abstain', citations=[], exact message) confirming GRACE-C is absent."
+    },
+    {
+      "query_id": "adv_test_unans_02",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Clean abstention confirming CMIP7 SSP1-2.6 projections are absent."
+    },
+    {
+      "query_id": "adv_test_unans_03",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Clean abstention confirming black carbon emissions from nuclear icebreakers are absent."
+    },
+    {
+      "query_id": "adv_test_unans_04",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Clean abstention confirming Svalbard Treaty offshore oil clauses are absent."
+    },
+    {
+      "query_id": "adv_test_unans_05",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Clean abstention confirming Arctic Council hydroelectric/geothermal shares are absent from Table 2."
+    },
+    {
+      "query_id": "adv_test_unans_06",
+      "group": "unanswerable",
+      "status": "abstain",
+      "verdict": "pass",
+      "citations": [],
+      "visual_inspections": 0,
+      "reason": "Clean abstention confirming submarine cable and Starlink failure rates are absent."
+    }
+  ]
+}

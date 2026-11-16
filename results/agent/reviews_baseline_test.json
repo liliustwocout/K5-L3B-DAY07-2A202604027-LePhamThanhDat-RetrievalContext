@@ -1,0 +1,11 @@
+[
+  {"query_id": "q07", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping Rank-1 chunk p022:para:001."},
+  {"query_id": "q08", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p029:para:001."},
+  {"query_id": "q15", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all retrieved chunks > 800 chars)."},
+  {"query_id": "q16", "answer_grade": 0, "citation_support": [], "note": "False abstention; empty context (all retrieved chunks > 800 chars)."},
+  {"query_id": "q23", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping Rank-1 p024:para:001."},
+  {"query_id": "q24", "answer_grade": 0, "citation_support": [], "note": "False abstention due to budget=800 dropping p026:para:001/002."},
+  {"query_id": "u_test_01", "citation_support": [], "abstention_correct": true, "note": "Clean abstention without unsupported claims."},
+  {"query_id": "u_test_02", "citation_support": [], "abstention_correct": true, "note": "Clean abstention without unsupported claims."},
+  {"query_id": "u_test_03", "citation_support": [], "abstention_correct": true, "note": "Clean abstention without unsupported claims."}
+]

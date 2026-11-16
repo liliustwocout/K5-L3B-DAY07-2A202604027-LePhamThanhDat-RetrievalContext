@@ -1,0 +1,268 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "In explainable AI terminology, how are the three key terms \"explanation\", \"output\", and \"process\" operationally defined?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What does the Knowledge Limits principle require of an explainable AI system?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "What are the two distinct ways an AI system can reach or exceed its knowledge limits, and how should it respond in each situation?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "How does a one-way interaction style differ from a declarative explanation in human-machine explanation delivery?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Within explainability risk management, what potential negative intellectual property risk arises when a system provides multiple explanations across queries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "category": "explainability"
+    }
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "How does SHAP compute per-feature importance for an individual prediction?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "test",
+    "question": "What vulnerability arises when an explanation lacks 100 percent accuracy, and how does fairwashing exploit it?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "test",
+    "question": "What benchmark conclusion is drawn from comparing human-produced explanations to the four AI principles, and what does this imply for human-machine collaboration?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "year": 2021
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What are the three dominant categories of AI bias identified beyond purely computational factors, and how is systemic bias defined?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "How do statistical and computational biases arise, and can they occur without discriminatory intent?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "What is \"techno-solutionism\" in the context of AI bias, and what model risk management control helps counter it?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Why does excluding protected attributes such as race or gender from training datasets fail to prevent discrimination?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Why is the distinction between reducible epistemic uncertainty and irreducible aleatoric uncertainty described as not absolute in bias management?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "category": "bias_management"
+    }
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "In the field study on STEM career advertisements, why did more men than women see an ad intended for women, and what limitation of algorithmic transparency does this reveal?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "year": 2022
+    }
+  },
+  {
+    "id": "q15",
+    "split": "test",
+    "question": "Which two mathematical fairness conditions are inherently incompatible in general, and does this impossibility prevent achieving both mitigated bias and good performance?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "How does the \"three lines of defense\" model assign accountability across teams to sustain a culture of effective challenge?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "Which Executive Order section prompted the secure generative AI development companion profile, and what unique boundary challenge exists in AI systems?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "question": "Which lifecycle activities are excluded from the AI model development security profile, and does it treat AI-generated source code differently from human-written source code?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q19",
+    "split": "dev",
+    "question": "Why is tracking model versioning, lineage, and reproducibility harder for final AI model weights than for model architecture source code?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "dev",
+    "question": "In the SSDF Community Profile table, what do the designation codes R, C, and N appended to a task ID represent?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q21",
+    "split": "dev",
+    "question": "Under task PO.5.1 for securing development environments, what practices are recommended for protecting sensitive data, training pipelines, and model registries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "category": "genai_security"
+    }
+  },
+  {
+    "id": "q22",
+    "split": "dev",
+    "question": "Under task PW.3.2, what should an organization still do when the provenance of training, testing, or fine-tuning data is unknown?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "year": 2024
+    }
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "Under secure coding practice PW.5.1, how should AI model inputs (including prompts) and outputs be handled and encoded?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "For analyzing vulnerabilities and planning risk responses in AI models (tasks RV.2.1 and RV.2.2), what input/output inspection is noted and what resource factor must risk responses consider?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "category": "genai_security"
+    }
+  },
+  {
+    "id": "u_dev_01",
+    "split": "dev",
+    "question": "Under the GDPR mentions in the NIST explainability publication, what administrative fine percentages or maximum Euro penalties apply for violating GDPR Article 22 automated decision-making rules?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST IR 8312 briefly cites GDPR Article 13 in explainability context (pp. 8, 16, 30, 42), but GDPR Article 22, administrative fine percentages, and Euro penalties do not appear anywhere in the corpus.",
+    "filter": {
+      "category": "explainability"
+    }
+  },
+  {
+    "id": "u_dev_02",
+    "split": "dev",
+    "question": "According to the secure generative AI development practices profile, what specific KL-divergence penalty coefficient or PPO clipping epsilon is recommended during RLHF alignment?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST SP 800-218A discusses aligning and fine-tuning at a high-level SSDF practice level (e.g., PW.3.2), but specifies no RLHF algorithm hyperparameters such as KL penalty coefficients or PPO clipping epsilon.",
+    "filter": {
+      "category": "genai_security"
+    }
+  },
+  {
+    "id": "u_dev_03",
+    "split": "dev",
+    "question": "How does the EU AI Act Article 52 transparency obligation or conformity assessment procedure map to the four explainable AI principles in the NIST documents?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The NIST documents cover explainability principles and transparency (IR 8312, SP 1270) but never mention or map to the EU AI Act, Article 52, or conformity assessment procedures.",
+    "filter": null
+  },
+  {
+    "id": "u_test_01",
+    "split": "test",
+    "question": "Under task RV.2.2 of the generative AI secure development profile, within how many calendar days must an organization patch or disclose newly discovered critical AI model vulnerabilities?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST SP 800-218A RV.2.2 recommends considering time and rebuilding expenses in risk responses, but gives no numeric patch or disclosure SLA in calendar days.",
+    "filter": {
+      "year": 2024
+    }
+  },
+  {
+    "id": "u_test_02",
+    "split": "test",
+    "question": "In SP 800-218A, how does NIST specify implementing cryptographic watermarking or C2PA provenance metadata tags for generated images and audio?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "NIST SP 800-218A addresses training/fine-tuning data provenance under PW.3.2, but contains no guidance on cryptographic watermarking or C2PA tags for generated media.",
+    "filter": null
+  },
+  {
+    "id": "u_test_03",
+    "split": "test",
+    "question": "How does ISO/IEC 42001 Clause 9.1 map to the AI bias and explainability governance controls across the three NIST publications?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The three NIST publications discuss AI governance, bias, and explainability, but make no reference to ISO/IEC 42001 or Clause 9.1.",
+    "filter": null
+  }
+]
